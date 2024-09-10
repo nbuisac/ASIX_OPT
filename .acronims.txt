@@ -1,0 +1,24 @@
+*[POT]: Programming Of Things - Programació de les Coses
+*[IOT]: Internet Of Things - Internet de les Coses
+
+*[TCP]: Transport Control Protocol
+*[UDP]: User Datagram Protocol
+
+*[http]: hypertext transfer protocol
+*[https]: hypertext transfer protocol secure
+*[HTTPS]: hypertext transfer protocol secure
+*[HTTP]: HiperText Terminal Protocol
+*[FTP]: File Transfer Protocol
+*[FTPS]: FTP-SSL
+*[SFTP]: SSH FTP (ftp over ssh)
+*[ProFTP]: Professional File Transfer Protocol
+*[SSL]: Secure Sockets Layer
+*[TLS]: Transport Layer Security
+
+*[ssh]: secure shell
+
+*[NAT]: Network Address Translation
+*[URL]: Uniform Resource Locator
+*[URI]: Uniform Resource Identifier
+
+*[P2P]: Peer to peer (entre iguals)

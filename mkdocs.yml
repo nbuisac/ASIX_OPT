@@ -1,0 +1,139 @@
+site_name: Institut Montilivi | ASIX | OPT
+site_url: http://apunts.institutmontilivi.cat/ASIX-OPT/
+site_description: Apunts pel Mòdul Optatiu d'ASIX
+site_author: Narcís
+copyright: Copyleft &copy; 2024 - 2025 Narcís
+# repo_url: https://github.com/nbuisac/ASIX_OPT
+
+theme:
+    language: ca
+    logo: img/Logo_Montilivi_2015_blanc.png
+    favicon: img/favicon.ico
+    name: material
+    nav_style: dark
+    custom_dir: overrides
+    palette:
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          toggle:
+            icon: material/weather-night
+            name: Canvia a mode dark
+          primary: custom
+          accent: deep orange
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          toggle:
+            icon: material/weather-sunny
+            name: Canvia a mode light
+          primary: custom
+          accent: yellow
+    features:
+        # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.sections
+#        - navigation.expand
+        - navigation.top
+        - navigation.footer
+        - header.autohide
+        - navigation.instant         # No carrega sempre tota la pàgina 
+#        - navigation.tracking        # Va modificant la URL d ela barra d'acreces
+        - toc.follow
+        - toc.integrate
+        - announce.dismiss
+        - content.code.copy       # permet copiar el codi https://squidfunk.github.io/mkdocs-material/reference/code-blocks/
+        - content.tabs.link       # vàries pestanyes de code https://squidfunk.github.io/mkdocs-material/reference/content-tabs/?h=tabs
+
+markdown_extensions:
+  - admonition
+  - pymdownx.keys
+  - pymdownx.highlight:
+      linenums: None
+#      auto_title: True
+  - pymdownx.superfences  
+  - pymdownx.tabbed:
+      alternate_style: true       # vàries pestanyes de codi https://squidfunk.github.io/mkdocs-material/reference/content-tabs/?h=tabs
+                                  # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#tabbed
+  - pymdownx.inlinehilite
+#https://pygments.org/docs/lexers
+  - pymdownx.snippets
+  - pymdownx.details
+  - attr_list
+  - def_list
+  - meta
+  - abbr
+#  - toc:
+#      permalink: "#"
+#      baselevel: 1
+#  - def_list
+# per a posar subindex ~ i superindex ^ cal afegir 3 extensions
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ins_montilivi
+      name: Institut Montilivi a Twitter
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/info_montilivi
+      name: Departament d'Informàtica a Twitter
+
+extra_css:
+    - stylesheets/extra.css
+
+plugins:
+  - search:
+#        indexing: 'full'
+  - exclude-search:
+        exclude:
+            - python/py_001exSolucio.md
+            - python/py_004exSolucio.md
+            - python/py_005exSolucio.md
+            - python/py_007exSolucio.md
+            - python/py_009exSolucio.md
+            - python/py_010exSolucio.md
+
+nav:
+    - "Python" :
+      - "Introducció" : 'python/py_000.md'
+      - "L'entorn de desenvolupament" : 'python/py_001.md'
+      - "Instal·lació" : 'python/py_002.md'
+      - "Un tastet" : 'python/py_002b.md'
+      - "Nombres" : 'python/py_003.md'
+      - "Conceptes bàsics" : 'python/py_004.md'
+      - "Booleans" : 'python/py_005.md'
+      - "Condicionals" : 'python/py_006.md'
+      - "Comparacions" : 'python/py_007.md'
+      - "Strings" : 'python/py_008.md'
+      - "Strings - Mètodes" : 'python/py_009.md'
+      - "Llistes" : 'python/py_010.md'
+      - "Llistes - Mètodes" : 'python/py_011.md'
+      - "Exercicis":
+        - "Exercici d'escriptures i assignacions" : 'python/py_001ex.md'
+        - "Conceptes bàsics" : 'python/py_004ex.md'
+        - "Booleans" : 'python/py_005ex.md'
+        - "Condicionals i Comparacions - blackjack" : 'python/py_007ex.md'
+        - "Strings" : 'python/py_009ex.md'
+        - "Llistes" : 'python/py_010ex.md'
+
+    - "ESP-32" :
+      - "La placa " : 'esp32/esp32_000.md'
+      - "Preparació de l'entorn de desenvolupament" : 'esp32/esp32_001.md'
+
+    - "Programació" : 'programacio.md'
+    - "Altres" :
+        - "Diferents entorns de Python" : 'altres/venv.md'
+        - "Instal·lació de paquets" : 'altres/pip.md'
+        - "Exemple d'entorn i paquet" : 'altres/pytube.md'
+        - "Enllaços": 'altres/altres.md'
+
+
+## Plugins
+# pip install mkdocs-material
+# pip install mkdocs-exclude-search
+# python.exe -m pip install --upgrade pygments
+# pip install --upgrade pymdown-extensions
+# admonitions
+# note abstract info tip success question warning failure danger bug example quote
