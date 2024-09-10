@@ -1,4 +1,4 @@
-# DAW_MP03 - Programming of Things
+# ASIX - OPT - Programming of Things
 
 ## Mòdul Optatiu - Python - Programació de les Coses - ASIX
 
@@ -12,4 +12,4 @@ Apunts per a donar el mòdul Optatiu de Programació de les Coses al Cicle Admin
 
 
 Apunts basats en [https://ellibrodepython.com/]()
-Versió 0.0.0
+Versió 0.0.1
