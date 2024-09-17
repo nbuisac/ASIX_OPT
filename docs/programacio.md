@@ -1,4 +1,4 @@
-# Mòdul professional optatiu - POT: Programació de les coses (99 h)
+# Mòdul professional optatiu - OPT: Programació en Python (99 h)
 
 Aquesta programació es basa en:
 
@@ -67,31 +67,23 @@ s'estableix el currículum dels cicles formatius de formació professional inici
 Aquest, al ser un mòdul optatiu de programació, no té UC associades al mòdul.
 
 
-### Competències professionals, personals i socials (CPPeS) 
-
-
-
-### Objectius generals (OG)
-
-
-
 ## 2. Relació de Nuclis Formatius i Resultats d’Aprenentatge
 
-| Unitats Formatives | Hores Mínimes | HLLD | Total H. | Data Inici | Data Final |
-|--------------------|:-------------:|:----:|:--------:|:----------:|:----------:|
-| NF 1: Tipus, conversions, expressions i composició seqüencial    |  18  | 0 | 18 | Setmana 1 | Setmana 6 |
-|<td colspan = 4> RA1: Reconeix l'estructura d'un programa informàtic, identificant i relacionant els elements propis del llenguatge de programació utilitzat. |
-|<td colspan = 4> RA2: Dissenya models lògics normalitzats interpretant diagrames entitat/relació. |
-|UF2 Llenguatge SQL: DML i DDL | 58 | 0 | 58 | Setmana 7 | Setmana 18 |
-|<td colspan = 4> RA1: Consulta i modifica la informació emmagatzemada en una base de dades emprant assistents, eines gràfiques i el llenguatge de manipulació de dades. |
-|<td colspan = 4> RA2: Realitza el disseny físic de bases de dades utilitzant assistents, eines gràfiques i el llenguatge de definició de dades. |
-|UF3 Llenguatges SQL: DCL i extensió procedimental SGBD corporatiu | 66 | 0 | 66 | Setmana 19 | Setmana 30|
-|<td colspan = 4> RA1: Implanta mètodes de control d’accés utilitzant assistents, eines gràfiques i comandes del llenguatge del sistema gestor de bases de dades corporatiu. |
-|<td colspan = 4> RA2: Desenvolupa procediments emmagatzemats avaluant i utilitzant les sentències del llenguatge incorporat en el sistema gestor de bases de dades corporatiu. |
-|UF4: Bases de dades objecte-relacional | 16 | 0 | 16 | Setmana 31 | Setmana 33 |
-|<td colspan = 4> RA1: Gestiona la informació emmagatzemada en bases de dades objecte-relacionals, avaluant i utilitzant les possibilitats que proporciona el sistema gestor. |
+<table border="1">
+    <tr style="background-color: #4B8BBE; color: #FFD43B">
+        <th>Unitats Formatives</th><th>Total H.</th><th>Setmana Inici</th><th>Setmana Final</th>
+    </tr>
+    <tr><td>NF 1: Tipus, conversions, expressions i composició seqüencial</td><td align="center">45</td><td align="center">1</td><td align="center">12</td></tr>
+    <tr><td colspan = 4> RA 1: Programa utilitzant estructures de control i funcions pròpies.</td></tr>
+    <tr><td>NF 2: Llibreries d’altres en Python</td><td align="center">20</td><td align="center">12</td><td align="center">17</td></tr>
+    <tr><td colspan = 4> RA 1: Escriu i prova programes senzills, utilitant llibreries d’altres.</td></tr>
+    <tr><td>NF 3: Accés, creació i manipulació de la informació externa.</td><td align="center">34</td><td align="center">17</td><td align="center">25</td></tr>
+    <tr><td colspan = 4> RA 1: Escriu programes que manipulin informació externa.</td></tr>
+</table>
 
 ## 3. Relació de continguts
+
+### Nucli Formatiu 1
 
 ???note "1. Identificació dels elements d'un programa informàtic:"
 
@@ -111,62 +103,51 @@ Aquest, al ser un mòdul optatiu de programació, no té UC associades al mòdul
 
     1.8 Comentaris.
 
-???note "2. Tipus de dades simples i compostes. Programació estructurada:"
+???note "2. Estructures de control:"
 
-    2.1 Fonaments de programació.
+    * 2.1 Estructures de selecció.
 
-    2.2 Introducció a l’algorísmica.
+    * 2.2 Estructures de repetició.
 
-    2.3 Disseny d’algorismes.
+    * 2.3 Estructures de salt.
 
-    2.4 Prova de programes.
+    * 2.4 Control d'excepcions.
 
-    2.5 Tipus de dades simples i compostes.
+???note "3 Funcions:"
 
-    2.6 Estructures de selecció.
+    * 3.1 Concepte de funció.
 
-    2.7 Estructures de repetició.
+    * 3.2 Estructura d'una funció. Visibilitat.
 
-    2.8 Estructures de salt.
+    * 3.3 Paràmetres.
 
-    2.9 Tractament de cadenes.
+    * 3.4 Crida de funcions
 
-    2.10 Depuració d’errors.
+### Nucli Formatiu 2
 
-    2.11 Documentació dels programes.
+???note "4. Utilització de funcions d’altres:"
 
-    2.12 Entorns de desenvolupament de programes.
+    * 4.1 Característiques dels paquets.
 
-???note "3. Programació modular:"
+    * 4.2 Instanciació d'objectes.
 
-    3.1 Concepte.
+    * 4.3 Utilització de mètodes. Paràmetres.
 
-    3.2 Avantatges i inconvenients.
+    * 4.4 Utilització de propietats.
 
-    3.3 Anàlisi descendent (top down).
+    * 4.5 Utilització de mètodes estàtics.
 
-    3.4 Modulació de programes.
+    * 4.6 Constructors.
 
-    3.5 Crides a funcions. Tipus i funcionament.
+    * 4.7 Destrucció d'objectes i alliberament de memòria.
 
-    3.6 Àmbit de les crides a funcions.
+### Nucli Formatiu 3
 
-    3.7 Prova, depuració i comentaris de programes.
+???note "Accés a dades externes"
 
-    3.8 Concepte de llibreries.
+    * 5.1 Accés a fitxers de diferents formats
 
-    3.9 Utilització de llibreries.
-
-???note "4. Gestió de fitxers:"
-
-    4.1 Concepte i tipus de fitxers.
-
-    4.2 Operacions sobre fitxers.
-
-    4.3 Disseny de programes de gestió de fitxers.
-
-    4.4 Modulació de les operacions sobre fitxers
-
+    * 5.2 Accés a URLs/APIs
 
 ## 4. Estratègies metodològiques i organització del MP
 
@@ -178,38 +159,98 @@ El mòdul pretén apropar els alumnes en la programació en el Llenguatge Python
 
 El mòdul també es pretén introduir un llenguatge per programar, en el mòdul de *Sostenibilitat aplicada al sistema productiu*, una targeta o placa ESP32 per mostrar eines que afavoreixen la sostenibilitat del nostre entorn.
 
+En aquest mòdul fomentarem al màxim l'aprenentatge cooperatiu.
 
-Com és obvi, en un cicle de la família d’Informàtica l’ús de les TAC és més que fonamental. Per això incorporem la plataforma _Moodle_ com a entorn virtual d’aprenentatge (EVA). Utilitzarem l'eina de control de versions _git_ i el lloc web _github.com_ per emmagatzemar els nostres progames i projectes. De la mateixa manera actuarem sobre un SGBD _MongoDB_ per emmagatzemar la informació recollida pels nostres prototipus. Farem servir com a formació de suport material divers: presentacions, pràctiques, projectes i exercicis d’autoavaluació, que permetran reforçar i alhora mesurar l’assoliment dels continguts treballats.
+Els diferents RA, que hem distribuït en NF, que integren el mòdul, tenen particularitats que fan que l'estratègia metodològica a emprar sigui diferent per cadascun.
+
+## 4.1 Organització
+
+Aprofitarem per fer el mòdul en sèrie abans del mòdul de sostenibilitat i ocupant les seves hores. D’aquesta manera, tindrem disponibles quatre hores setmanals que aniran des de principi de curs fins la setmana vint-i-cinc (99/4 = 24'75). A la setmana 25 finalitzarem el mòdul i començarà, ocupant les hores que utilitzàvem, el mòdul 1708, sostenibilitat aplicada al sistema productiu.
+
+Realitzarem les NFs de forma seqüencial i eminentment pràctiques, buscant en tot moment, exemples que puguin enriquir l’alumnat, fins i tot, en altres matèries.
+
+Incorporarem l'Anglès en totes els RA a nivell de lectura d'apunts/manuals (comprensió lectora). Els accessos a les webs de python estan en anglès i les explicacions de classe són en català, sense que això suposi cap problema per al correcte aprenentatge dels alumnes.
+
+## 4.2. Inclusió i perspectiva de gènere
+
+### 4.2.1 Atenció a la diversitat
+
+Entenent diversitat com a la singularitat de cada persona dins un grup, podem trobar diferents ritmes o necessitats d’aprenentatge  que caldrà valorar per a la millora del procés i la consecució dels objectius marcats.
+
+A l’inici de curs es farà una avaluació diagnòstica on mirarem de saber no només les inquietuds, motivacions i coneixement del mòdul que té l’alumnat, sinó també, detectar la seva capacitat de raonament,  de comunicació, de comprensió i de deducció.
+
+A partir d’aquesta avaluació prendrem les accions necessàries, com pot ser l’execució d’exercicis de reforç o la formació d’agrupacions concretes.
+
+La metodologia proposada, la qual redueix les classes magistrals, potencia l’aprenentatge significatiu acostant l’avaluació a situacions reals en el mon laboral, promou el treball cooperatiu, permet l’augment de la motivació de  l’alumnat i l’assoliment de l’aprenentatge. 
+
+El fet de tenir accés web als apunts de classe permet adequar el ritme d’aprenentatge segons la necessitat de l’alumnat. En els casos necessaris es permetrà finalitzar l’entrega de pràctiques més tard de la data prevista.
+Per adequar les activitats es promourà la cooperació en la identificació i solució de problemes trobats durant les activitats.
+
+S’utilitzarà l’avaluació  formativa, on el professor aprèn i llegeix les necessitats de l’alumnat, per atendre millor  la diversitat i millorar el procés d’ensenyament aprenentatge.
+
+### 4.2.2 Perspectiva de gènere
+
+Es promourà l’ús del llenguatge gràfic, escrit i oral, respectuós, inclusiu i no sexista tal com indica el pla per a la igualtat de gènere en el sistema educatiu.
+
+Es rebutjaran els materials didàctics on els comportaments i continguts sexistes i estereotips  suposin discriminació entre dones i homes.
+
+Es tindrà especial atenció a la distribució equitativa de les tasques que puguin ser sensibles a estereotips i que suposin una discriminació entre dones i homes.
+
 
 ## 5. Avaluació i qualificació del MP
 
 ### 5.1 Qualificació del MP
 
-La qualificació del mòdul professional es determina analitzant les hores de cadascun dls RAs, segons la seva rellevància i el perfil professional del cicle.
+La qualificació del mòdul professional es determina analitzant la rellevància de cadascun dels diferents NFs.
 
-Els RAs els ponderarem de forma equitativa respecte les hores de docència impartides i la importància en el Mòdul.
+Així doncs, l'equació per qualificar el mòdul professional és la següent:
 
-Així doncs, l’equació per qualificar el mòdul professional és la següent:
-
-** Q~MP~ = 0.10 · Q~RA1~ + 0.35 · Q~RA2~ + 0.40 · Q~RA3~ + 0.15 · Q~RA4~ **
+Q~MP~ = 0’45 · Q~NF1~ + 0’20 · Q~NF2~ + 0’35 · Q~NF3~
 
 essent:
 
-* Q~MP~ la qualificació del Mòdul Professional
-* Q~RA1~ la qualificació del RA1
-* Q~RA2~ la qualificació del RA2
-* Q~RA3~ la qualificació del RA3
-* Q~RA4~ la qualificació del RA4
+* Q~MP~ la qualificació del Mòdul Professional 
 
-Per tal d’aprovar el Mòdul Professional cal superar independentment cadascun dels Resultats d'Aprenentage (Q*~RAx~* >= 5).
+* Q~NF1~ la qualificació del NF1 (45 hores – 45’45%)
 
-Per superar el Mòdul Professional l’alumne disposa de fins a quatre convocatòries ordinàries i una d’extraordinària, que si fos el cas, cal que l’alumne sol·liciti a la direcció del centre. A fi de poder superar una determinada UF en primera convocatòria, cal que l’alumne assisteixi com a mínim un 80% de les hores lectives que la UF té assignades.
+* Q~NF2~ la qualificació del NF2 (20 hores – 20’20%)
 
-###5.2 Avaluació del MP en segona convocatòria
+* Q~NF3~ la qualificació del NF3 (34 hores – 34’34%)
 
-L’alumnat que no superi un determina RA en primera convocatòria, tindrà opció a presentar-se a la segona convocatòria. Serà el professor qui determinarà els RAs dels quals s'avaluarà l'alumne en segona convocatòria.
+Els Nuclis Formatius tenen una finalitat orientativa, això vol dir que per cadascuna pot obtenir una qualificació final 
 
-Els alumnes que no superin la convocatòria ordinària podran presentar-se a la segona convocatòria. Per això caldrà presentar les pràctiques que determini el professor en el termini prefixat i realitzar una prova escrita que es durà a terme, finalitzades les convocatòries ordinàries dels Mòduls del curs, en les dates fixades pel centre a tal efecte. En aquesta prova escrita, es pot preguntar qualsevol aspecte relacionat tant amb els continguts del Mòdul, com amb les pràctiques realitzades al llarg de mateixa. Per superar la convocatòria caldrà superar les dues parts individualment.
+La ponderació dels Resultats d’Aprenentatge en el total de la Nucli Formatiu 1 és:
+
+* RA1 = 100 %
+
+D’acord a la ponderació que hem fet dels diferents RA, la qualificació de la NF1 (Q~NF1~) s’obté a través de la fórmula següent:
+
+* Q~NF1~  = Q~RA1~
+
+La ponderació dels Resultats d’Aprenentatge en el total de la Nucli Formatiu 2 és:
+
+* RA1 = 100 %
+
+D’acord a la ponderació que hem fet dels diferents RA, la qualificació de la NF2 (Q~NF2~) s’obté a través de la fórmula següent:
+
+* Q~NF2~  = Q~RA2~
+
+La ponderació dels Resultats d’Aprenentatge en el total de la Nucli Formatiu 3 és:
+
+* RA3 = 100 %
+
+D’acord a la ponderació que hem fet dels diferents RA, la qualificació de la NF3 (Q~NF3~) s’obté a través de la fórmula següent:
+
+* Q~NF3~  = Q~RA3~
+
+
+### 5.2 Avaluació segona convocatòria del MP
+
+L’alumnat que no superi el mòdul durant la primera convocatòria té l’opció de presentar-se a la segona convocatòria  en el període establert pel centre educatiu un cop finalitzades les classes. 
+
+L'avaluació contínua requereix l'assistència regular dels alumnes i les alumnes a les classes i les activitats programades de cada Nucli Formatiu. L’alumne que superi el 20% de faltes del  mòdul perdrà el dret a l’avaluació contínua. 
+
+Els alumnes que no superin la convocatòria ordinària podran presentar-se a la segona convocatòria. Per això caldrà presentar les pràctiques que determini el professor en el termini prefixat i realitzar una  prova escrita que es durà a terme, finalitzada la convocatòria ordinària del mòdul, en les dates fixades pel centre a tal efecte. En aquesta prova escrita, es pot preguntar qualsevol aspecte relacionat tant amb els continguts del mòdul, com amb les pràctiques realitzades al llarg de mateixa. Per superar la convocatòria caldrà superar les dues parts individualment.
 
 No obstant això, si un estudiant no es veu capacitat per recuperar el Mòdul suspès, pot optar per no presentar-se a la prova de recuperació, evitant així consumir la convocatòria.
 
@@ -217,17 +258,15 @@ No obstant això, si un estudiant no es veu capacitat per recuperar el Mòdul su
 
 El MP s’imparteix en les aules taller d’informàtica preparades per treballar amb discs durs extraïbles amb ordinadors de sobretaula i infraestructura d’accés a xarxa per connectar els portàtils dels alumnes. El MP tindrà associat un curs _Moodle_ per a la comunicació dels alumnes i la publicació si s’escau de material addicional. Aquesta plataforma permetrà que l’estudiant pugui consultar les seves qualificacions de les activitats que anem realitzant, a fi de que ell mateix pugui dur a terme el seguiment dels seus progressos dins el mòdul.
 
-Els materials i activitats proposades estan publicats al curs _Moodle_ de l’assignatura.
+Els materials i activitats proposades estan publicats al curs Moodle de l’assignatura i a la pàgina web dels apunts del mòdul: [https://apunts.institutmontilivi.cat/ASIX-OPT/][]{target="_blank"}
 
 ## 7. Material i recursos necessaris per a desenvolupar el MP
 
-Per impartir aquest mòdul farem un ús intensiu de les plataformes *Moodle*, *github* i *MongoDBAtlas*.
+Per impartir aquest mòdul farem un ús intensiu de la plataforma *Moodle* i utilitzarem la darrera o una de les darreres versions de *Python* per a la realització dels programes.
 
-També utilitzarem el llenguatge de programació Python, en la darrera o una de les darreres versions, així com el llenguatge MicroPython, pre programar les plaques ESP32.
+Com entorn de desenvolupament es proposarà l’ús de *Visual Studio Code*.
 
-Com a entorn de desenvoluparem utilitzarem *Visual Stucio Code* i *Thonny*.
-
-Per accedir a la plataforma *MongoDB Atlas* es realitzaran crides tipus *API Rest* des de l'entorn de programació, cap a la API proporcionada pel propi entorn.
+El material didàctic que farem servir per impartir el mòdul és material propi, webs amb tutorials de *python*, pàgina de referència dels llenguatge *python* i altres materials menors.
 
 ## 8. Bibliografia general del MP
 
@@ -237,205 +276,202 @@ Enguany no farem servir cap llibre de text de referència. Tota la informació n
 
 * [https://ellibrodepython.com/][]{target="_blank"}
 
-* [web de MongoDB](https://www.mongodb.com/docs/){target="_blank"}
+* [apunts del mòdul][https://apunts.institutmontilivi.cat/ASIX-OPT/]{target="_blank"}
 
 _Tant la informació en paper com la informació en format digital que es va proporcionant al llarg del curs cal que l’alumne se la gestioni i organitzi correctament a fi de tenir-la a l’abast en tot moment quan aquesta pugui ser requerida._
 
-## 9. Programació d’unitats formatives
+## 9. Programació dels Nuclis Formatius
 
-En el moment d’iniciar cadascuna de les UF es presentarà detalladament el seu desenvolupament i el sistema d’avaluació emprat.
+En el moment d’iniciar cadascun dels NF, es presentarà detalladament el seu desenvolupament i el sistema d’avaluació emprat.
 
-### 9.1 UF1 Introducció a les bases de dades - 25h - Setmana 1 - Setmana 6
+#### Nucli Formatiu 1
 
-#### 9.1.1 Relació de Nuclis Formatius
+Activitats d’ensenyament i aprenentatge:
 
-En aquest Mòdul no hi ha nuclis formatius (NF), la temàtica és prou homogènia per ser programada fent servir únicament activitats d’ensenyament aprenentatge.
+* AEA1	RA1	Introducció el Python
+
+* AEA2	RA1	Estructures de control i Funcions
+
+**RA1 Programa utilitzant estructures de control i funcions pròpies.**
+
+Criteris d’avaluació
+
+* 1.1 Utilitza entorns integrats de desenvolupament.
+
+* 1.2 Identifica els diferents tipus de variables i la utilitat específica de cadascun.
+
+* 1.3 Crea i utilitza constants i literals.
+
+* 1.4 Classifica, reconeix i utilitza en expressions els operadors del llenguatge.
+
+* 1.5 Escriu programes simples utilitzant estructures de control: selecció i iteració
+
+* 1.6 Introdueix comentaris al codi.
+
+* 1.7 Gestiona les excepcions que es poden produir en un programa.
+
+* 1.8 Crea funcions locals amb els paràmetres necessaris i les utilitza en el programa principal i en altres funcions.
+
+<table border="1">
+    <tr style="background-color: #4B8BBE; color: #FFD43B;">
+        <th rowspan="2" colspan="3">Activitats d’ensenyament i aprenentatge de NF 1<br />Durada: 45 hores</th>
+        <th rowspan="2">RA</th>
+        <th rowspan="2">Continguts</th>
+        <th colspan="2">Avaluació</th>
+    </tr>
+    <tr style="background-color: #4B8BBE; color: #FFD43B;"><th>CA</th><th>Instruments<br />d'avaluació</th></tr>
+    <tr>
+        <td colspan="2"> A1- Introducció el Python</td>
+        <td>18 h</td>
+        <td rowspan="2">1</td>
+        <td rowspan="2">1</td>
+        <td rowspan="2">1.1<br />1.2<br />1.3<br />1.4</td>
+        <td rowspan="2">NF1-EP1- Llista d’exercicis<br />NF1-PE1- Prova escrita de programació bàsica</td>
+    </tr>
+    <tr>
+        <td><p style="font-style: italic;">Descripció</p></td>
+        <td colspan="2"><ul>
+            <li>Entorn de desenvolupament.</li>
+            <li>Tipus de llenguatges de programació.</li>
+            <li>Variables, tipus i operacions</li>
+        </ul></td>
+    </tr>
+    <tr>
+        <td colspan="2"> A2- Estructures de control i Funcions</td>
+        <td>27 h</td>
+        <td rowspan="2">1</td>
+        <td rowspan="2">2</td>
+        <td rowspan="2">1.5<br />1.6<br />1.7<br />1.8</td>
+        <td rowspan="2">NF1-EP2- Llista d’exercicis  avançats<br />NF1-PE2- Prova escrita d’exercicis  avançats</td>
+    </tr>
+    <tr>
+        <td><p style="font-style: italic;">Descripció</p></td>
+        <td colspan="2"><ul>
+            <li>Estructures de selecció</li>
+            <li>Estructures iteratives</li>
+            <li>Llistes i altres tipus avançats</li>
+            <li>Excepcions</li>
+            <li>Funcions</li>
+        </ul></td>
+    </tr>
+</table>
+
+
+#### Nucli Formatiu 2
+
+Activitats d’ensenyament i aprenentatge:
+
+* AEA1	RA2	Ús de llibreries d’altres
+
+**RA2 Escriu i prova programes senzills, utilitzant llibreries d’altres.**
+
+Criteris d’avaluació
+
+* 2.1. Incorpora i utilitza llibreries d'objectes.
+
+* 2.2. Escriu crides a mètodes estàtics.
+
+* 2.3. Instancia objectes a partir de classes predefinides.
 
-#### 9.1.2 Resultats d’Aprenentatge i Criteris d’Avaluació
+* 2.4. Utilitza constructors i mètodes d’objectes
 
-???note "1.  Reconeix l'estructura d'un programa informàtic, identificant i relacionant els elements propis del llenguatge de programació utilitzat."
+<table border="1">
+    <tr style="background-color: #4B8BBE; color: #FFD43B;">
+        <th rowspan="2" colspan="3">Activitats d’ensenyament i aprenentatge de NF 2<br />Durada: 20 hores</th>
+        <th rowspan="2">RA</th>
+        <th rowspan="2">Continguts</th>
+        <th colspan="2">Avaluació</th>
+    </tr>
+    <tr style="background-color: #4B8BBE; color: #FFD43B;"><th>CA</th><th>Instruments<br />d'avaluació</th></tr>
+    <tr>
+        <td colspan="2"> A1 - Ús de llibreries d’altres</td>
+        <td>20 h</td>
+        <td rowspan="2">2</td>
+        <td rowspan="2">4.1 a 4.7</td>
+        <td rowspan="2">2.1<br />2.2<br />2.3<br />2.4</td>
+        <td rowspan="2">NF2-EP1- Llista d’exercicis utilitzant llibreries  d’altres<br />NF2-PE1- Prova escrita utilitzant llibreries  d’altres</td>
+    </tr>
+    <tr>
+        <td><p style="font-style: italic;">Descripció</p></td>
+        <td colspan="2"><ul>
+            <li>Llibreries en python.</li>
+            <li>Ús de les llibreries.</li>
+            <li>Classes i Objectes.</li>
+            <li>Mètodes i propietats de classe.</li>
+            <li>Mètodes i propietats d’objecte.</li>
+        </ul></td>
+    </tr>
+</table>
+
+
+#### Nucli Formatiu 3
+
+Activitats d’ensenyament i aprenentatge:
+
+* AEA1	RA3	Creació de fitxers i accés a dades externes en fitxers
+
+* AEA2	RA3	Creació de informació a través de URLs/APIs
+
+**RA3 Escriu programes que manipulin informació externa.**
+
+Criteris d’avaluació
+
+* 3.1. Escriu programes que creen fitxers
+
+* 3.2. Escriu programes que accedeixen a dades de fitxers de diferents tipus
+
+* 3.3. Escriu programes que accedeixen a URLs externes i obtenen informació en format JSON i altres.
+
+* 3.4. Escriu programes que accedeixen a URLs externes i afegeixen informació en format JSON i altres.
+
+<table border="1">
+    <tr style="background-color: #4B8BBE; color: #FFD43B;">
+        <th rowspan="2" colspan="3">Activitats d’ensenyament i aprenentatge de NF 1<br />Durada: 34 hores</th>
+        <th rowspan="2">RA</th>
+        <th rowspan="2">Continguts</th>
+        <th colspan="2">Avaluació</th>
+    </tr>
+    <tr style="background-color: #4B8BBE; color: #FFD43B;"><th>CA</th><th>Instruments<br />d'avaluació</th></tr>
+    <tr>
+        <td colspan="2"> A1- Treball amb fitxers locals</td>
+        <td>17 h</td>
+        <td rowspan="2">3</td>
+        <td rowspan="2">5.1</td>
+        <td rowspan="2">3.1<br />3.2<br /></td>
+        <td rowspan="2">NF3-EP1- Llista d’exercicis amb fitxers<br />NF3-PE1- Prova escrita accedint i creant fitxers</td>
+    </tr>
+    <tr>
+        <td><p style="font-style: italic;">Descripció</p></td>
+        <td colspan="2"><ul>
+            <li>Crear fitxers.</li>
+            <li>Llegir informació del fitxers.</li>
+        </ul></td>
+    </tr>
+    <tr>
+        <td colspan="2"> A2- Treball amb dades externes</td>
+        <td>17 h</td>
+        <td rowspan="2">3</td>
+        <td rowspan="2">5.2</td>
+        <td rowspan="2">3.3<br />3.4</td>
+        <td rowspan="2">NF3-EP2- Llista d’exercicis amb accés extern<br />NF3-PE2- Prova escrita accedint a informació externa</td>
+    </tr>
+    <tr>
+        <td><p style="font-style: italic;">Descripció</p></td>
+        <td colspan="2"><ul>
+            <li>Accés a informació externa.</li>
+            <li>Modificació d’informació externa.</li>
+        </ul></td>
+    </tr>
+</table>
 
-    1.1.	Identifica els blocs que componen l'estructura d'un programa informàtic.
-    
-    1.2.	Crea projectes de desenvolupament d'aplicacions.
-    
-    1.3.	Utilitza entorns integrats de desenvolupament.
-    
-    1.4.	Identifica els diferents tipus de variables i la utilitat específica de cadascun.
-    
-    1.5.	Modifica el codi d'un programa per crear i fer servir variables.
-    
-    1.6.	Crea i utilitza constants i literals.
-    
-    1.7.	Classifica, reconeix i utilitza en expressions els operadors del llenguatge.
-    
-    1.8.	Comprova el funcionament de les conversions de tipus explícites i implícites.
-    
-    1.9.	Introdueix comentaris al codi.
 
 
-???note "2.  Utilitza correctament tipus de dades simples i compostes emprant les estructures de control adients"
 
-    2.1 Descriu els fonaments de la programació.
 
-    2.2 Escriu algorismes simples.
 
-    2.3 Analitza i dissenya els possibles algorismes per resoldre problemes.
 
-    2.4 Escriu i prova programes senzills reconeixent i aplicant els fonaments de la programació.
 
-    2.5 Utilitza estructures de dades simples i compostes.
 
-    2.6 Escriu i prova codi que faci ús de les estructures de selecció.
-
-    2.7 Utilitza correctament les diferents estructures de repetició disponibles.
-
-    2.8 Reconeix les possibilitats de les sentències de salt.
-
-    2.9 Realitza operacions bàsiques, compostes i de tractament de caràcters.
-
-    2.10 Revisa i corregeix els errors apareguts en els programes.
-
-    2.11 Comenta i documenta adequadament els programes realitzats.
-
-    2.12 Utilitza un entorn integrat de desenvolupament en la creació i compilació de programes simples.
-
-???note "3.	Escriu i prova programes senzills reconeixent i aplicant els fonaments de la programació modular."
-
-    3.1 Analitza els conceptes relacionats amb la programació modular.
-
-    3.2 Analitza els avantatges i la necessitat de la programació modular.
-
-    3.3 Aplica el concepte d’anàlisi descendent en l’elaboració de programes.
-
-    3.4 Modula correctament els programes realitzats.
-
-    3.5 Realitza correctament les crides a funcions i la seva parametrització.
-
-    3.6 Té en compte l’àmbit de les variables en les crides a les funcions.
-
-    3.7 Prova, depura, comenta i documenta els programes.
-
-    3.8 Defineix el concepte de llibreries i la seva utilitat.
-
-    3.9 Utilitza llibreries en l’elaboració de programes.
-
-???note "4.  Dissenya, prova i documenta programes que realitzen diferents operacions sobre fitxers documentant el programa i les proves realitzades."
-
-    4.1 Reconeix els conceptes relacionats amb fitxers.
-
-    4.2 Reconeix els diferents tipus de fitxers.
-
-    4.3 Estableix i diferencia les operacions a realitzar sobre els fitxers en el llenguatge de programació emprat.
-
-    4.4 Utilitza correctament diferents operacions sobre fitxers.
-
-    4.5 Modula adequadament els programes que gestionen fitxers.
-
-    4.6 Dissenya, prova i documenta programes simples que gestionen fitxers.
-
-#### 9.1.3 Continguts
-
-???note "1. Identificació dels elements d'un programa informàtic:"
-
-    1.1 Estructura i blocs fonamentals.
-
-    1.2 Variables.
-
-    1.3 Tipus de dades.
-
-    1.4 Literals.
-
-    1.5 Constants.
-
-    1.6 Operadors i expressions.
-
-    1.7 Conversions de tipus.
-
-    1.8 Comentaris.
-
-???note "2. Tipus de dades simples i compostes. Programació estructurada:"
-
-    2.1 Fonaments de programació.
-
-    2.2 Introducció a l’algorísmica.
-
-    2.3 Disseny d’algorismes.
-
-    2.4 Prova de programes.
-
-    2.5 Tipus de dades simples i compostes.
-
-    2.6 Estructures de selecció.
-
-    2.7 Estructures de repetició.
-
-    2.8 Estructures de salt.
-
-    2.9 Tractament de cadenes.
-
-    2.10 Depuració d’errors.
-
-    2.11 Documentació dels programes.
-
-    2.12 Entorns de desenvolupament de programes.
-
-???note "3. Programació modular:"
-
-    3.1 Concepte.
-
-    3.2 Avantatges i inconvenients.
-
-    3.3 Anàlisi descendent (top down).
-
-    3.4 Modulació de programes.
-
-    3.5 Crides a funcions. Tipus i funcionament.
-
-    3.6 Àmbit de les crides a funcions.
-
-    3.7 Prova, depuració i comentaris de programes.
-
-    3.8 Concepte de llibreries.
-
-    3.9 Utilització de llibreries.
-
-???note "4. Gestió de fitxers:"
-
-    4.1 Concepte i tipus de fitxers.
-
-    4.2 Operacions sobre fitxers.
-
-    4.3 Disseny de programes de gestió de fitxers.
-
-    4.4 Modulació de les operacions sobre fitxers
-
-
-### 9.1.3 Activitats d’ensenyament i aprenentatge
-
-
-|aaa|aaa|aaa|aaa|aaa|aaa|aaa|
-|---|---|---|---|---|---|---|
-|A1- Preparació d'un entorn en Python|aaa|aaa|aaa|aaa|aaa|aaa|
-|Descripcio <td colspan = 2> * Evolució, tipus i elements.<br> * Diferencies entre SGBD.<br>Models de bases de dades.<br> * Fonaments de les Relacions.<br> * Bases de dades centralitzades.<br> * Bases de dades distribuïdes.|aaa|aaa|aaa|aaa|aaa|
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
---8<-- ".acronims.txt"
 
 [https://ellibrodepython.com/]:             https://ellibrodepython.com/                    "El libro De Python.com"
 [Real Decreto 1629/2009, de 30 de octubre]: https://www.boe.es/eli/es/rd/2009/10/30/1629    "Real Decreto 1629/2009"
@@ -446,3 +482,7 @@ En aquest Mòdul no hi ha nuclis formatius (NF), la temàtica és prou homogèni
 [Decret 197/2013, de 23 de juliol]:         https://portaljuridic.gencat.cat/eli/es-ct/d/2013/07/23/197 "Decret 197/2013"
 [ORDRE EDU/186/2021, de 23 de setembre]:    https://portaljuridic.gencat.cat/eli/es-ct/o/2021/09/23/edu186/dof   "ORDRE EDU/186/2021"
 [Orientacions a partir 2024/2025]:          https://xtec.gencat.cat/web/.content/curriculum/professionals/fp/titolsloe/infcomunicacions/o_ICA0_administracio_sistemes_informatics_xarxa_20240425.docx   "Orientacions a partir 2024/2025"
+[https://apunts.institutmontilivi.cat/ASIX-OPT/]:   https://apunts.institutmontilivi.cat/ASIX-OPT/  "Apunts del curs"
+
+
+--8<-- ".acronims.txt"

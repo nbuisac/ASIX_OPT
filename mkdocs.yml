@@ -110,6 +110,7 @@ nav:
       - "Strings - Mètodes" : 'python/py_009.md'
       - "Llistes" : 'python/py_010.md'
       - "Llistes - Mètodes" : 'python/py_011.md'
+      - "Iteracions" : 'python/py_012.md'
       - "Exercicis":
         - "Exercici d'escriptures i assignacions" : 'python/py_001ex.md'
         - "Conceptes bàsics" : 'python/py_004ex.md'
@@ -135,5 +136,5 @@ nav:
 # pip install mkdocs-exclude-search
 # python.exe -m pip install --upgrade pygments
 # pip install --upgrade pymdown-extensions
-# admonitions
+# admonitions (markdown-extensions)
 # note abstract info tip success question warning failure danger bug example quote

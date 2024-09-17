@@ -8,6 +8,8 @@
 
 * [Python i altres llenguatges][]{target="_blank"}
 
+* [Python per a principiants][]{target="_blank"}
+
 * [Exercicis de Python][]{target="_blank"} per principiants
 
 
@@ -23,6 +25,7 @@
 
 [El libro de python]:                   https://ellibrodepython.com         "El libro de python"
 [Exercicis de Python]:                  https://thinkinfi.com/python-print-function-exercises-with-solutions-for-beginners/ "Exercicis de Python"
+[Python per a principiants]:            https://uniwebsidad.com/libros/python   "Python per a principiants"
 [Python i altres llenguatges]:          https://exercism.org/tracks/python  "Exercicis i Prenentatge de Python"
 
 [Videos ESP32]:                         ../esp32/esp32_videos.md             "Videos ESP32"
