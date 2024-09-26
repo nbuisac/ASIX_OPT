@@ -5,6 +5,11 @@ site_author: Narcís
 copyright: Copyleft &copy; 2024 - 2025 Narcís
 # repo_url: https://github.com/nbuisac/ASIX_OPT
 
+# https://www.tutorialspoint.com/python/python_gui_programming.htm
+# https://tkdocs.com/shipman/canvas.html
+## Tkinter 
+
+
 theme:
     language: ca
     logo: img/Logo_Montilivi_2015_blanc.png
