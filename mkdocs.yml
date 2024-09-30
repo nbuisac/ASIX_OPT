@@ -130,9 +130,13 @@ nav:
         - "Strings" : 'python/py_009ex.md'
         - "Llistes" : 'python/py_010ex.md'
 
+    - "Turtle" :
+      - "Turtle" : 'turtle/tu_000.md'
+
     - "Tkinter" :
       - "Tkinter" : 'tkinter/tk_000.md'
       - "Canvas" : 'tkinter/tk_001.md'
+      - "Pintem en un Canvas" : 'tkinter/tk_001ex.md'
 
     - "ESP-32" :
       - "La placa" : 'esp32/esp32_000.md'
