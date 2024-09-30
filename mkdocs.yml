@@ -1,14 +1,9 @@
 site_name: Institut Montilivi | ASIX | OPT
-site_url: http://apunts.institutmontilivi.cat/ASIX-OPT/
-site_description: Apunts pel Mòdul Optatiu d'ASIX
+site_url: http://apunts.institutmontilivi.cat/ASIX-OPTNB/
+site_description: Apunts pel Mòdul Optatiu d'ASIX - Programació en Python
 site_author: Narcís
 copyright: Copyleft &copy; 2024 - 2025 Narcís
 # repo_url: https://github.com/nbuisac/ASIX_OPT
-
-# https://www.tutorialspoint.com/python/python_gui_programming.htm
-# https://tkdocs.com/shipman/canvas.html
-## Tkinter 
-
 
 theme:
     language: ca
@@ -99,6 +94,17 @@ plugins:
             - python/py_007exSolucio.md
             - python/py_009exSolucio.md
             - python/py_010exSolucio.md
+  - open-in-new-tab
+
+#  - exclude-docs: |
+draft_docs: |
+      esp
+      esp/*
+      esp/*.*
+      /esp
+      /esp/*
+      /esp/*.*
+
 
 nav:
     - "Python" :
@@ -124,8 +130,12 @@ nav:
         - "Strings" : 'python/py_009ex.md'
         - "Llistes" : 'python/py_010ex.md'
 
+    - "Tkinter" :
+      - "Tkinter" : 'tkinter/tk_000.md'
+      - "Canvas" : 'tkinter/tk_001.md'
+
     - "ESP-32" :
-      - "La placa " : 'esp32/esp32_000.md'
+      - "La placa" : 'esp32/esp32_000.md'
       - "Preparació de l'entorn de desenvolupament" : 'esp32/esp32_001.md'
 
     - "Programació" : 'programacio.md'
@@ -136,10 +146,16 @@ nav:
         - "Enllaços": 'altres/altres.md'
 
 
+## Tkinter 
+# https://www.tutorialspoint.com/python/python_gui_programming.htm
+# https://tkdocs.com/shipman/canvas.html  Obsolet (Python 2.7 - Tk 8.5 - No actualitzat des del 2013)
+# https://www.pythonguis.com/ (Python 3)
+# https://www.pythonguis.com/tutorials/use-tkinter-to-design-gui-layout/
 ## Plugins
 # pip install mkdocs-material
 # pip install mkdocs-exclude-search
 # python.exe -m pip install --upgrade pygments
 # pip install --upgrade pymdown-extensions
 # admonitions (markdown-extensions)
+# pip install mkdocs-open-in-new-tab
 # note abstract info tip success question warning failure danger bug example quote
