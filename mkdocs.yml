@@ -155,6 +155,11 @@ nav:
 # https://tkdocs.com/shipman/canvas.html  Obsolet (Python 2.7 - Tk 8.5 - No actualitzat des del 2013)
 # https://www.pythonguis.com/ (Python 3)
 # https://www.pythonguis.com/tutorials/use-tkinter-to-design-gui-layout/
+
+## Exercicis
+# https://www.mclibre.org/consultar/python/ejercicios/ej-listas-1.html
+# https://www.mclibre.org/consultar/python/ejercicios/ej-booleanos-2.html
+
 ## Plugins
 # pip install mkdocs-material
 # pip install mkdocs-exclude-search
