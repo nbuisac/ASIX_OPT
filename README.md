@@ -12,4 +12,4 @@ Apunts per a donar el mòdul Optatiu de Programació de les Coses al Cicle Admin
 
 
 Apunts basats en [https://ellibrodepython.com/]()
-Versió 0.0.1
+Versió 1.0.1

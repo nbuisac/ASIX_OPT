@@ -58,6 +58,8 @@ markdown_extensions:
 #https://pygments.org/docs/lexers
   - pymdownx.snippets
   - pymdownx.details
+  - pymdownx.arithmatex:
+      generic: true
   - attr_list
   - def_list
   - meta
@@ -83,12 +85,17 @@ extra:
 extra_css:
     - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
 plugins:
   - search:
 #        indexing: 'full'
   - exclude-search:
         exclude:
             - python/py_001exSolucio.md
+            - python/py_002exSolucio.md
             - python/py_004exSolucio.md
             - python/py_005exSolucio.md
             - python/py_007exSolucio.md
@@ -124,6 +131,7 @@ nav:
       - "Iteracions" : 'python/py_012.md'
       - "Exercicis":
         - "Exercici d'escriptures i assignacions" : 'python/py_001ex.md'
+        - "Exercicis d'alternatives" : 'python/py_002ex.md'
         - "Conceptes bàsics" : 'python/py_004ex.md'
         - "Booleans" : 'python/py_005ex.md'
         - "Condicionals i Comparacions - blackjack" : 'python/py_007ex.md'
@@ -167,4 +175,6 @@ nav:
 # pip install --upgrade pymdown-extensions
 # admonitions (markdown-extensions)
 # pip install mkdocs-open-in-new-tab
+
+# https://squidfunk.github.io/mkdocs-material/reference/formatting/
 # note abstract info tip success question warning failure danger bug example quote
