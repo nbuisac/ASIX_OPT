@@ -33,7 +33,7 @@ Ajuda de [if][]{target="_blank}.
 
         ```py
         import math
-        print("Anem a resoldre una equació de 2n grau\nax^2 + bx + c= 0\n")
+        print("Anem a resoldre una equació de 2n grau\nax\u00b2 + bx + c= 0\n")
         a = int(input("Entra el valor per la a -> "))
         b = int(input("Entra el valor per la b -> "))
         c = int(input("Entra el valor per la c -> "))
@@ -214,23 +214,132 @@ Ajuda de [if][]{target="_blank}.
         print(f"{grausTotals} graus es troben al {quadrant} quadrant")
         ```
 
-
 10. Fes un programa que demani una lletra i digui si és majúscula, minúscula o no és lletra. 
 
+    ???example "Possible solució"
+
+        === "Sense contemplar accents ni ç ni ñ"
+            ```py
+            lletra = input("Entra una lletra -> "))
+            # Posem els graus en valor positiu
+            if 'a' <= lletra[0] < ='z' < 0:
+                print(f"{a[0]} és minúscula")
+            elif 'A' <= lletra[0] < ='Z' < 0:
+                print(f"{a[0]} és majúscula")
+            else:
+                print(f"{a[0]} no és lletra")
+            ```
+
+        === "Contemplant accents i ç i ñ"
+            ```py
+            lletra = input("Entra una lletra -> "))
+            # Posem els graus en valor positiu
+            if 'a' <= lletra[0] < ='z' < 0 or a[0] in "àèìòùáéíóúäëïöüçñ":
+                print(f"{a[0]} és minúscula")
+            elif 'A' <= lletra[0] < ='Z' < 0 or a[0] in "ÀÈÌÒÙÁÉÍÓÚÄËÏÖÜÇÑ":
+                print(f"{a[0]} és majúscula")
+            else:
+                print(f"{a[0]} no és lletra")
+            ```
+
+        === "amb mètodes islower() i isupper() i comprovant una lletra"
+            ```py
+            lletra = input("Entra una lletra -> ")
+            if len(lletra) != 1:
+                print("No has entrat un caràcter")
+            elif lletra.islower():
+                print("És minúscula")
+            elif lletra.isupper():
+                print("És MASJÚSCULA")
+            else:
+                print("No és lletra")
+            ```
 
 11. Fes un programa que demani una lletra i digui si és o no una vocal.
 
+    ???example "Possible solució"
+
+        ```py
+        VOCALS = "aeiouAEIOUáéíóúÁÉÍÚÓàèìòùÀÈÌÒÙäëïöüÄËÏÖÜÂÊÎÔÛ"
+        lletra = input("Entra una lletra -> ")
+
+        if len(lletra) != 1:        # Comprovem que només hagin entrat un caràcter
+            print("He demanat un sol caràcter")
+        elif lletra[0] in VOCALS:
+            print(f"{lletra[0]} SÍ és una vocal")
+        else:
+            print(f"{lletra[0]} NO és una vocal")
+        ```
 
 12. Fes un programa que demani un caràcter i digui si és o no lletra.
 
+    ???example "Possible solució"
+
+        ```py
+        lletra = input("Entra una lletra -> ")
+
+        if len(lletra) != 1:        # Comprovem que només hagin entrat un caràcter
+            print("He demanat un sol caràcter")
+        elif lletra.isalpha():
+            print(f"{lletra} SÍ és una lletra")
+        else:
+            print(f"{lletra} NO és una lletra")
+        ```
 
 13. Fes un programa que passi una lletra a majúscules. Si no és minúscula no ha de fer res.
 
+    ???example "Possible solució"
+
+        ```py
+        lletra = input("Entra una lletra -> ")
+
+        if len(lletra) != 1:        # Comprovem que només hagin entrat un caràcter
+            print("He demanat un sol caràcter")
+        elif lletra.islower():
+            lletra = lletra.upper()
+        print(f"En majúscula -> {lletra}")
+        ```
 
 14. Fes un programa que digui si un any és de traspàs o no. Ho serà quan sigui múltiple de 4, com el 2020. Compte, els múltiples de 100 no són tots de traspàs, només aquells que són múltiples de 400 com el 2000 (1900 no va ser de traspàs).
 
+    ???example "Possible solució"
+
+        ```py
+        anyy = int(input("Entra un any -> "))
+
+        if anyy % 400 == 0 or anyy % 100 != 0 and anyy % 4 == 0 :
+            print(f"{anyy} SÍ és de traspàs")
+        else:
+            print(f"{anyy} NO és de traspàs")
+        ```
 
 15. Fes un programa que demani dos números qualssevol i després els mostri en ordre creixent. Demana `a` i `b`, i escriu `a` i `b`. Ha de permutar el valor de les variables si cal.
+
+    ???example "Possible solució"
+
+        === "Amb variable d'ajuda"
+
+            ```py
+            valor1 = input("Entra un valor -> ")
+            valor2 = input("Entra un altre valor -> ")
+
+            ajuda = valor1
+            valor1 = valor2
+            valor2 = ajuda
+
+            print(f"Els valors permutats són {valor1} i {valor2}"")
+            ```
+
+        === "Sense variable d'ajuda. Més Python"
+
+            ```py
+            valor1 = input("Entra un valor -> ")
+            valor2 = input("Entra un altre valor -> ")
+
+            valor1, valor2 = valor2, valor1
+
+            print(f"Els valors permutats són {valor1} i {valor2}")
+            ```
 
 16. Fes un programa que demani tres números introduïts per teclat i digui si estan ordenats. (dos nombres entrats consecutivament iguals considerarem que no trenquen l'ordre).
 

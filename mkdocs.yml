@@ -5,6 +5,12 @@ site_author: Narcís
 copyright: Copyleft &copy; 2024 - 2025 Narcís
 # repo_url: https://github.com/nbuisac/ASIX_OPT
 
+## Exercicis de llistes 
+## https://aprendeconalf.es/docencia/python/ejercicios/listas-tuplas/
+## https://www.mclibre.org/consultar/python/ejercicios/ej-listas-1.html
+## https://certidevs.com/ejercicios-python-listas-codigo
+## https://www.w3resource.com/python-exercises/list/
+
 theme:
     language: ca
     logo: img/Logo_Montilivi_2015_blanc.png
@@ -47,6 +53,11 @@ theme:
 markdown_extensions:
   - admonition
   - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+# https://facelessuser.github.io/pymdown-extensions/extensions/emoji/
+# :smile: :heart: :thumbsup:
+# https://gist.github.com/rxaviers/7360908
   - pymdownx.highlight:
       linenums: None
 #      auto_title: True
@@ -128,7 +139,8 @@ nav:
       - "Strings - Mètodes" : 'python/py_009.md'
       - "Llistes" : 'python/py_010.md'
       - "Llistes - Mètodes" : 'python/py_011.md'
-      - "Iteracions" : 'python/py_012.md'
+      - "Llistes - Resum" : 'python/py_012.md'
+      - "Iteracions" : 'python/py_013.md'
       - "Exercicis":
         - "Exercici d'escriptures i assignacions" : 'python/py_001ex.md'
         - "Exercicis d'alternatives" : 'python/py_002ex.md'
