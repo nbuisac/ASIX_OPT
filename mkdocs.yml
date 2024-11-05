@@ -139,6 +139,7 @@ nav:
       - "Comparacions" : 'python/py_007.md'
       - "Strings" : 'python/py_008.md'
       - "Strings - Mètodes" : 'python/py_009.md'
+      - "El tipus range" : 'python/py_010_b.md'
       - "Llistes" : 'python/py_010.md'
       - "Llistes - Mètodes" : 'python/py_011.md'
       - "Llistes - Resum" : 'python/py_012.md'
