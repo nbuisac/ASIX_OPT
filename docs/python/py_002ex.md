@@ -8,7 +8,7 @@ Ajuda de [input()][]{target="_blank}.
 
 Ajuda de [if][]{target="_blank}.
 
-1. Fes un programa en c# que calculi la solució de l'equació de primer grau $a x + b = 0$. Ha de controlar quan la $a$ és zero. $x = -b / a$.
+1. Fes un programa que calculi la solució de l'equació de primer grau $a x + b = 0$. Ha de controlar quan la $a$ és zero. $x = -b / a$.
     
 2. Fes un programa que calculi les solucions d'una equació de segon grau i que no falli mai. No es poden fer arrels de valors negatius ni divisions per 0.
 
