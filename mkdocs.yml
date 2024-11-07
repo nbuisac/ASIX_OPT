@@ -25,14 +25,14 @@ theme:
           scheme: default
           toggle:
             icon: material/weather-night
-            name: Canvia a mode dark
+            name: Canvia a mode fosc
           primary: custom
           accent: deep orange
         - media: "(prefers-color-scheme: dark)"
           scheme: slate
           toggle:
             icon: material/weather-sunny
-            name: Canvia a mode light
+            name: Canvia a mode clar
           primary: custom
           accent: yellow
     features:
@@ -47,7 +47,8 @@ theme:
         - navigation.instant         # No carrega sempre tota la pàgina 
 #        - navigation.tracking        # Va modificant la URL d ela barra d'acreces
         - toc.follow
-        - toc.integrate
+#        - toc.integrate    # Opcions de menú a l'esquerra totes
+#        - toc.follow
         - announce.dismiss
         - content.code.copy       # permet copiar el codi https://squidfunk.github.io/mkdocs-material/reference/code-blocks/
         - content.tabs.link       # vàries pestanyes de code https://squidfunk.github.io/mkdocs-material/reference/content-tabs/?h=tabs
