@@ -158,6 +158,7 @@ nav:
 
     - "Turtle" :
       - "Turtle" : 'turtle/tu_000.md'
+      - "Exercicis de Banderes" : 'banderes/banderes001.md'
 
     - "Tkinter" :
       - "Tkinter" : 'tkinter/tk_000.md'
