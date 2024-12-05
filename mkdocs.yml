@@ -145,16 +145,21 @@ nav:
       - "Llistes - Mètodes" : 'python/py_011.md'
       - "Llistes - Resum" : 'python/py_012.md'
       - "Iteracions" : 'python/py_013.md'
+      - "Usos de l'estructura while" : 'python/py_014.md'
       - "Exercicis":
         - "Exercici d'escriptures i assignacions" : 'python/py_001ex.md'
         - "Exercicis d'alternatives" : 'python/py_002ex.md'
         - "Exercicis de llistes" : 'python/py_lists001ex.md'
+        - "Exercicis d'iteracions" : 'python/py_iter001ex.md'
 
         # - "Conceptes bàsics" : 'python/py_004ex.md'
         # - "Booleans" : 'python/py_005ex.md'
         # - "Condicionals i Comparacions - blackjack" : 'python/py_007ex.md'
         # - "Strings" : 'python/py_009ex.md'
         # - "Llistes" : 'python/py_010ex.md'
+
+    - "Funcions" :
+      - "Funcions" : 'python/py_020.md'
 
     - "Turtle" :
       - "Turtle" : 'turtle/tu_000.md'
