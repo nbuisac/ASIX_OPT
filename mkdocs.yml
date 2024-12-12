@@ -151,6 +151,7 @@ nav:
         - "Exercicis d'alternatives" : 'python/py_002ex.md'
         - "Exercicis de llistes" : 'python/py_lists001ex.md'
         - "Exercicis d'iteracions" : 'python/py_iter001ex.md'
+        - "Exercicis d'iteracions amb seqüències" : 'python/py_iter002ex.md'
 
         # - "Conceptes bàsics" : 'python/py_004ex.md'
         # - "Booleans" : 'python/py_005ex.md'
@@ -158,8 +159,11 @@ nav:
         # - "Strings" : 'python/py_009ex.md'
         # - "Llistes" : 'python/py_010ex.md'
 
-    - "Funcions" :
-      - "Funcions" : 'python/py_020.md'
+    - "Procediments i Funcions" :
+      - "Procediments" : 'python/py_020.md'
+      - "Funcions" : 'python/py_021.md'
+      - "Barregem *ars i **kwargs" : 'python/py_022.md'
+      - "Metadades" : 'python/py_023.md'
 
     - "Turtle" :
       - "Turtle" : 'turtle/tu_000.md'

@@ -20,11 +20,11 @@ Resol aquests exercicis d'iteracions amb [`for`][for] i/o [`while`][while].
     ???example "Possible solució"
 
         ```py
-        continua = input("Vols continuar (s/n)? ")
-        while continua not in "sSnN":
-            continua = input("Vols continuar (s/n)? ")
+        continua = input("Vols continuar (s/n)? ").strip().lower()
+        while len(continua) != 1 or (continua != "s" and continua != "n"):
+            continua = input("Vols continuar (s/n)? ").strip().lower()
 
-        if continua in "sS":
+        if continua == "s":
             print("Sí vols continuar")
         else:
             print("No vols continuar")
@@ -96,7 +96,8 @@ Resol aquests exercicis d'iteracions amb [`for`][for] i/o [`while`][while].
         ```py
         suma = 0
         for i in range(10):
-            suma = suma + float(input("Entra un número -> "))
+            numero = float(input("Entra un número -> "))
+            suma = suma + numero
         
         print(suma)
         ```
@@ -126,7 +127,12 @@ Resol aquests exercicis d'iteracions amb [`for`][for] i/o [`while`][while].
     ???example "Possible solució"
 
         ```py
-
+        n1 = int(input("Entra el primer numero -> "))
+        n2 = int(input("Entra el segon  numero -> "))
+        producte = 0
+        for a in range(n1):
+            producte = producte + n2
+        print(f"{n1} x {n2} = {producte}")
         ```
 
 11. Fes un programa que calculi la divisió entera a base de restes. Per exemple *per calcular 20 / 3 = 6*3 + 2. Quocient 3 i sobren 2, doncs puc restar 6 vegades el 3*
@@ -134,7 +140,16 @@ Resol aquests exercicis d'iteracions amb [`for`][for] i/o [`while`][while].
     ???example "Possible solució"
 
         ```py
+        dividend = int(input("Entra el dividend -> "))
+        divisor = int(input("Entra el divisor  -> "))
+        quocient = 0
+        residu = dividend
 
+        while residu > divisor:
+            quocient = quocient + 1
+            residu = residu - divisor
+        print(f"{dividend} // {divisor} = {quocient}")
+        print(f"{dividend} %  {divisor} = {residu}")
         ```
 
 12. Escriu un programa que demani un número N i calculi la **suma** de l'**1 al N**. Per exemple si donem el 4 ha de calcular 1+2+3+4=10
@@ -142,7 +157,13 @@ Resol aquests exercicis d'iteracions amb [`for`][for] i/o [`while`][while].
     ???example "Possible solució"
 
         ```py
+        numero = int(input("Entra un número -> "))
+        suma = 0
+        for a in range(1, numero + 1):
+            print(a, end=" ")
+            suma = suma + a
 
+        print("La suma és", suma)
         ```
 
 13. Fes un programa que demani un número N i calculi el factorial del número. **N!** (producte de l'1 al N). Per exemple si donem el 4 ha de calcular 1*2*3*4=24
@@ -150,7 +171,12 @@ Resol aquests exercicis d'iteracions amb [`for`][for] i/o [`while`][while].
     ???example "Possible solució"
 
         ```py
+        numero = int(input("Entra un número -> "))
+        factorial = 1
+        for a in range(numero, 1, -1):
+            factorial = factorial * a
 
+        print(f"{numero}! = {factorial}")
         ```
 
 14. Fes un programa que demani un número N i escrigui els seus divisors. Per exemple si donem el 12 ha d'escriure: 1 2 3 4 6 12 (la divisió entera té residu 0)
@@ -158,7 +184,10 @@ Resol aquests exercicis d'iteracions amb [`for`][for] i/o [`while`][while].
     ???example "Possible solució"
 
         ```py
-
+        numero = int(input("Entra un número -> "))
+        for a in range(1, numero + 1):
+            if numero % a == 0:
+                print(a)
         ```
 
 15. Fes un programa que compti els divisors d'un número. Per exemple si donem el 12 ha d'escriure: 6
@@ -166,27 +195,82 @@ Resol aquests exercicis d'iteracions amb [`for`][for] i/o [`while`][while].
     ???example "Possible solució"
 
         ```py
-
+        numero = int(input("Entra un número -> "))
+        divisors = 0
+        for a in range(1, numero + 1):
+            if numero % a == 0:
+                divisors = divisors + 1
+        print(f"{numero} té {divisors} divisors")
         ```
 
 16. Fes un programa que digui si un número és primer. Són primers els que tenen només dos divisors, l'1 i ell mateix.
 
     ???example "Possible solució"
 
-        ```py
-
+        ```py title="Aquesta solució no és gens eficient"
+        numero = int(input("Entra un número -> "))
+        divisors = 0
+        for a in range(1, numero + 1):
+            if numero % a == 0:
+                divisors = divisors + 1
+        if divisors == 2:
+            print(f"{numero} és primer")
+        else:
+            print(f"{numero} no és primer")
         ```
 
-17. Fes un programa que calculi el màxim comú divisor de dos números. El màxim comú divisor és el divisor de tots dos més gran que hi hagi. Si no trobem cap divisor, el 1 sempre ho serà. Podem fer-ho provant números del 2 al menor d'ells com a molt o a base de restes (el major menys el menor i ara tornem a tenir dos nombres, el menor que teniem i el resultat de la resta i així anem fint fins arribar a tenir dos nombres iguals)
+        El següent codi no mira ni el primer si el darrer i, en cas de trobar algun divisor, deixa de buscar. Tampoc cal mirar tots els nombres fins `N` sinó només fins `N/2` (en realitat log~2~N)
+
+        ```py title="Aquesta solució és més eficient"
+        numero = int(input("Entra un número -> "))
+        primer = numero != 1
+        for a in range(2, numero // 2 + 1):
+            if numero % a == 0:
+                primer = False
+                break
+        if primer:
+            print(f"{numero} és primer")
+        else:
+            print(f"{numero} no és primer")
+        ```
+
+        En el següent codi utilitzarem l'`else`.
+
+        ```py title="Utilitzem l'else en el for"
+        numero = int(input("Entra un número -> "))
+        if numero > 1:
+            for a in range(2, numero // 2 + 1):
+                if numero % a == 0:
+                    primer = False
+                    break
+            else:
+                primer = True
+        else:
+            primer = False
+        if primer:
+            print(f"{numero} és primer")
+        else:
+            print(f"{numero} no és primer")
+        ```
+
+
+17. Fes un programa que calculi el **màxim comú divisor** de dos números. El màxim comú divisor és el divisor de tots dos més gran que hi hagi. Si no trobem cap divisor, l'1 sempre ho serà. Podem fer-ho provant números del 2 al menor d'ells com a molt o a base de restes (el major menys el menor i ara tornem a tenir dos nombres, el menor que teniem i el resultat de la resta i així anem fint fins arribar a tenir dos nombres iguals)
 
     ???example "Possible solució"
 
         ```py
-
+        n1 = int(input("Entra un número -> "))
+        n2 = int(input("Entra un altre número -> "))
+        nn1, nn2 = n1, n2
+        while nn1 != nn2:
+            if nn1 > nn2:
+                nn1 = nn1 - nn2
+            else:
+                nn2 = nn2 - nn1
+        print(f"mcd({n1}, {n2}) = {nn1}")
         ```
 
-18. Fes un programa que calculi el mínim comú múltiple de dos números. El mínim comú múltiple és el múltiple de tots dos més petit que hi hagi. com a molt, el producte de tots dos ho serà. Es-ho provant tots els números des del major al producte dels dos o fins que en
-trobis un.
+18. Fes un programa que calculi el **mínim comú múltiple** de dos números. El mínim comú múltiple és el múltiple de tots dos més petit que hi hagi. com a molt, el producte de tots dos ho serà. Es pot anar provant tots els números des del major al producte dels dos o fins que en trobis un.
 
     ???example "Possible solució"
 
@@ -195,6 +279,7 @@ trobis un.
         ```
 
 19. Escriu un programa que indiqui si un número és perfecte. Un número és perfecte si la suma dels divisors excepte ell mateix coincideix amb el número. Per exemple 6 = 1 + 2 + 3
+
     ???example "Possible solució"
 
         ```py
