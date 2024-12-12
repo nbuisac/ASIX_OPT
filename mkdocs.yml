@@ -146,6 +146,8 @@ nav:
       - "Llistes - Resum" : 'python/py_012.md'
       - "Iteracions" : 'python/py_013.md'
       - "Usos de l'estructura while" : 'python/py_014.md'
+      - "Estructures repetitives (teoria)" : 'python/py_015.md'
+      - "Estructures repetitives (seqüències)" : 'python/py_016.md'
       - "Exercicis":
         - "Exercici d'escriptures i assignacions" : 'python/py_001ex.md'
         - "Exercicis d'alternatives" : 'python/py_002ex.md'

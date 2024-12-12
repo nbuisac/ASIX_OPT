@@ -1,9 +1,7 @@
-n1 = int(input("Entra un número -> "))
-n2 = int(input("Entra un altre número -> "))
-nn1, nn2 = n1, n2
-while nn1 != nn2:
-    if nn1 > nn2:
-        nn1 = nn1 - nn2
-    else:
-        nn2 = nn2 - nn1
-print(f"mcd({n1}, {n2}) = {nn1}")
+notes = [6.7, 3.4, 9.8, 7.6, 4.5]
+suma = 0
+for nota in notes:
+    ## Tractem l’element
+    suma = suma + nota
+
+print("La mitjana de notes és", suma/len(notes))
