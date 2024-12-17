@@ -46,23 +46,23 @@ trobis un.
 
 22. Fes un programa que sumi les xifres que té un número enter. Hauràs d'anar extraient les xifres i acumular-les.
 
-23. Escriu un programa que miri si un número enter qualsevol és capicua. Per a resoldre’l crearem un alter nombre amb els dígits al revés i al final els compararem per veure si són iguals.
+23. Escriu un programa que miri si un número enter qualsevol és capicua. Per a resoldre'l crearem un altre nombre amb els dígits al revés i al final els compararem per veure si són iguals.
 
-24. Fes un programa que llanci 1000000 de monedes (s’inventi 0 o 1) i digui quin % de cares i creus ha tret.
+24. Fes un programa que llanci 1000000 de monedes (s'inventi 0 o 1) i digui quin % de cares i creus ha tret.
 
-25. Fes un programa que digui si un número és apilable: Ho són el 0, 1, 3, 6, 10, 15, 21, ... (els que són la suma de 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + ... fins arribar al número o que ens passem).
+25. Fes un programa que digui si un número és apilable: Ho són el 0, 1, 3, 6, 10, 15, 21, ... (els que són la suma de 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + ...). Caldrà comprovar fins arribar al número o que ens passem.
 
 26. Fes un programa que escrigui els apilables entre 1 i 1000
 
 27. Fes un programa que escrigui els 20 primers termes de la successió de Fibonacci. La successió és 1, 1, 2, 3, 5, 8, 13, 21, 34, ... (el primer és 1, el segon és 1 i la resta són la suma dels dos anteriors).
 
-28. Fes un programa que calculi el MCD per l’algorisme d’Euclides.
+28. Fes un programa que calculi el MCD per l'algorisme d'Euclides.
 
-    1. Euclides diu que si un número és múltiple de l’altre, el petit és el MCD: De 24 i 6 el MCD és 6
+    1. Euclides diu que si un número és múltiple de l'altre, el petit és el MCD: De 24 i 6 el MCD és 6
     
-    2. Euclides diu que si no són múltiple un de l’altre, el MCD que hem de buscar és el del petit i el residu de la divisió entera entre tots dos: De 40 i 24 el MCD que hem de buscar és el de 24 i 16
+    2. Euclides diu que si no són múltiple un de l'altre, el MCD que hem de buscar és el del petit i el residu de la divisió entera entre tots dos: De 40 i 24 el MCD que hem de buscar és el de 24 i 16
 
-29. Fes un programa que donat un número N i escrigui els seus factors primers.
+29. Fes un programa que, donat un número N, escrigui els seus factors primers.
 
 
 [while]:                https://docs.python.org/reference/compound_stmts.html#the-while-statement       "while"

@@ -258,7 +258,7 @@ Resol aquests exercicis d'iteracions amb [`for`][for] i/o [`while`][while].
 
     ???example "Possible solució"
 
-        ```py
+        ```py title="A base de restes"
         n1 = int(input("Entra un número -> "))
         n2 = int(input("Entra un altre número -> "))
         nn1, nn2 = n1, n2
@@ -275,15 +275,28 @@ Resol aquests exercicis d'iteracions amb [`for`][for] i/o [`while`][while].
     ???example "Possible solució"
 
         ```py
-
+        n1 = int(input("Entra un número -> "))
+        n2 = int(input("Entra un altre número -> "))
+        nn1 = n1
+        while (nn1 % n2 != 0):
+            nn1 = nn1 + n1
+        print(f"mcm({n1}, {n2}) = {nn1}")
         ```
 
-19. Escriu un programa que indiqui si un número és perfecte. Un número és perfecte si la suma dels divisors excepte ell mateix coincideix amb el número. Per exemple 6 = 1 + 2 + 3
+19. Escriu un programa que indiqui si un número és perfecte. Un número és perfecte si la suma dels divisors excepte ell mateix coincideix amb el número. Per exemple 6 = 1 + 2 + 3 (Números perfectes:  6, 28, 496, 8128, 33550336, 8589869056, 137438691328)
 
     ???example "Possible solució"
 
         ```py
-
+        n1 = int(input("Entra un número -> "))
+        suma = 0
+        for i in range(1, n1):
+            if n1 % i == 0:
+                suma = suma + i
+        if suma == n1:
+            print(f"{n1} SÍ és perfecte")
+        else:
+            print(f"{n1} NO és perfecte")
         ```
 
 20. Escriu un programa que calculi l'arrel entera d'un número. Arrel (30) = 5. Fem-ho per força bruta anar provant valors fins a passar-nos. n2 (n*n)
@@ -291,7 +304,12 @@ Resol aquests exercicis d'iteracions amb [`for`][for] i/o [`while`][while].
     ???example "Possible solució"
 
         ```py
-
+        n1 = int(input("Entra un número -> "))
+        quadrat = 1
+        while quadrat * quadrat <= n1:
+            quadrat = quadrat + 1
+        quadrat = quadrat - 1
+        print(f"L'arrel quadrada de {n1} és {quadrat}")
         ```
 
 21. Fes un programa que compti quantes xifres té un número enter. Hauràs de fer-ho anant treien un dígit cada vegada fins que no te'n quedi cap, o un.
@@ -299,7 +317,13 @@ Resol aquests exercicis d'iteracions amb [`for`][for] i/o [`while`][while].
     ???example "Possible solució"
 
         ```py
-
+        n1 = int(input("Entra un número -> "))
+        xifres = 0
+        nn1 = n1
+        while nn1 > 0:
+            xifres = xifres + 1
+            nn1 = nn1 // 10
+        print(f"{n1} té {xifres} xifres")
         ```
 
 22. Fes un programa que sumi les xifres que té un número enter. Hauràs d'anar extraient les xifres i acumular-les.
@@ -307,31 +331,63 @@ Resol aquests exercicis d'iteracions amb [`for`][for] i/o [`while`][while].
     ???example "Possible solució"
 
         ```py
-
+        n1 = int(input("Entra un número -> "))
+        xifres = 0
+        nn1 = n1
+        suma = 0
+        while nn1 > 0:
+            suma = suma + nn1 % 10
+            nn1 = nn1 // 10
+        print(f"Les xifres de {n1} sumen {suma}")
         ```
 
-23. Escriu un programa que miri si un número enter qualsevol és capicua. Per a resoldre’l crearem un alter nombre amb els dígits al revés i al final els compararem per veure si són iguals.
+23. Escriu un programa que miri si un número enter qualsevol és capicua. Per a resoldre'l crearem un altre nombre amb els dígits al revés i al final els compararem per veure si són iguals.
 
     ???example "Possible solució"
 
         ```py
-
+        n1 = int(input("Entra un número -> "))
+        nn1 = n1
+        reves = 0
+        while nn1 > 0:
+            reves = reves * 10 + nn1 % 10
+            nn1 = nn1 // 10
+        if reves == n1:
+            print(f"{n1} SÍ és capicua")
+        else:
+            print(f"{n1} NO és capicua")
         ```
 
-24. Fes un programa que llanci 1000000 de monedes (s’inventi 0 o 1) i digui quin % de cares i creus ha tret.
+24. Fes un programa que llanci 1000000 de monedes (s'inventi 0 o 1) i digui quin % de cares i creus ha tret.
 
     ???example "Possible solució"
 
         ```py
-
+        import random
+        TOTAL = 100000
+        cares = creus = 0
+        for a in range(TOTAL):
+            if random.randint(0, 1) == 0:
+                cares = cares + 1
+            else:
+                creus = creus + 1
+        print(f"cares -> {cares} ({cares / TOTAL * 100:.2f}%), creus -> {creus} ({creus / TOTAL * 100:.2f}%)")
         ```
 
-25. Fes un programa que digui si un número és apilable: Ho són el 0, 1, 3, 6, 10, 15, 21, ... (els que són la suma de 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + ... fins arribar al número o que ens passem).
+25. Fes un programa que digui si un número és apilable: Ho són el 0, 1, 3, 6, 10, 15, 21, ... (els que són la suma de 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + ...). Caldrà comprovar fins arribar al número o que ens passem.
 
     ???example "Possible solució"
 
         ```py
-
+        import random
+        TOTAL = 100000
+        cares = creus = 0
+        for a in range(TOTAL):
+            if random.randint(0, 1) == 0:
+                cares = cares + 1
+            else:
+                creus = creus + 1
+        print(f"cares -> {cares} ({cares / TOTAL * 100:.2f}%), creus -> {creus} ({creus / TOTAL * 100:.2f}%)")
         ```
 
 26. Fes un programa que escrigui els apilables entre 1 i 1000
@@ -339,7 +395,12 @@ Resol aquests exercicis d'iteracions amb [`for`][for] i/o [`while`][while].
     ???example "Possible solució"
 
         ```py
-
+        numero = 1
+        i = 1
+        while numero <= 1000:
+            print(numero)
+            i = i + 1
+            numero = numero + i
         ```
 
 27. Fes un programa que escrigui els 20 primers termes de la successió de Fibonacci. La successió és 1, 1, 2, 3, 5, 8, 13, 21, 34, ... (el primer és 1, el segon és 1 i la resta són la suma dels dos anteriors).
@@ -347,26 +408,59 @@ Resol aquests exercicis d'iteracions amb [`for`][for] i/o [`while`][while].
     ???example "Possible solució"
 
         ```py
-
+        numero_anterior = 0
+        numero = 1
+        print(numero, end=" ")
+        for a in range(19):
+            numero_anterior, numero = numero, numero + numero_anterior
+            """
+            ajuda = numero_anterior
+            numero_anterior = numero
+            numero = numero + ajuda
+            """
+            print(numero, end=" ")
+        print()
         ```
 
-28. Fes un programa que calculi el MCD per l’algorisme d’Euclides.
+28. Fes un programa que calculi el MCD per l'algorisme d'Euclides.
 
-    1. Euclides diu que si un número és múltiple de l’altre, el petit és el MCD: De 24 i 6 el MCD és 6
+    1. Euclides diu que si un número és múltiple de l'altre, el petit és el MCD: De 24 i 6 el MCD és 6
     
-    2. Euclides diu que si no són múltiple un de l’altre, el MCD que hem de buscar és el del petit i el residu de la divisió entera entre tots dos: De 40 i 24 el MCD que hem de buscar és el de 24 i 16
+    2. Euclides diu que si no són múltiple un de l'altre, el MCD que hem de buscar és el del petit i el residu de la divisió entera entre tots dos: De 40 i 24 el MCD que hem de buscar és el de 24 i 16
 
     ???example "Possible solució"
 
         ```py
-
+        numero1 = int(input("Entra un nombre -> "))
+        numero2 = int(input("Entra un nombre -> "))
+        if numero1 > numero2:
+            gran, petit = numero1, numero2
+        else:
+            gran, petit = numero2, numero1
+        while gran % petit != 0:
+            gran = gran % petit
+            if gran < petit:
+                gran, petit = petit, gran
+        print(f"mcd({numero1}, {numero2}) = {petit}")
         ```
 
-29. Fes un programa que donat un número N i escrigui els seus factors primers.
+29. Fes un programa que, donat un número N, escrigui els seus factors primers.
 
     ???example "Possible solució"
 
-        ```py
+        ```py title="No és l'algorisme més optim"
+        numero1 = int(input("Entra un nombre -> "))
+        # comprovem tots els numeros fins ell mateix
+        # si son divisibles per ell i alhora nombres primers
+        for n in range(1, numero1 + 1):
+            if numero1 % n == 0: # és divisible
+                ## comprovem si és primer
+                divisors = 0
+                for i in range (1, n + 1):
+                    if n % i == 0:
+                        divisors += 1
+                if divisors == 2:
+                    print(i)
 
         ```
 
