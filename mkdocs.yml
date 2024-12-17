@@ -1,10 +1,18 @@
 site_name: Institut Montilivi | ASIX | OPT
-site_url: http://apunts.institutmontilivi.cat/ASIX-OPT/
-site_description: Apunts pel Mòdul Optatiu d'ASIX
+site_url: http://apunts.institutmontilivi.cat/ASIX-OPTNB/
+site_description: Apunts pel Mòdul Optatiu d'ASIX - Programació en Python
 site_author: Narcís
 copyright: Copyleft &copy; 2024 - 2025 Narcís
 # repo_url: https://github.com/nbuisac/ASIX_OPT
 
+## Exercicis de llistes 
+## https://aprendeconalf.es/docencia/python/ejercicios/listas-tuplas/
+## https://www.mclibre.org/consultar/python/ejercicios/ej-listas-1.html
+## https://certidevs.com/ejercicios-python-listas-codigo
+## https://www.w3resource.com/python-exercises/list/
+##
+## Apunts curs de Python (amic Jordi) ASIR
+## https://www.mclibre.org/consultar/python/
 theme:
     language: ca
     logo: img/Logo_Montilivi_2015_blanc.png
@@ -17,14 +25,14 @@ theme:
           scheme: default
           toggle:
             icon: material/weather-night
-            name: Canvia a mode dark
+            name: Canvia a mode fosc
           primary: custom
           accent: deep orange
         - media: "(prefers-color-scheme: dark)"
           scheme: slate
           toggle:
             icon: material/weather-sunny
-            name: Canvia a mode light
+            name: Canvia a mode clar
           primary: custom
           accent: yellow
     features:
@@ -39,7 +47,8 @@ theme:
         - navigation.instant         # No carrega sempre tota la pàgina 
 #        - navigation.tracking        # Va modificant la URL d ela barra d'acreces
         - toc.follow
-        - toc.integrate
+#        - toc.integrate    # Opcions de menú a l'esquerra totes
+#        - toc.follow
         - announce.dismiss
         - content.code.copy       # permet copiar el codi https://squidfunk.github.io/mkdocs-material/reference/code-blocks/
         - content.tabs.link       # vàries pestanyes de code https://squidfunk.github.io/mkdocs-material/reference/content-tabs/?h=tabs
@@ -47,6 +56,11 @@ theme:
 markdown_extensions:
   - admonition
   - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+# https://facelessuser.github.io/pymdown-extensions/extensions/emoji/
+# :smile: :heart: :thumbsup:
+# https://gist.github.com/rxaviers/7360908
   - pymdownx.highlight:
       linenums: None
 #      auto_title: True
@@ -58,6 +72,8 @@ markdown_extensions:
 #https://pygments.org/docs/lexers
   - pymdownx.snippets
   - pymdownx.details
+  - pymdownx.arithmatex:
+      generic: true
   - attr_list
   - def_list
   - meta
@@ -83,17 +99,33 @@ extra:
 extra_css:
     - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
 plugins:
   - search:
 #        indexing: 'full'
   - exclude-search:
         exclude:
             - python/py_001exSolucio.md
+            - python/py_002exSolucio.md
             - python/py_004exSolucio.md
             - python/py_005exSolucio.md
             - python/py_007exSolucio.md
             - python/py_009exSolucio.md
             - python/py_010exSolucio.md
+  - open-in-new-tab
+
+#  - exclude-docs: |
+draft_docs: |
+      esp
+      esp/*
+      esp/*.*
+      /esp
+      /esp/*
+      /esp/*.*
+
 
 nav:
     - "Python" :
@@ -108,18 +140,44 @@ nav:
       - "Comparacions" : 'python/py_007.md'
       - "Strings" : 'python/py_008.md'
       - "Strings - Mètodes" : 'python/py_009.md'
+      - "El tipus range" : 'python/py_010_b.md'
       - "Llistes" : 'python/py_010.md'
       - "Llistes - Mètodes" : 'python/py_011.md'
+      - "Llistes - Resum" : 'python/py_012.md'
+      - "Iteracions" : 'python/py_013.md'
+      - "Usos de l'estructura while" : 'python/py_014.md'
+      - "Estructures repetitives (teoria)" : 'python/py_015.md'
+      - "Estructures repetitives (seqüències)" : 'python/py_016.md'
       - "Exercicis":
         - "Exercici d'escriptures i assignacions" : 'python/py_001ex.md'
-        - "Conceptes bàsics" : 'python/py_004ex.md'
-        - "Booleans" : 'python/py_005ex.md'
-        - "Condicionals i Comparacions - blackjack" : 'python/py_007ex.md'
-        - "Strings" : 'python/py_009ex.md'
-        - "Llistes" : 'python/py_010ex.md'
+        - "Exercicis d'alternatives" : 'python/py_002ex.md'
+        - "Exercicis de llistes" : 'python/py_lists001ex.md'
+        - "Exercicis d'iteracions" : 'python/py_iter001ex.md'
+        - "Exercicis d'iteracions amb seqüències" : 'python/py_iter002ex.md'
+
+        # - "Conceptes bàsics" : 'python/py_004ex.md'
+        # - "Booleans" : 'python/py_005ex.md'
+        # - "Condicionals i Comparacions - blackjack" : 'python/py_007ex.md'
+        # - "Strings" : 'python/py_009ex.md'
+        # - "Llistes" : 'python/py_010ex.md'
+
+    - "Procediments i Funcions" :
+      - "Procediments" : 'python/py_020.md'
+      - "Funcions" : 'python/py_021.md'
+      - "Barregem *ars i **kwargs" : 'python/py_022.md'
+      - "Metadades" : 'python/py_023.md'
+
+    - "Turtle" :
+      - "Turtle" : 'turtle/tu_000.md'
+      - "Exercicis de Banderes" : 'banderes/banderes001.md'
+
+    - "Tkinter" :
+      - "Tkinter" : 'tkinter/tk_000.md'
+      - "Canvas" : 'tkinter/tk_001.md'
+      - "Pintem en un Canvas" : 'tkinter/tk_001ex.md'
 
     - "ESP-32" :
-      - "La placa " : 'esp32/esp32_000.md'
+      - "La placa" : 'esp32/esp32_000.md'
       - "Preparació de l'entorn de desenvolupament" : 'esp32/esp32_001.md'
 
     - "Programació" : 'programacio.md'
@@ -130,10 +188,23 @@ nav:
         - "Enllaços": 'altres/altres.md'
 
 
+## Tkinter 
+# https://www.tutorialspoint.com/python/python_gui_programming.htm
+# https://tkdocs.com/shipman/canvas.html  Obsolet (Python 2.7 - Tk 8.5 - No actualitzat des del 2013)
+# https://www.pythonguis.com/ (Python 3)
+# https://www.pythonguis.com/tutorials/use-tkinter-to-design-gui-layout/
+
+## Exercicis
+# https://www.mclibre.org/consultar/python/ejercicios/ej-listas-1.html
+# https://www.mclibre.org/consultar/python/ejercicios/ej-booleanos-2.html
+
 ## Plugins
 # pip install mkdocs-material
 # pip install mkdocs-exclude-search
 # python.exe -m pip install --upgrade pygments
 # pip install --upgrade pymdown-extensions
-# admonitions
+# admonitions (markdown-extensions)
+# pip install mkdocs-open-in-new-tab
+
+# https://squidfunk.github.io/mkdocs-material/reference/formatting/
 # note abstract info tip success question warning failure danger bug example quote
