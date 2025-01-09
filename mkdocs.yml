@@ -166,6 +166,7 @@ nav:
       - "Funcions" : 'python/py_021.md'
       - "Barregem *ars i **kwargs" : 'python/py_022.md'
       - "Metadades" : 'python/py_023.md'
+      - "Exercicis de Funcions i Procediments" : 'python/py_020ex.md'
 
     - "Turtle" :
       - "Turtle" : 'turtle/tu_000.md'
