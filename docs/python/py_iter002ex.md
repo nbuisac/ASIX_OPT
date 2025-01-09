@@ -4,7 +4,7 @@ Resol aquests exercicis d'iteracions amb [`for`][for] i/o [`while`][while].
 
 pots utilitzar aquells [mètodes d'strings][] que vegis interessants.
 
-## Seqüències (1 a 10) i Recorreguts (11 a 19)
+## Seqüències (1 a 10) i Recorreguts (11 a 18)
 
 1. Escriu un programa que demani una frase i digui quantes lletres `a` hi ha.
 

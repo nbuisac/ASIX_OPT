@@ -171,6 +171,11 @@ nav:
       - "Turtle" : 'turtle/tu_000.md'
       - "Exercicis de Banderes" : 'banderes/banderes001.md'
 
+    - "Pygame" :
+      - "Introducció" : 'pygame/pygame_001.md'
+      - "Tutorial bàsic" : 'pygame/pygame_002.md'
+      - "Tutorial avançat" : 'pygame/pygame_003.md'
+
     - "Tkinter" :
       - "Tkinter" : 'tkinter/tk_000.md'
       - "Canvas" : 'tkinter/tk_001.md'

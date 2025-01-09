@@ -254,20 +254,20 @@ Resol aquests exercicis d'iteracions amb [`for`][for] i/o [`while`][while].
         ```
 
 
-17. Fes un programa que calculi el **màxim comú divisor** de dos números. El màxim comú divisor és el divisor de tots dos més gran que hi hagi. Si no trobem cap divisor, l'1 sempre ho serà. Podem fer-ho provant números del 2 al menor d'ells com a molt o a base de restes (el major menys el menor i ara tornem a tenir dos nombres, el menor que teniem i el resultat de la resta i així anem fint fins arribar a tenir dos nombres iguals)
+17. Fes un programa que calculi el màxim comú divisor de dos números. El màxim comú divisor és el divisor de tots dos més gran que hi hagi. Si no trobem cap divisor, el 1 sempre ho serà. Aquest exercici el resoldrem per *froça bruta* provant tots els nombres des del menor dels dos entrats fins l'1.
 
     ???example "Possible solució"
 
-        ```py title="A base de restes"
+        ```py title="Per força bruta"
         n1 = int(input("Entra un número -> "))
         n2 = int(input("Entra un altre número -> "))
-        nn1, nn2 = n1, n2
-        while nn1 != nn2:
-            if nn1 > nn2:
-                nn1 = nn1 - nn2
-            else:
-                nn2 = nn2 - nn1
-        print(f"mcd({n1}, {n2}) = {nn1}")
+        if n1 < n2:
+            mcd = n1
+        else:
+            mcd = n2
+        while n1 % mcd != 0 or n2 % mcd != 0:
+            mcd = mcd - 1
+        print(f"mcd({n1}, {n2}) = {mcd}")
         ```
 
 18. Fes un programa que calculi el **mínim comú múltiple** de dos números. El mínim comú múltiple és el múltiple de tots dos més petit que hi hagi. com a molt, el producte de tots dos ho serà. Es pot anar provant tots els números des del major al producte dels dos o fins que en trobis un.
@@ -430,7 +430,7 @@ Resol aquests exercicis d'iteracions amb [`for`][for] i/o [`while`][while].
 
     ???example "Possible solució"
 
-        ```py
+        ```py title="A base de divisions"
         numero1 = int(input("Entra un nombre -> "))
         numero2 = int(input("Entra un nombre -> "))
         if numero1 > numero2:
@@ -442,6 +442,20 @@ Resol aquests exercicis d'iteracions amb [`for`][for] i/o [`while`][while].
             if gran < petit:
                 gran, petit = petit, gran
         print(f"mcd({numero1}, {numero2}) = {petit}")
+        ```
+
+        fins i tot, podem fer-ho, però trigarà més, a base de restes
+
+        ```py title="A base de restes"
+        n1 = int(input("Entra un número -> "))
+        n2 = int(input("Entra un altre número -> "))
+        nn1, nn2 = n1, n2
+        while nn1 != nn2:
+            if nn1 > nn2:
+                nn1 = nn1 - nn2
+            else:
+                nn2 = nn2 - nn1
+        print(f"mcd({n1}, {n2}) = {nn1}")
         ```
 
 29. Fes un programa que, donat un número N, escrigui els seus factors primers.

@@ -34,7 +34,7 @@ Resol aquests exercicis d'iteracions amb [`for`][for] i/o [`while`][while].
 
 16. Fes un programa que digui si un número és primer. Són primers els que tenen només dos divisors, l'1 i ell mateix.
 
-17. Fes un programa que calculi el màxim comú divisor de dos números. El màxim comú divisor és el divisor de tots dos més gran que hi hagi. Si no trobem cap divisor, el 1 sempre ho serà. Podem fer-ho provant números del 2 al menor d'ells com a molt o a base de restes (el major menys el menor i ara tornem a tenir dos nombres, el menor que teniem i el resultat de la resta i així anem fint fins arribar a tenir dos nombres iguals)
+17. Fes un programa que calculi el màxim comú divisor de dos números. El màxim comú divisor és el divisor de tots dos més gran que hi hagi. Si no trobem cap divisor, el 1 sempre ho serà. Aquest exercici el resoldrem per *froça bruta* provant tots els nombres des del menor dels dos entrats fins l'1.
 
 18. Fes un programa que calculi el mínim comú múltiple de dos números. El mínim comú múltiple és el múltiple de tots dos més petit que hi hagi. com a molt, el producte de tots dos ho serà. Es-ho provant tots els números des del major al producte dels dos o fins que en
 trobis un.
