@@ -185,7 +185,7 @@ Altres enllaços interessants:
 [http://caca.zoy.org/wiki/libcaca]:             http://caca.zoy.org/wiki/libcaca
 [https://www.pygame.org/docs/ref/time.html]:    https://www.pygame.org/docs/ref/time.html
 
-[Carpeta amb el contingut]: ./sprites/
+[Carpeta amb el contingut]: ../sprites/
 
 [./sprites/camina01.png]:   ./sprites/camina01.png
 [./sprites/camina02.png]:   ./sprites/camina02.png
