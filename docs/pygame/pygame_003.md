@@ -72,6 +72,29 @@ Caldrà doncs:
 
 Sovint es crea una agrupació d'objectes per tal de no deixar-nos de tractar-ne cap. Podem crear doferents grups d'objectes, segons el seu tractament.
 
+Podeu trobar els diferents Sprites en els següents enllaços:
+
+* [Carpeta amb el contingut][]{target="_blank"}
+
+* [./sprites/ninosGran.png][]{download="ninosGran.png"}
+
+* [./sprites/camina01.png][]{download="camina01.png"}
+
+* [./sprites/camina02.png][]{download="camina02.png"}
+
+* [./sprites/camina03.png][]{download="camina03.png"}
+
+* [./sprites/camina04.png][]{download="camina04.png"}
+
+* [./sprites/camina05.png][]{download="camina05.png"}
+
+* [./sprites/camina06.png][]{download="camina06.png"}
+
+* [./sprites/camina07.png][]{download="camina07.png"}
+
+* [./sprites/camina08.png][]{download="camina08.png"}
+
+
 ```py title="Joc amb sprites bàsic" hl_lines="1"
 --8<-- "./pygame/tutorial002/02-sprites.py"
 ```
@@ -161,3 +184,15 @@ Altres enllaços interessants:
 [objecte Rect]:                                 https://www.pygame.org/docs/ref/rect.html
 [http://caca.zoy.org/wiki/libcaca]:             http://caca.zoy.org/wiki/libcaca
 [https://www.pygame.org/docs/ref/time.html]:    https://www.pygame.org/docs/ref/time.html
+
+[Carpeta amb el contingut]: ./sprites/
+
+[./sprites/camina01.png]:   ./sprites/camina01.png
+[./sprites/camina02.png]:   ./sprites/camina02.png
+[./sprites/camina03.png]:   ./sprites/camina03.png
+[./sprites/camina04.png]:   ./sprites/camina04.png
+[./sprites/camina05.png]:   ./sprites/camina05.png
+[./sprites/camina06.png]:   ./sprites/camina06.png
+[./sprites/camina07.png]:   ./sprites/camina07.png
+[./sprites/camina08.png]:   ./sprites/camina08.png
+[./sprites/ninosGran.png]:  ./sprites/ninosGran.png
