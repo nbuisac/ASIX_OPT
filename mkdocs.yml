@@ -177,6 +177,19 @@ nav:
       - "Tutorial bàsic" : 'pygame/pygame_002.md'
       - "Tutorial avançat" : 'pygame/pygame_003.md'
 
+    - "Excepcions" :
+      - "Tractament de les excepcions" : 'excepcions/excepcions_001.md'
+
+    - "Accés extern" :
+      - "Introducció" : 'fitxers/fitxers_001.md'
+      - "Lectura de fitxers de text" : 'fitxers/fitxers_002.md'
+      - "Escriptura en fitxers de text" : 'fitxers/fitxers_003.md'
+      - "Lectura de fitxers de diferents tipus: CSV" : 'fitxers/fitxers_004.md'
+      - "Lectura de fitxers de diferents tipus: XML" : 'fitxers/fitxers_005.md'
+      - "Accés a bases de dades SQL: SQLite" : 'fitxers/fitxers_006.md'
+      - "Exercicis" :
+        - "Exercicis de Fitxers" : 'fitxers/fitxers_001ex.md'
+
     - "Tkinter" :
       - "Tkinter" : 'tkinter/tk_000.md'
       - "Canvas" : 'tkinter/tk_001.md'
