@@ -56,7 +56,7 @@ Provarem l'accés a una API gratuita amb dades de diversos temes: [http://jsonpl
 i mirarem el següent codi:
 
 ```py
---8<-- "./docs/fitxers/python/fitxers_007_1.py"
+--8<-- "./docs/fitxers/python/fitxers_api_1.py"
 ```
 
 Si feu la prova, veureu que la resposta la tenim, en format `JSON`, a `reply.json()`. A partir d'aquí ja serem nosaltres els que tractarem les dades com calgui.

@@ -1,18 +1,10 @@
-## https://jsonplaceholder.typicode.com/
-## https://jsonplaceholder.typicode.com/users/1
-import socket
-
-server_addr = "jsonplaceholder.typicode.com"
-sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
-
-sock.connect((server_addr, 80))
-
-que_volem = b"/users/2"
-sock.send(b"GET " + que_volem + b" HTTP/1.1\r\nHost: " +
-          bytes(server_addr, "utf8") +
-          b"\r\nConnection: close\r\n\r\n")
-
-reply = sock.recv(10000)
-
-sock.shutdown(socket.SHUT_RDWR)
-sock.close()
+nom_fitxer = "passwd"
+try:
+    with open(nom_fitxer, "r") as f:
+        for linia in f:
+            llista = linia.split(":")
+            print(f"usuari: {llista[0]}, id : {llista[2]}")
+except FileNotFoundError as e:
+    print(f"ERROR: Fitxer {nom_fitxer} no trobat. ({e})")
+except Exception as e:
+    print(f"ERROR: Error no tractat. ({e})")

@@ -2,7 +2,7 @@
 
 En aquest apartat esbrinarem com tractar les excepcions en python. Trobareu més informació a:
 
-*[Tractament d'errors  i excepcions][]: tutorial de python
+* [Tractament d'errors  i excepcions][]: tutorial de python
 
 * [Sintaxis del `try`][try]: Sintaxis del `try` a python.
 
@@ -87,8 +87,6 @@ if not a.isnumeric():
 ```
 
 El fet de llançar errors ens pot ser útil quan programem funcions i/o procediments i els paràmetres rebuts siguin incorrectes o succeeixi quelcom que no puguem tractar. Llavors llancem l'excepció i qui cridi la funció caldrà que capturi l'execpció que nosalters hem llançat.
-
-
 
 
 

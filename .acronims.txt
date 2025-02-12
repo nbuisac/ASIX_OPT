@@ -22,3 +22,6 @@
 *[URI]: Uniform Resource Identifier
 
 *[P2P]: Peer to peer (entre iguals)
+
+*[ODS]: Objectius de desenvolupament sostenible
+*[ASG]: Ambiental, Social i de Governança

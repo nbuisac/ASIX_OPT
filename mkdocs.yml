@@ -199,7 +199,9 @@ nav:
       - "La placa" : 'esp32/esp32_000.md'
       - "Preparació de l'entorn de desenvolupament" : 'esp32/esp32_001.md'
 
-    - "Programació" : 'programacio.md'
+    - "Programació" :
+      - "Programació Mòdul Optatiu" : 'programacioOPT.md'
+      - "Programació Mòdul Sostenibilitat" : 'programacioSOST.md'
     - "Altres" :
         - "Diferents entorns de Python" : 'altres/venv.md'
         - "Instal·lació de paquets" : 'altres/pip.md'
