@@ -10,7 +10,7 @@ Veurem algun exemple de com treballar contra una base de dades SQLite. Aprendrem
 
 Crearem la nostra base de dades amb les següents instruccions, des del mateix Python.
 
-```xml
+```py
 import sqlite3 
 conn = sqlite3.connect('c:/ASIX/tasques.db')
 ```
@@ -67,13 +67,10 @@ També hem fet un `#!py conn.commit()` per confirmar els canvis de la transacci�
 
 Al final hem tancat la connexió amb `#!py conn.close()`.
 
-Si tenim vàries files per iserir, podem inserir-les amb una sola comanda si les tenim en una llista de tuples. Vegem-ho:
+Si tenim vàries files per inserir, podem inserir-les amb una sola comanda si les tenim en una llista de tuples. Vegem-ho:
 
 ```py
-import sqlite3
-
-conn = sqlite3.connect('c:/ASIX/tasques.db')
-c = conn.cursor()
+c = connc.cursor()
 tasks = [
     ('La segona tasca', 2),
     ('La tercera tasca', 5),
@@ -91,9 +88,6 @@ En aquest cas hem executat la comanda `#!py c.executemany(...)` per executar mé
 Per accedir a la informació emmagatzemada utilitzarem la sentència SQL `#!sql SELECT`:
 
 ```py
-import sqlite3
-
-conn = sqlite3.connect('c:/ASIX/tasques.db')
 c = conn.cursor()
 for row in c.execute('SELECT * FROM tasks'):
     print(row)

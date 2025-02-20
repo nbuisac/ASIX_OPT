@@ -187,6 +187,7 @@ nav:
       - "Lectura de fitxers de diferents tipus: CSV" : 'fitxers/fitxers_004.md'
       - "Lectura de fitxers de diferents tipus: XML" : 'fitxers/fitxers_005.md'
       - "Accés a bases de dades SQL: SQLite" : 'fitxers/fitxers_006.md'
+      - "Accés a bases de dades SQL: MariaDB" : 'fitxers/fitxers_007.md'
       - "Exercicis" :
         - "Exercicis de Fitxers" : 'fitxers/fitxers_001ex.md'
 
@@ -197,7 +198,9 @@ nav:
 
     - "ESP-32" :
       - "La placa" : 'esp32/esp32_000.md'
-      - "Preparació de l'entorn de desenvolupament" : 'esp32/esp32_001.md'
+      - "Preparació de l'entorn de desenvolupament - VSCode" : 'esp32/esp32_001_a.md'
+      - "Preparació de l'entorn de desenvolupament - Thonny" : 'esp32/esp32_001_b.md'
+      - "Programem" : 'esp32/esp32_002.md'
 
     - "Programació" :
       - "Programació Mòdul Optatiu" : 'programacioOPT.md'
