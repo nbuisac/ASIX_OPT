@@ -189,6 +189,9 @@ nav:
       - "Accés a bases de dades SQL: SQLite" : 'fitxers/fitxers_006.md'
       - "Accés a bases de dades SQL: MariaDB" : 'fitxers/fitxers_007.md'
       - "DBeaver" : 'fitxers/fitxers_00a.md'
+      - "Servidor web propi" : 'fitxers/fitxers_008.md'
+      - "Accés amb GET" : 'fitxers/fitxers_009.md'
+      - "APIRest" : 'fitxers/fitxers_010.md'
       - "Exercicis" :
         - "Exercicis de Fitxers" : 'fitxers/fitxers_001ex.md'
         - "Exercicis de Bases de dades" : 'fitxers/fitxers_002ex.md'
