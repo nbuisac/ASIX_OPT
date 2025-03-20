@@ -41,6 +41,8 @@ Imagineu que cal canviar l'estat de l'objecte a través de la xarxa. Podem fer-h
 
 Nosaltres provarem l'accés a les API a partir de la llibreria `requests`. Aquesta ens dóna mètodes per a fer GET, POST, PUT, DELETE, etc.
 
+* [Mètodes HTTP][MetodesHTTP]
+
 Trobareu més informació a: [https://cosasdedevs.com/posts/usar-requests-python-api-rest/][].
 
 En aquest exemple accedirem amb el mètode `POST` passant tots els paràmetres necessaris utilitzant aquest mètode `POST`. Compte, és possible que hagem de modificar el nostre servidor.
@@ -69,3 +71,4 @@ També podriem mirar com modificar les dades a partir dels mètodes `PUT`, `POST
 [http://jsonplaceholder.typicode.com/]:    http://jsonplaceholder.typicode.com/
 
 [https://cosasdedevs.com/posts/usar-requests-python-api-rest/]: https://cosasdedevs.com/posts/usar-requests-python-api-rest/
+[MetodesHTTP]:  https://developer.mozilla.org/es/docs/Web/HTTP/Reference/Methods

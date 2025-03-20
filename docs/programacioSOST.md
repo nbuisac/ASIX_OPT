@@ -140,15 +140,15 @@ Aquest, al ser un mòdul general, no té UC associades al mòdul.
 
 ???info "RA 6. Analitza un pla de sostenibilitat d'una empresa del sector, identificant-ne els grups d'interès, els aspectes ASG materials i justificant accions per gestionar-los i mesurar-los."
 
-        a) S'han identificat els grups d'interès principals de l'empresa.
+    a) S'han identificat els grups d'interès principals de l'empresa.
 
-        b) Shan analitzat els aspectes ASG materials, les expectatives dels grups dinterès i la importància dels aspectes ASG en relació amb els objectius empresarials.
+    b) Shan analitzat els aspectes ASG materials, les expectatives dels grups dinterès i la importància dels aspectes ASG en relació amb els objectius empresarials.
 
-        c) S'han definit accions encaminades a minimitzar els impactes negatius i aprofitar les oportunitats que plantegen els principals aspectes ASG identificats.
+    c) S'han definit accions encaminades a minimitzar els impactes negatius i aprofitar les oportunitats que plantegen els principals aspectes ASG identificats.
 
-        d) S'han determinat les mètriques d'avaluació de l'acompliment de l'empresa d'acord amb els estàndards de sostenibilitat utilitzats més àmpliament.
+    d) S'han determinat les mètriques d'avaluació de l'acompliment de l'empresa d'acord amb els estàndards de sostenibilitat utilitzats més àmpliament.
 
-        e) S'ha elaborat un informe de sostenibilitat amb el pla i els indicadors proposats
+    e) S'ha elaborat un informe de sostenibilitat amb el pla i els indicadors proposats
 
 ## 3. Relació de continguts
 
@@ -252,7 +252,7 @@ Enguany no farem servir cap llibre de text de referència. Tota la informació n
 
 _Tant la informació en paper com la informació en format digital que es va proporcionant al llarg del curs cal que l'alumne se la gestioni i organitzi correctament a fi de tenir-la a l'abast en tot moment quan aquesta pugui ser requerida._
 
-## 9. Programació dels Resltats d'Aprenentatge
+## 9. Programació dels Resultats d'Aprenentatge
 
 En el moment d'iniciar cadascun dels RA, es presentarà detalladament el seu desenvolupament i el sistema d'avaluació emprat.
 
@@ -267,7 +267,7 @@ En el moment d'iniciar cadascun dels RA, es presentarà detalladament el seu des
 [Decret 197/2013, de 23 de juliol]:         https://portaljuridic.gencat.cat/eli/es-ct/d/2013/07/23/197 "Decret 197/2013"
 [ORDRE EDU/186/2021, de 23 de setembre]:    https://portaljuridic.gencat.cat/eli/es-ct/o/2021/09/23/edu186/dof   "ORDRE EDU/186/2021"
 [Orientacions a partir 2024/2025]:          https://xtec.gencat.cat/web/.content/curriculum/professionals/fp/titolsloe/infcomunicacions/o_ICA0_administracio_sistemes_informatics_xarxa_20240425.docx   "Orientacions a partir 2024/2025"
-[https://apunts.institutmontilivi.cat/ASIX-OPT/]:   https://apunts.institutmontilivi.cat/ASIX-OPT/  "Apunts del curs"
+[https://apunts.institutmontilivi.cat/ASIX-OPT/]:   https://apunts.institutmontilivi.cat/ASIX-OPTNB/  "Apunts del curs"
 
 
 --8<-- ".acronims.txt"

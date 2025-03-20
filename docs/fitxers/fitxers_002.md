@@ -22,7 +22,7 @@ Per obrir el fitxer utilitzarem la funció [`open`][open] de la següent forma:
 fitxer = open('exemple.txt')
 ```
 
-!!!tip "Per defecte, el fitxer s'obre en mode lectura `r` i com fiter de text `t`, per tant `rt`"
+!!!tip "Per defecte, el fitxer s'obre en mode lectura `r` i com fitxer de text `t`, per tant `rt`"
 
 D'aquesta manera ja tenim una variable, `fitxer`, que ens permet accedir al contingut del fitxer.
 

@@ -23,7 +23,7 @@ Podem, també, indicar-li un `PATH` absolut per accedir al fitxer
 conn = sqlite3.connect('c:/ASIX/tasques.db')
 ```
 
-o bé dir-li que treballarem només amm la memòria del PC, sense guardar res a disc.
+o bé dir-li que treballarem només amb la memòria del PC, sense guardar res a disc.
 
 ```py
 conn = sqlite3.connect(':memory:') 
@@ -67,7 +67,7 @@ També hem fet un `#!py conn.commit()` per confirmar els canvis de la transacci�
 
 Al final hem tancat la connexió amb `#!py conn.close()`.
 
-Si tenim vàries files per inserir, podem inserir-les amb una sola comanda si les tenim en una llista de tuples. Vegem-ho:
+Si tenim vàries files per inserir,  i les tenim en una llista de tuples, podem inserir-les amb una sola comanda: `#!executemany()`. Vegem-ho:
 
 ```py
 c = connc.cursor()
@@ -81,7 +81,7 @@ conn.commit()
 conn.close()
 ```
 
-En aquest cas hem executat la comanda `#!py c.executemany(...)` per executar més d'una sentència `#!sql INSERT`.
+En aquest cas hem executat la comanda `#!py c.executemany(...)` en comptes de `#!py c.execute(...)` per executar més d'una sentència `#!sql INSERT`.
 
 ### DML - SELECT
 
@@ -94,7 +94,7 @@ for row in c.execute('SELECT * FROM tasks'):
 conn.close()
 ```
 
-Hem llegit **fila a fila del cursor** directament. En aquest cas veiem que escriu:
+Hem llegit **fila a fila del cursor** directament. En aquest cas veiem què escriu:
 
 ```txt
 (1, 'La primera tasca', 1)
@@ -119,7 +119,7 @@ for row in rows:
 
 En aquest cas hem utilitzat la comanda `#!py c.fetchall()` per carregar totes les files en una llista. Fins i tot hem tancat la connexió a la base de dades abans de tractar la llista.
 
-Igual que hem utilitzat la comanda `#!py c.fetchall()`, tenim la comanda `#!py c.fetchone()` per llegit les files una a una. Quan ja no queden més dades, retorna None
+Igual que hem utilitzat la comanda `#!py c.fetchall()`, tenim la comanda `#!py c.fetchone()` per llegit les files una a una. Quan ja no queden més dades, retorna **_None_**
 
 ```py
 import sqlite3
@@ -134,7 +134,7 @@ while not (row is None):
 conn.close()
 ```
 
-De manera semblant, podem executar sentències `#!sql UPDATE` i `#!sql DELETE`.
+De manera semblant, podem executar sentències `#!sql UPDATE` i `#!sql DELETE`. Recordeu-vos t'utilitzar paràmeters per tal d'evitar l'*SQLInjection*.
 
 [sqlite3]: https://docs.python.org/library/sqlite3.html
 

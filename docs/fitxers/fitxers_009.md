@@ -5,6 +5,8 @@ Podem accedir, amb *Python*, a diferents URL i tractar-ne el resultat.
 
 Accedirem a la URL a partir de la llibreria `requests`. Aquesta ens dóna mètodes per a fer GET, POST, PUT, DELETE, etc.
 
+* [Mètodes de petició HTTP][MetodesHTTP]
+
 Trobareu més informació a: [Llibreria requests a w3chools][].
 
 ```py
@@ -36,3 +38,4 @@ També podriem mirar com modificar les dades a partir dels mètodes `PUT`, `POST
 [https://pokeapi.co/api/v2/pokemon/ditto]:  https://pokeapi.co/api/v2/pokemon/ditto
 [http://jsonplaceholder.typicode.com/]:    http://jsonplaceholder.typicode.com/
 [Llibreria requests a w3chools]:        https://www.w3schools.com/python/module_requests.asp
+[MetodesHTTP]:  https://developer.mozilla.org/es/docs/Web/HTTP/Reference/Methods

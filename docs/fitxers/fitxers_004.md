@@ -88,7 +88,7 @@ with open('contactes_exportats.csv', 'w', newline='') as csvfile:
     writer.writerow(['avi, avia', '612-345-678'])
 ```
 
-En aquest darrer cas, com que el darrer element conté una coma, hem utilitzat, en el writer, els paràmetres `#py quotechar='"', quoting=csv.QUOTE_MINIMAL` per tal d'escriure'ls entre cometes dobles.
+En aquest darrer cas, com que el darrer element conté una coma, hem utilitzat, en el writer, els paràmetres `#!py quotechar='"', quoting=csv.QUOTE_MINIMAL` per tal d'escriure'ls entre cometes dobles.
 
 On hem utilitzat `csv.QUOTE_MINIMAL`, podriem haver utilitzat, també:
 

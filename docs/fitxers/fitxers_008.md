@@ -48,6 +48,8 @@ Les peticions es tractebn amb un manipulador, *handler*. El mòdul `http.server`
 
     Suporta els mètodes GET i HEAD, i genera automàticament llistats de directoris.
 
+    * [Mètodes de petició HTTP][MetodesHTTP]
+
     Si troba un fitxer `index.html` mostrarà el seu contingut en lloc de la llista de fitxers del directori.
 
 * **`ThreadingHTTPServer`**: Estén la classe `HTTPServer` proporcionant un servidor HTTP multifil.
@@ -700,3 +702,4 @@ except KeyboardInterrupt:
 [http://127.0.0.1:8888/jobs/min_salary/3000/]: http://127.0.0.1:8888/jobs/min_salary/3000/
 [http://127.0.0.1:8888/put/jobs/IT_DBA/Administrador%20de%20bases%20de%20dades/1000/2000]: http://127.0.0.1:8888/put/jobs/IT_DBA/Administrador%20de%20bases%20de%20dades/1000/2000
 [http://127.0.0.1:8888/delete/jobs/IT_DBA]: http://127.0.0.1:8888/delete/jobs/IT_DBA
+[MetodesHTTP]:  https://developer.mozilla.org/es/docs/Web/HTTP/Reference/Methods

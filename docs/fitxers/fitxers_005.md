@@ -6,7 +6,7 @@ Veurem alguns exemples de com treballar amb fitxers de diferents tipus. Aprendre
 
 ## XML
 
-Treballarem a partir del fitxer [books.xml][] que desarem al mateix directori on tinguem els programes que provem.
+Treballarem a partir del fitxer [books.xml][]{download="books.xml"} que desarem al mateix directori on tinguem els programes que provem.
 
 ```xml
 --8<-- "./docs/fitxers/python/books.xml"
@@ -14,7 +14,7 @@ Treballarem a partir del fitxer [books.xml][] que desarem al mateix directori on
 
 El processament de fitxers **XML** a *Python* és molt fàcil gràcies a la classe [`#!py ElementTree`][ElementTree] proporcionada pel mòdul [`#!py xml.etree.ElementTree`][xml.etree.ElementTree]. L'objecte [`#!py ElementTree`][ElementTree] s'encarrega de presentar el document *XML* en forma d'arbre sobre el qual ens podem moure cap amunt o cap avall. També tenim l'objecte [`#!py Element`][Element] que representa un sol node de l'arbre.
 
-En primer lloc, hem d'importar el mòdul adequat i definir-ne un àlies. És habitual utilitzar l'àlies `#!py ET`, però per descomptat podem posar-li el nom que vulguem. Per crear un arbre (un objecte `#!py ElementTree`) a partir d'un document *XML* existent, el passarem al mètode d'anàlisi de la manera següent:
+En primer lloc, hem d'importar el mòdul adequat i definir-ne un àlies. És habitual utilitzar l'àlies `#!py ET`, però, per descomptat, podem posar-li el nom que vulguem. Per crear un arbre (un objecte `#!py ElementTree`) a partir d'un document *XML* existent, el passarem al mètode d'anàlisi de la manera següent:
 
 ```py
 import xml.etree.ElementTree as ET 
