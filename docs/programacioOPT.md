@@ -233,15 +233,15 @@ La ponderació dels Resultats d’Aprenentatge en el total de la Nucli Formatiu 
 
 D’acord a la ponderació que hem fet dels diferents RA, la qualificació de la NF2 (Q~NF2~) s’obté a través de la fórmula següent:
 
-* Q~NF2~  = Q~RA2~
+* Q~NF2~  = Q~RA1~
 
 La ponderació dels Resultats d’Aprenentatge en el total de la Nucli Formatiu 3 és:
 
-* RA3 = 100 %
+* RA1 = 100 %
 
 D’acord a la ponderació que hem fet dels diferents RA, la qualificació de la NF3 (Q~NF3~) s’obté a través de la fórmula següent:
 
-* Q~NF3~  = Q~RA3~
+* Q~NF3~  = Q~RA1~
 
 
 ### 5.2 Avaluació segona convocatòria del MP
@@ -292,7 +292,7 @@ Activitats d’ensenyament i aprenentatge:
 
 * AEA2	RA1	Estructures de control i Funcions
 
-**RA1 Programa utilitzant estructures de control i funcions pròpies.**
+**RA1 Escriu scripts en Python tractant dades externes.**
 
 Criteris d’avaluació
 
@@ -361,9 +361,9 @@ Criteris d’avaluació
 
 Activitats d’ensenyament i aprenentatge:
 
-* AEA1	RA2	Ús de llibreries d’altres
+* AEA1	RA1	Ús de llibreries d’altres
 
-**RA2 Escriu i prova programes senzills, utilitzant llibreries d’altres.**
+**RA1 Escriu scripts en Python tractant dades externes.**
 
 Criteris d’avaluació
 
@@ -408,11 +408,11 @@ Criteris d’avaluació
 
 Activitats d’ensenyament i aprenentatge:
 
-* AEA1	RA3	Creació de fitxers i accés a dades externes en fitxers
+* AEA1	RA1	Creació de fitxers i accés a dades externes en fitxers i bases de dades
 
-* AEA2	RA3	Creació de informació a través de URLs/APIs
+* AEA2	RA1	Creació de informació a través de URLs/APIs
 
-**RA3 Escriu programes que manipulin informació externa.**
+**RA1 Escriu scripts en Python tractant dades externes.**
 
 Criteris d’avaluació
 

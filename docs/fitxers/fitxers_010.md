@@ -41,7 +41,7 @@ Imagineu que cal canviar l'estat de l'objecte a través de la xarxa. Podem fer-h
 
 Nosaltres provarem l'accés a les API a partir de la llibreria `requests`. Aquesta ens dóna mètodes per a fer GET, POST, PUT, DELETE, etc.
 
-* [Mètodes HTTP][MetodesHTTP]
+* [Mètodes de petició HTTP][MetodesHTTP]
 
 Trobareu més informació a: [https://cosasdedevs.com/posts/usar-requests-python-api-rest/][].
 

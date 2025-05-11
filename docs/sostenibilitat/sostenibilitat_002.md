@@ -1,27 +1,34 @@
 # Objectius de Desenvolupament Sostenible
 
-L'**Agenda 2030**, aprovada el 25 de setembre de 2015, proposa un full de ruta de 17 **_objectius de desenvolupament sostenible_** (ODS).
+L'[**Agenda 2030**][Agenda2030], amb l'acord històric de 193 països, aprovada el 25 de setembre de 2015, per l'[Assemblea General de les Nacions Unides][], proposa un full de ruta de 17 **_objectius de desenvolupament sostenible_** (ODS).
 
-[![objectiu_1][]{width=15%}][objectiu_1]
-[![objectiu_2][]{width=15%}][objectiu_2]
-[![objectiu_3][]{width=15%}][objectiu_3]
-[![objectiu_4][]{width=15%}][objectiu_4]
-[![objectiu_5][]{width=15%}][objectiu_5]
-[![objectiu_6][]{width=15%}][objectiu_6]
+Com a compromís mundial, busca que tots els estats es proposin fermament posar fi a la pobresa i la fam, a combatre les desigualtats, protegir els drets humans, especialment de les persones més excloses i de major vulnerabilitat, promoure la igualtat de gènere i l'empoderament de les dones i les nenes, construir societats pacífiques, justes i inclusives i garantir una protecció resilient del planeta i dels seus recursos naturals.
 
-[![objectiu_7][]{width=15%}][objectiu_7]
-[![objectiu_8][]{width=15%}][objectiu_8]
-[![objectiu_9][]{width=15%}][objectiu_9]
-[![objectiu_10][]{width=15%}][objectiu_10]
-[![objectiu_11][]{width=15%}][objectiu_11]
-[![objectiu_12][]{width=15%}][objectiu_12]
+[![objectiu_1][]{width=15%}][objectiu_1]{target="_blank"}
+[![objectiu_2][]{width=15%}][objectiu_2]{target="_blank"}
+[![objectiu_3][]{width=15%}][objectiu_3]{target="_blank"}
+[![objectiu_4][]{width=15%}][objectiu_4]{target="_blank"}
+[![objectiu_5][]{width=15%}][objectiu_5]{target="_blank"}
+[![objectiu_6][]{width=15%}][objectiu_6]{target="_blank"}
 
-[![objectiu_13][]{width=15%}][objectiu_13]
-[![objectiu_14][]{width=15%}][objectiu_14]
-[![objectiu_15][]{width=15%}][objectiu_15]
-[![objectiu_16][]{width=15%}][objectiu_16]
-[![objectiu_17][]{width=15%}][objectiu_17]
-[![objectius][]{width=15%}][objectius]
+[![objectiu_7][]{width=15%}][objectiu_7]{target="_blank"}
+[![objectiu_8][]{width=15%}][objectiu_8]{target="_blank"}
+[![objectiu_9][]{width=15%}][objectiu_9]{target="_blank"}
+[![objectiu_10][]{width=15%}][objectiu_10]{target="_blank"}
+[![objectiu_11][]{width=15%}][objectiu_11]{target="_blank"}
+[![objectiu_12][]{width=15%}][objectiu_12]{target="_blank"}
+
+[![objectiu_13][]{width=15%}][objectiu_13]{target="_blank"}
+[![objectiu_14][]{width=15%}][objectiu_14]{target="_blank"}
+[![objectiu_15][]{width=15%}][objectiu_15]{target="_blank"}
+[![objectiu_16][]{width=15%}][objectiu_16]{target="_blank"}
+[![objectiu_17][]{width=15%}][objectiu_17]{target="_blank"}
+[![objectius][]{width=15%}][objectius]{target="_blank"}
+
+
+!!!tip "Els ODS incideixen en cinc esferes d'importància crítica de l'Agenda, les anomenades 5 P:"
+
+    Persones (People) 1 - 5, Pau (Peace) 16, Planeta (Planet) 6, 12 - 15, Prosperitat (Prosperity) 7 - 11 i Aliances (Partnership) 17."
 
 
 Els dividim en diferents dimensions:
@@ -32,7 +39,7 @@ Els dividim en diferents dimensions:
 
 * dimensió **_Ambiental_**: 6, 7, 11, 13, 14 i 15
 
-Al ser tant generals, s'han especificat diferents metes per cadascun, arribant a un total de *169 metes*. Entre elles:
+En ser tan generals, s'han especificat diferents metes per cadascun, arribant a un total de *169 metes*. Entre elles:
 
 * **9.4** D'aquí al 2030, modernitzar la infraestructura i reconvertir **les indústries** perquè **siguin sostenibles**, utilitzant els recursos amb més eficàcia i promovent l'adopció de tecnologies i processos industrials nets i ambientalment racionals, i aconseguint que tots els països prenguin mesures d'acord amb les seves capacitats respectives.
 
@@ -80,7 +87,7 @@ La gestió *ASG* (**Ambiental, Social i de Governança**) fa referència a la pr
 
     Els factors ambientals consideren com una empresa opera respecte al seu impacte en el medi ambient. Això inclou la gestió de residus, la contaminació, la utilització de recursos naturals, el tractament de les emissions de gasos d'efecte hivernacle, així com la seva implicació en canvi climàtic i sostenibilitat.
     
-2. Gestió d’aspectes socials
+2. Gestió d'aspectes socials
 
     Es refereix a la consideració de la companyia cap als aspectes socials dins i fora de l'empresa. Inclou temes com les condicions laborals, la igualtat de gènere, els drets humans, les relacions amb les comunitats locals, i l'impacte sobre elles. També pot cobrir aspectes com la salut i la seguretat en el lloc de treball i la gestió de la cadena de subministrament.
 
@@ -99,18 +106,23 @@ A la web de *Medi ambient i sostenibilitat de la Generalitat de Catalunya*, podr
 [objectiu_4]:       ./img/dissetReptes_04.jpg           "4- Educació de qualitat"
 [objectiu_5]:       ./img/dissetReptes_05.jpg           "5- Igualtat de gènere"
 [objectiu_6]:       ./img/dissetReptes_06.jpg           "6- Aigua neta i sanejament"
-[objectiu_7]:       ./img/dissetReptes_07.jpg           "7- Energia assequible i no contaminant"
-[objectiu_8]:       ./img/dissetReptes_08.jpg           "8- Treball decent i creixement econòmic"
+[objectiu_7]:       ./img/dissetReptes_07.jpg           "7- Energia neta i assequible"
+[objectiu_8]:       ./img/dissetReptes_08.jpg           "8- Treball digne i creixement econòmic"
 [objectiu_9]:       ./img/dissetReptes_09.jpg           "9- Indústria, innovació i infraestructura"
 [objectiu_10]:      ./img/dissetReptes_10.jpg           "10- Reducció de les desigualtats"
 [objectiu_11]:      ./img/dissetReptes_11.jpg           "11- Ciutats i comunitats sostenibles"
-[objectiu_12]:      ./img/dissetReptes_12.jpg           "12- Producció i consum responsables"
-[objectiu_13]:      ./img/dissetReptes_13.jpg           "13- Acció pel clima"
+[objectiu_12]:      ./img/dissetReptes_12.jpg           "12- Consum i producció responsables"
+[objectiu_13]:      ./img/dissetReptes_13.jpg           "13- Acció climàtica"
 [objectiu_14]:      ./img/dissetReptes_14.jpg           "14- Vida submarina"
-[objectiu_15]:      ./img/dissetReptes_15.jpg           "15- Vida d'ecosistemes terrestres"
+[objectiu_15]:      ./img/dissetReptes_15.jpg           "15- Vida terrestre"
 [objectiu_16]:      ./img/dissetReptes_16.jpg           "16- Pau, justícia i institucions sòlides"
-[objectiu_17]:      ./img/dissetReptes_17.jpg           "17- Aliances per aconseguir els objectius"
-[objectius]:        ./img/dissetReptes.jpg              "ODS"
+[objectiu_17]:      ./img/dissetReptes_17.jpg           "17- Aliances pels objectius"
+[objectius]:        ./img/dissetReptes.jpg              "Objectius Global de Desenvolupament Sostenible"
 
 [Mapa de materialitat ASG per a la gestió de la sostenibilitat a la PIME]: https://mediambient.gencat.cat/ca/05_ambits_dactuacio/empresa_i_produccio_sostenible/finances-sostenibles/mapa-materialitat-asg-gestio-sostenibilitat-pime/index.html
+[Assemblea General de les Nacions Unides]: https://sdgs.un.org/
+[Agenda2030]:   https://www.un.org/sustainabledevelopment/es/development-agenda/
+
+
+
 --8<-- ".acronims.txt"
