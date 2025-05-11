@@ -12,7 +12,8 @@
 
     * esbrina i comenta, a l'Estat Espanyol, com estem respecte aquest objectiu
 
-[Mapa-de-materialitat-ASG-per-a-la-PIME.xlsx]:  ./docs/Mapa-de-materialitat-ASG-per-a-la-PIME.xlsx "Mapa de materialitat ASG per a la PIME"
-[unODS]:   https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/ "Nacions Unides - Objectius de desenvolupament sostenible
+[Mapa-de-materialitat-ASG-per-a-la-PIME.xlsx]:  https://mediambient.gencat.cat/web/.content/home/ambits_dactuacio/empresa_i_produccio_sostenible/finances-sostenibles/Mapa-de-materialitat-ASG-per-a-la-PIME.xlsx "Mapa de materialitat ASG per a la PIME"
+
+[unODS]:   https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/ "Nacions Unides - Objectius de desenvolupament sostenible"
 
 --8<-- ".acronims.txt"
