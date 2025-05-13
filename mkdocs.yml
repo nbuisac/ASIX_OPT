@@ -210,6 +210,7 @@ nav:
       - "Preparació de l'entorn de desenvolupament - Thonny" : 'esp32/esp32_001_b.md'
       - "Algunes classes" : 'esp32/esp32_002.md'
       - "Programem" : 'esp32/esp32_003.md'
+      - "Ajudes" : 'esp32/esp32_010.md'
 
     - "Sostenibilitat" :
       - "Sostenibilitat aplicada al sistema productiu" : 'sostenibilitat/sostenibilitat_001.md'
