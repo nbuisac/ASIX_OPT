@@ -211,6 +211,7 @@ nav:
       - "Algunes classes" : 'esp32/esp32_002.md'
       - "Programem" : 'esp32/esp32_003.md'
       - "Interrupcions externes" : 'esp32/esp32_004.md'
+      - "Proposta d'Exercicis" : 'esp32/esp32_005Ex.md'
       - "Ajudes" : 'esp32/esp32_010.md'
 
     - "Sostenibilitat" :
