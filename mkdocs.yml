@@ -58,6 +58,7 @@ theme:
 markdown_extensions:
   - admonition
   - pymdownx.keys
+  - pymdownx.critic
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
 # https://facelessuser.github.io/pymdown-extensions/extensions/emoji/
@@ -251,3 +252,4 @@ nav:
 
 # https://squidfunk.github.io/mkdocs-material/reference/formatting/
 # note abstract info tip success question warning failure danger bug example quote
+# falstad -> pàgina simulador electricitat https://www.falstad.com/circuit/
