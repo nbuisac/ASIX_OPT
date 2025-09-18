@@ -226,6 +226,7 @@ nav:
       - "Programació Mòdul Optatiu" : 'programacioOPT.md'
       - "Programació Mòdul Sostenibilitat" : 'programacioSOST.md'
     - "Altres" :
+        - "GitHub" : 'altres/github.md'
         - "Diferents entorns de Python" : 'altres/venv.md'
         - "Instal·lació de paquets" : 'altres/pip.md'
         - "Exemple d'entorn i paquet" : 'altres/pytube.md'
@@ -247,7 +248,7 @@ nav:
 # pip install mkdocs-exclude-search
 # python.exe -m pip install --upgrade pygments
 # pip install --upgrade pymdown-extensions
-# admonitions (markdown-extensions)
+# pip install markdown-extensions   # admonitions
 # pip install mkdocs-open-in-new-tab
 
 # https://squidfunk.github.io/mkdocs-material/reference/formatting/
