@@ -70,7 +70,7 @@ Aquest, al ser un mòdul optatiu de programació, no té UC associades al mòdul
 ## 2. Relació de Nuclis Formatius i Resultats d’Aprenentatge
 
 <table border="1">
-    <tr style="background-color: #4B8BBE; color: #FFD43B">
+    <tr style="background-color: #306998; color: #FFD43B">
         <th>Unitats Formatives</th><th>Total H.</th><th>Setmana Inici</th><th>Setmana Final</th>
     </tr>
     <tr><td>NF 1: Tipus, conversions, expressions i composició seqüencial</td><td align="center">45</td><td align="center">1</td><td align="center">12</td></tr>
@@ -313,13 +313,13 @@ Criteris d’avaluació
 * 1.8 Crea funcions locals amb els paràmetres necessaris i les utilitza en el programa principal i en altres funcions.
 
 <table border="1">
-    <tr style="background-color: #4B8BBE; color: #FFD43B;">
+    <tr style="background-color: #306998; color: #FFD43B;">
         <th rowspan="2" colspan="3">Activitats d’ensenyament i aprenentatge de NF 1<br />Durada: 45 hores</th>
         <th rowspan="2">RA</th>
         <th rowspan="2">Continguts</th>
         <th colspan="2">Avaluació</th>
     </tr>
-    <tr style="background-color: #4B8BBE; color: #FFD43B;"><th>CA</th><th>Instruments<br />d'avaluació</th></tr>
+    <tr style="background-color: #306998; color: #FFD43B;"><th>CA</th><th>Instruments<br />d'avaluació</th></tr>
     <tr>
         <td colspan="2"> A1- Introducció el Python</td>
         <td>18 h</td>
@@ -376,13 +376,13 @@ Criteris d’avaluació
 * 2.4. Utilitza constructors i mètodes d’objectes
 
 <table border="1">
-    <tr style="background-color: #4B8BBE; color: #FFD43B;">
+    <tr style="background-color: #306998; color: #FFD43B;">
         <th rowspan="2" colspan="3">Activitats d’ensenyament i aprenentatge de NF 2<br />Durada: 20 hores</th>
         <th rowspan="2">RA</th>
         <th rowspan="2">Continguts</th>
         <th colspan="2">Avaluació</th>
     </tr>
-    <tr style="background-color: #4B8BBE; color: #FFD43B;"><th>CA</th><th>Instruments<br />d'avaluació</th></tr>
+    <tr style="background-color: #306998; color: #FFD43B;"><th>CA</th><th>Instruments<br />d'avaluació</th></tr>
     <tr>
         <td colspan="2"> A1 - Ús de llibreries d’altres</td>
         <td>20 h</td>
@@ -425,13 +425,13 @@ Criteris d’avaluació
 * 3.4. Escriu programes que accedeixen a URLs externes i afegeixen informació en format JSON i altres.
 
 <table border="1">
-    <tr style="background-color: #4B8BBE; color: #FFD43B;">
+    <tr style="background-color: #306998; color: #FFD43B;">
         <th rowspan="2" colspan="3">Activitats d’ensenyament i aprenentatge de NF 1<br />Durada: 34 hores</th>
         <th rowspan="2">RA</th>
         <th rowspan="2">Continguts</th>
         <th colspan="2">Avaluació</th>
     </tr>
-    <tr style="background-color: #4B8BBE; color: #FFD43B;"><th>CA</th><th>Instruments<br />d'avaluació</th></tr>
+    <tr style="background-color: #306998; color: #FFD43B;"><th>CA</th><th>Instruments<br />d'avaluació</th></tr>
     <tr>
         <td colspan="2"> A1- Treball amb fitxers locals</td>
         <td>17 h</td>
