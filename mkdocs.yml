@@ -138,6 +138,7 @@ nav:
       - "Un tastet" : 'python/py_002b.md'
       - "Nombres" : 'python/py_003.md'
       - "Conceptes bàsics" : 'python/py_004.md'
+      - "Entrada per teclat" : 'python/py_018.md'
       - "Booleans" : 'python/py_005.md'
       - "Condicionals" : 'python/py_006.md'
       - "Comparacions" : 'python/py_007.md'
