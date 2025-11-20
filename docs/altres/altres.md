@@ -12,6 +12,7 @@
 
 * [Exercicis de Python][]{target="_blank"} per principiants
 
+* [Tutorial de Python a Python][]{target="_blank"}
 
 ### ESP32
 
@@ -27,6 +28,7 @@
 [Exercicis de Python]:                  https://thinkinfi.com/python-print-function-exercises-with-solutions-for-beginners/ "Exercicis de Python"
 [Python per a principiants]:            https://uniwebsidad.com/libros/python   "Python per a principiants"
 [Python i altres llenguatges]:          https://exercism.org/tracks/python  "Exercicis i Prenentatge de Python"
+[Tutorial de Python a Python]:          https://docs.python.org/es/3/tutorial/
 
 [Videos ESP32]:                         ../esp32/esp32_videos.md             "Videos ESP32"
 [Qué es el ESP32 y porque deberías tener esta placa]: https://www.youtube.com/watch?v=pdgFqPbw64g "Qué es el ESP32 y porque deberías tener esta placa"
