@@ -212,7 +212,9 @@ nav:
       - "Preparació de l'entorn de desenvolupament - Thonny" : 'esp32/esp32_001_b.md'
       - "Algunes classes" : 'esp32/esp32_002.md'
       - "Programem" : 'esp32/esp32_003.md'
-      - "Interrupcions externes" : 'esp32/esp32_004.md'
+      - "Components" : 'esp32/esp32_004.md'
+      - "Timer" : 'esp32/esp32_007.md'
+      - "Interrupcions externes" : 'esp32/esp32_008.md'
       - "Proposta d'Exercicis" : 'esp32/esp32_005Ex.md'
       - "Ajudes" : 'esp32/esp32_010.md'
 
@@ -251,6 +253,7 @@ nav:
 # pip install --upgrade pymdown-extensions
 # pip install markdown-extensions   # admonitions
 # pip install mkdocs-open-in-new-tab
+# pip install mathjax
 
 # https://squidfunk.github.io/mkdocs-material/reference/formatting/
 # note abstract info tip success question warning failure danger bug example quote
