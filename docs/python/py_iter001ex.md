@@ -22,7 +22,9 @@ Resol aquests exercicis d'iteracions amb [`for`][for] i/o [`while`][while].
 
 10. Fes un programa que demani 2 números i calculi el producte a base de sumes. Per exemple **per calcular 5*3 ha de fer 5 + 5 + 5**
 
-11. Fes un programa que calculi la divisió entera a base de restes. Per exemple *per calcular 20 / 3 = 6*3 + 2. Quocient 3 i sobren 2, doncs puc restar 6 vegades el 3*
+11. Fes un programa que calculi la divisió entera a base de restes. Per exemple *per calcular 20 / 3 = 6*.
+
+    Quocient 3 i sobren 2, doncs puc restar 6 vegades el 3*
 
 12. Escriu un programa que demani un número N i calculi la **suma** de l'**1 al N**. Per exemple si donem el 4 ha de calcular 1+2+3+4=10
 
