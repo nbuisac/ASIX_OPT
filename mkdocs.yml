@@ -203,6 +203,9 @@ nav:
         - "Exercicis de Bases de dades" : 'fitxers/fitxers_002ex.md'
         - "Exercici total" : 'fitxers/fitxers_009ex.md'
 
+    - "Eines ASIX" :
+      - "os, shutil, subprocess" : 'ASIX/asix_001.md'
+
     - "Tkinter" :
       - "Tkinter" : 'tkinter/tk_000.md'
       - "Canvas" : 'tkinter/tk_001.md'

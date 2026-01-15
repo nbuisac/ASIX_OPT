@@ -98,8 +98,51 @@ with open('exemple.txt') as f:
     pass
 ```
 
-Aquesta darrera opció ens estalvia algunes línies de codi.
+Aquesta darrera opció ens estalvia algunes línies de codi. Vegem-ho amb més detall.
 
+## [with][]
+
+Tot i que podem utilitzar `open()` i `close()` de manera manual, la forma estàndard i més segura en _Python_ és utilitzar la sentència `with`.
+
+Aquesta estructura actua com un gestor de context: obre el fitxer i **s'assegura de tancar-lo automàticament en sortir del bloc indentat**, **fins i tot si es produeix un error** durant la lectura.
+
+**Per què utilitzar with?**
+
+* **Seguretat**: No hem de patir per si ens oblidem de fer el .close().
+
+* **Robustesa**: El fitxer s'alliberarà correctament encara que el programa "peti" mentre llegeix.
+
+* **Neteja**: El codi és més compacte i fàcil de llegir.
+
+```python title="Exemple de lectura línia a línia:"
+## Llegim fitxers amb la sentència with
+with open("exemple.txt", encoding="utf-8") as f:
+    for linia in f:
+        # Treiem els espais en blanc i salts de línia del final amb .strip()
+        print(linia.strip())
+
+# Aquí el fitxer ja està tancat automàticament
+```
+
+**Comparativa visual:**
+
+* **Mètode Manual (`try...finally`)**
+
+    ```python
+    f = open('dades.txt', 'r')
+    try:
+        contingut = f.read()
+    finally:
+        f.close()
+    ```
+
+* **Mètode amb `with`**
+
+    ```python
+    with open('dades.txt', 'r') as f:",
+        contingut = f.read()
+    ```
 
 [lectura i escriptura de fitxers]:  https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files   "lectura i escriptura de fitxers"
 [open]: https://docs.python.org/3/library/functions.html#open   "open"
+[with]: https://docs.python.org/3/reference/compound_stmts.html#the-with-statement
