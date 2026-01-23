@@ -54,23 +54,23 @@ Vegem-ne un exemple:
 --8<-- "./docs/fitxers/python/fitxers_003.py"
 ```
 
-## writelines
+## [writelines][]
 
-La funció `#!py writeline()` ens permet escriure el que tinguem emmagatzemat en una llista, afegint tots els elements de la llista però sense escriure al final cap alt de línia. Per exemple:
+La funció [`#!py writelines()`][writelines] ens permet **escriure** el que tinguem emmagatzemat en **una llista**, afegint tots els elements de la llista **però sense escriure cap salt de línia**. Per exemple:
 
 ```py
 --8<-- "./docs/fitxers/python/fitxers_003_1.py"
 ```
 
-Escriurà al fitxer `dillunsdimartsdimecresdijousdivendresdissabtediumenge` sense cap alt de línia.
+Escriurà al fitxer `dillunsdimartsdimecresdijousdivendresdissabtediumenge` sense cap salt de línia.
 
-Per solventar-ho podem utilitzar una funció *lambda*, que no hem explicat, dins la funció *map* que tampoc hem explicat. Però aquí ho deixo:
+Per solventar-ho podem utilitzar una funció *lambda*, _que no hem explicat_, dins la funció *map* _que tampoc hem explicat_. Però aquí ho deixo:
 
 ```py
 --8<-- "./docs/fitxers/python/fitxers_003_2.py"
 ```
 
-També podem utilitzar `#!py with` per esciure al fitxer:
+També podem utilitzar `#!py with` per escriure al fitxer:
 
 ```py
 --8<-- "./docs/fitxers/python/fitxers_003_3.py"
@@ -94,6 +94,21 @@ try:
 finally:
     # Aquesta part SEMPRE s'executarà
     f.close()
+```
+
+## [flush][]
+
+La comanda [`flush()`][flush] ens permet forçar el sistema a escriure a disc allò que tingui al buffer d'escriptura del fitxer.
+
+```py
+f = open('exemple.txt', "wt")
+for a in range(1000):
+    f.write(f"Aquesta és la línia {a}\n")
+    if a % 100 == 0:
+        input("Prem intro per continuar (1)")
+        f.flush()
+        input("Prem intro per continuar (2)")
+f.close()
 ```
 
 ## [with][]
@@ -169,3 +184,5 @@ with open("config.txt", "w") as f:
 [lectura i escriptura de fitxers]:  https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files   "lectura i escriptura de fitxers"
 [open]: https://docs.python.org/3/library/functions.html#open   "open"
 [with]: https://docs.python.org/3/reference/compound_stmts.html#the-with-statement
+[writelines]:   https://docs.python.org/3/library/io.html#io.IOBase.writelines
+[flush]:        https://docs.python.org/3/library/io.html#io.BufferedWriter.flush
