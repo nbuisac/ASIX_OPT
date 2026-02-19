@@ -158,6 +158,7 @@ nav:
         - "Exercicis de llistes" : 'python/py_lists001ex.md'
         - "Exercicis d'iteracions" : 'python/py_iter001ex.md'
         - "Exercicis d'iteracions ASIX" : 'python/py_iter003ex.md'
+        - "Exercicis d'iteracions ASIX - 2" : 'python/py_iter004ex.md'
         - "Exercicis d'iteracions amb seqüències" : 'python/py_iter002ex.md'
 
         # - "Conceptes bàsics" : 'python/py_004ex.md'
