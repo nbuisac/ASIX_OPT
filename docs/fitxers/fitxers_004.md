@@ -4,9 +4,9 @@ Python inclou moltes llibreries per treballar amb fitxers de text de diferents t
 
 Veurem alguns exemples de com treballar amb fitxers de diferents tipus. Aprendrem a utilitzar-los amb exemples:
 
-## CSV
+## [CSV][csv]
 
-El format *CSV* (*"Comma Separated Values"*) és un dels formats de fitxer més populars utilitzats per emmagatzemar i transferir dades entre diferents programes. Actualment, moltes eines de gestió de bases de dades, i el popular Excel, ofereixen la importació i exportació de dades en aquest format.
+El format *[CSV][csv]* (*"Comma Separated Values"*) és un dels formats de fitxer més populars utilitzats per emmagatzemar i transferir dades entre diferents programes. Actualment, moltes eines de gestió de bases de dades, i el popular Excel, ofereixen la importació i exportació de dades en aquest format.
 
 El fitxer *CSV* és un fitxer de text senzill amb l'extensió `.csv`. Un fitxer típic conté valors separats per comes, però també es permeten altres separadors com el *punt i coma* o la *tabulació*. Cal destacar que només es pot utilitzar un tipus de separador en un fitxer *CSV*.
 
@@ -102,3 +102,4 @@ On hem utilitzat `csv.QUOTE_MINIMAL`, podriem haver utilitzat, també:
 
 [contactes.csv]: ./python/contactes.csv
 [Pandas]:   https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html
+[csv]:      https://docs.python.org/3/library/csv.html
