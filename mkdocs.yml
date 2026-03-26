@@ -207,6 +207,10 @@ nav:
 
     - "Eines ASIX" :
       - "os, shutil, subprocess" : 'ASIX/asix_001.md'
+      - "Altres llibreries" : 'ASIX/asix_002.md'
+      - "Exercici 1" : 'ASIX/asix_901.md'
+      - "Exercici 2" : 'ASIX/asix_902.md'
+      - "Exercici 3" : 'ASIX/asix_903.md'
 
     - "Tkinter" :
       - "Tkinter" : 'tkinter/tk_000.md'

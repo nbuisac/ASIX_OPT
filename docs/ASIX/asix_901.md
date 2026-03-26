@@ -1,54 +1,87 @@
-# Gestió amb Python
+# Eines per Administradors de Sistemes en Python
 
-Entrant en la gestió de xarxes amb *Python*, passem d'administrar el _"ferro"_ local a controlar la infraestructura. Per a un perfil d'ASIX, *Python* és com una _"navalla suïssa"_ per fer _auditories_, _monitoratge_ i _automatització de configuracions_.
+Aquest exercici combina les quatre llibreries següents: `argparse`, `psutil`, `logging` i `requests`.
 
-Tres pilars fonamentals:
+## 🚀 Projecte: "Creació d'un Agent de Monitoratge (SysMon) amb Alertes Webhook"
 
-1. Escaneig i Connectivitat (El "ping" intel·ligent)
+Ets l'administrador de sistemes d'una petita empresa. Teniu diversos servidors crítics i necessiteu un script lleuger (un _agent_) que comprovi periòdicament si els servidors s'estan quedant sense memòria RAM o espai al disc. Si algun recurs supera el llindar de perill, l'script ha de deixar constància en un fitxer de registre (_log_) i enviar una alerta al canal de l'equip d'IT (mitjançant un _Webhook_).
 
-    En lloc de fer un ping manual, podem usar *Python* per comprovar l'estat de tota una subxarxa i generar un informe (*JSON* o *CSV*) amb els hosts caiguts.
+### Objectius de l'script (_sysmon.py_)
 
-    Eina: Llibreria `subprocess` (que ja hem vist) o llibreries més potents com `scapy`.
+Cal crear un script en Python que compleixi els següents requisits:
 
-2. Automatització de SSH (`Paramiko` / `Netmiko`)
+1. Interfície per Comandes (argparse)
 
-    !!!question "Paramiko / Netmiko"
-        
-        són llibreries de *python*:
-        
-        * `Netmiko`: molt usada en xarxes
-        * `Paramiko`: més genèrica
+    L'_script_ no pot tenir valors fixats dins el codi (hardcoded). Ha d'acceptar els següents arguments des de la terminal:
 
-    Podem fer un script que es connecti a 50 servidors o routers simultàniament, executi una comanda (com actualitzar el sistema o canviar una regla de firewall) i tanqui la sessió.
+    * `--ram-limit`: Llindar d'ús de la RAM en percentatge (per defecte: 80).
 
-    Cas d'ús: "Necessito canviar la contrasenya de l'usuari `admin` a tots els servidors de la planta 2".
+    * `--disk-limit`: Llindar d'ús del disc principal en percentatge (per defecte: 85).
 
-3. Consultes de Xarxa i Sockets
+    * `--webhook`: URL opcional on enviar l'alerta. Si no s'indica, només guardarà l'alerta al fitxer de log.
 
-    Python tant pot obrir ports com consultar un _DNS_. Podem crear un _"Port Scanner"_ bàsic per veure quins ports tenen oberts els nostres servidors i detectar vulnerabilitats.
+2. Monitoratge del Sistema (`psutil`)
 
-    Llibreria: `socket`.
+    * L'script ha d'obtenir el percentatge d'ús de la memòria RAM actual.
 
-## Un exemple pràctic per començar: Port Scanner Bàsic
+    * L'script ha d'obtenir el percentatge d'ús de la partició principal (`/` a _Linux_ o `C:\` a _Windows_).
 
-Aquest script mira si un port concret està obert en una IP. És molt útil per entendre com funcionen els timeouts i les connexions TCP.
+3. Registre d'Activitats (`logging`)
 
-```python
-import socket
+    Tota l'execució s'ha de registrar en un arxiu anomenat _`sysmon.log`_.
 
-def check_port(ip, port):
-    # Creem un objecte socket (IPv4, TCP)
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.settimeout(1) # No volem esperar eternament
+    Ha de registrar un missatge d'_INFO_ cada cop que l'script s'executi, indicant els valors actuals (Ex: **_INFO** - Comprovació: RAM 45% | Disc 60%_).
+
+    Si un valor supera el llindar indicat, ha de registrar un missatge de WARNING (Ex: **_WARNING** - Alerta de RAM: Ús al 88% (Límit 80%)_).
+
+4. Alertes Externes (`requests` i `json`)
+
+    Si hi ha un _WARNING_ i l'usuari ha passat una _URL de webhook_, l'script ha de fer una petició _POST_ enviant un diccionari en format _JSON_ cap a aquesta URL amb el missatge d'alerta.
+
+## Exemples d'execució esperats:
+
+* Cas 1: Execució normal sense superar els límits
     
-    resultat = s.connect_ex((ip, port)) # Retorna 0 si està obert
-    
-    if resultat == 0:
-        print(f"Port {port}: OBERT")
-    else:
-        print(f"Port {port}: Tancat")
-    s.close()
+    ```bash
+    $ python sysmon.py --ram-limit 90 --disk-limit 90
+    ```
 
-# Prova-ho amb el teu servidor local o una IP coneguda
-check_port("8.8.8.8", 53) # DNS de Google
-```
+    (No surt res per pantalla, però al fitxer sysmon.log s'hi afegeix: AAAA-MM-DD HH:MI:SS - INFO - Estat del sistema: RAM 45%, Disc 72%_)
+
+* Cas 2: Execució forçant l'alerta amb Webhook (límit al 10%)
+
+    ```bash
+    $ python sysmon.py --ram-limit 10 --webhook https://webhook.site/el-seu-codi-aqui
+    ```
+
+    (Al fitxer `sysmon.log` hi queda el registre del _WARNING_ i, a més, a la web _webhook.site_ rep el missatge _POST_ amb l'alerta en _JSON_).
+
+!!!note "En comptes d'un servidor webhook podriem enviar un missatge a Discord o telegram"
+
+
+
+
+
+[os]:           https://docs.python.org/3/library/os.html   
+[shutil]:       https://docs.python.org/3/library/shutil.html
+[subprocess]:   https://docs.python.org/3/library/subprocess.html
+
+[flask]:        https://pypi.org/project/Flask/
+
+[argparse]:     https://docs.python.org/3/library/argparse.html
+[platform]:     https://docs.python.org/3/library/platform.html
+[pathlib]:      https://docs.python.org/3/library/pathlib.html   
+[configparser]: https://docs.python.org/3/library/configparser.html
+[re]:           https://docs.python.org/3/library/re.html
+[logging]:      https://docs.python.org/3/library/logging.html
+[datetime]:     https://docs.python.org/3/library/datetime.html
+[time]:         https://docs.python.org/3/library/time.html
+[json]:         https://docs.python.org/3/library/json.html
+
+[psutil]:       https://pypi.org/project/psutil/
+[PyYAML]:       https://pypi.org/project/PyYAML/
+[requests]:     https://pypi.org/project/requests/
+[paramiko]:     https://pypi.org/project/paramiko/
+[netmiko]:      https://pypi.org/project/netmiko/
+
+--8<-- ".acronims.txt"

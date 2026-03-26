@@ -2,9 +2,9 @@
 
 Un cop dominem la lectura i escriptura de fitxers, el següent pas per a un **administrador de sistemes** és interactuar directament amb el sistema operatiu. Per a això, *Python* ens ofereix dues eines clau: `shutil` per a la gestió de fitxers i directori, i `subprocess` per executar comandes de terminal.
 
-## La llibreria `os` (Interacció amb el Sistema Operatiu)
+## La llibreria [`os`][os] (Interacció amb el Sistema Operatiu)
 
-La llibreria `os` (_Operating System_) és una de les més importants per a un administrador de sistemes. Permet que el nostre script de Python interactuï amb el sistema operatiu per gestionar fitxers, carpetes i rutes de forma independent de si estem a Linux, Windows o macOS.
+La llibreria [`os`][os] (_Operating System_) és una de les més importants per a un administrador de sistemes. Permet que el nostre script de Python interactuï amb el sistema operatiu per gestionar fitxers, carpetes i rutes de forma independent de si estem a Linux, Windows o macOS.
 
 ### Gestió de Directoris i Rutes
 
@@ -101,9 +101,9 @@ print(f"El seu directori personal és: {home}")
 * Si troba algun fitxer amb l'extensió `.old`, l'elimini automàticament.
 
 
-## La llibreria `shutil` (Operacions de Shell)
+## La llibreria [`shutil`][shutil] (Operacions de Shell)
 
-Mentre que la llibreria `os` ens permet fer operacions bàsiques, `shutil` (_Shell Utilities_) està dissenyada per a operacions d'alt nivell, com copiar carpetes senceres o comprimir dades.
+Mentre que la llibreria `os` ens permet fer operacions bàsiques, [`shutil`][shutil] (_Shell Utilities_) està dissenyada per a operacions d'alt nivell, com copiar carpetes senceres o comprimir dades.
 Funcions principals:
 
 * `shutil.copy(origen, desti)`: Copia un fitxer a una nova ubicació.
@@ -130,9 +130,9 @@ shutil.make_archive(desti_zip, 'zip', origen)
 print(f"Còpia de seguretat creada a: {desti_zip}.zip")
 ```
 
-## La llibreria `subprocess` (Execució de comandes)
+## La llibreria [`subprocess`][subprocess] (Execució de comandes)
 
-Aquesta llibreria permet que *Python* enviï comandes directament al terminal (_Bash_ a _Linux_ o _PowerShell_ a _Windows_) i en recuperi el resultat.
+La llibreria [`subprocess`][subprocess] permet que *Python* enviï comandes directament al terminal (_Bash_ a _Linux_ o _PowerShell_ a _Windows_) i en recuperi el resultat.
 
 ### La funció `subprocess.run()`
 
