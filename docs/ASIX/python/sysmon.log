@@ -1,0 +1,76 @@
+2026-04-09 21:02:32 - INFO - Estat del sistema: RAM 59.7% | Disc 55.2%
+2026-04-09 21:02:32 - WARNING - Alerta de RAM: Ús al 59.7% (Límit 10.0%)
+2026-04-09 21:02:32 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 10.0%)
+2026-04-09 21:02:50 - INFO - Estat del sistema: RAM 59.3% | Disc 55.2%
+2026-04-09 21:03:36 - INFO - Estat del sistema: RAM 57.9% | Disc 55.2%
+2026-04-09 21:03:36 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 50.0%)
+2026-04-09 21:04:41 - INFO - Estat del sistema: RAM 58.7% | Disc 55.2%
+2026-04-09 21:04:41 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 50.0%)
+2026-04-09 21:04:41 - ERROR - Error de xarxa intentant connectar amb el webhook: No connection adapters were found for '127.0.0.1:5000'
+2026-04-09 21:04:48 - INFO - Estat del sistema: RAM 59.0% | Disc 55.2%
+2026-04-09 21:04:48 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 50.0%)
+2026-04-09 21:04:48 - ERROR - Error de xarxa intentant connectar amb el webhook: Invalid URL '127.0.0.1': No scheme supplied. Perhaps you meant https://127.0.0.1?
+2026-04-09 21:06:38 - INFO - Estat del sistema: RAM 58.3% | Disc 55.2%
+2026-04-09 21:06:38 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 50.0%)
+2026-04-09 21:06:38 - ERROR - Error de xarxa intentant connectar amb el webhook: No connection adapters were found for '127.0.0.1:5000'
+2026-04-09 21:07:02 - INFO - Estat del sistema: RAM 58.0% | Disc 55.2%
+2026-04-09 21:07:02 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 50.0%)
+2026-04-09 21:07:02 - ERROR - Error de xarxa intentant connectar amb el webhook: No connection adapters were found for '127.0.0.1:5000'
+2026-04-09 21:08:13 - INFO - Estat del sistema: RAM 58.8% | Disc 55.2%
+2026-04-09 21:08:13 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 50.0%)
+2026-04-09 21:08:13 - ERROR - Error de xarxa intentant connectar amb el webhook: No connection adapters were found for '127.0.0.1:5000'
+2026-04-09 21:09:00 - INFO - Estat del sistema: RAM 57.7% | Disc 55.2%
+2026-04-09 21:09:00 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 50.0%)
+2026-04-09 21:09:00 - ERROR - Error de xarxa intentant connectar amb el webhook: No connection adapters were found for '127.0.0.1:5000/webhook'
+2026-04-09 21:09:59 - INFO - Estat del sistema: RAM 58.1% | Disc 55.2%
+2026-04-09 21:09:59 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 50.0%)
+2026-04-09 21:09:59 - ERROR - El webhook ha fallat. Codi d'error HTTP: 404
+2026-04-09 21:10:19 - INFO - Estat del sistema: RAM 58.3% | Disc 55.2%
+2026-04-09 21:10:19 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 50.0%)
+2026-04-09 21:10:19 - INFO - Alerta enviada correctament al webhook.
+2026-04-09 21:10:23 - INFO - Estat del sistema: RAM 58.1% | Disc 55.2%
+2026-04-09 21:10:23 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 50.0%)
+2026-04-09 21:10:23 - INFO - Alerta enviada correctament al webhook.
+2026-04-09 21:10:25 - INFO - Estat del sistema: RAM 58.5% | Disc 55.2%
+2026-04-09 21:10:25 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 50.0%)
+2026-04-09 21:10:25 - INFO - Alerta enviada correctament al webhook.
+2026-04-09 21:10:27 - INFO - Estat del sistema: RAM 58.1% | Disc 55.2%
+2026-04-09 21:10:27 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 50.0%)
+2026-04-09 21:10:27 - INFO - Alerta enviada correctament al webhook.
+2026-04-09 21:10:29 - INFO - Estat del sistema: RAM 58.1% | Disc 55.2%
+2026-04-09 21:10:29 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 50.0%)
+2026-04-09 21:10:29 - INFO - Alerta enviada correctament al webhook.
+2026-04-09 21:10:31 - INFO - Estat del sistema: RAM 58.5% | Disc 55.2%
+2026-04-09 21:10:31 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 50.0%)
+2026-04-09 21:10:31 - INFO - Alerta enviada correctament al webhook.
+2026-04-09 21:18:33 - INFO - Estat del sistema: RAM 58.6% | Disc 55.2%
+2026-04-09 21:18:33 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 50.0%)
+2026-04-09 21:18:33 - INFO - Alerta enviada correctament al webhook.
+2026-04-09 21:18:58 - INFO - Estat del sistema: RAM 57.9% | Disc 55.2%
+2026-04-09 21:18:58 - WARNING - Alerta de RAM: Ús al 57.9% (Límit 20.0%)
+2026-04-09 21:18:58 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 50.0%)
+2026-04-09 21:19:00 - INFO - Alerta enviada correctament al webhook.
+2026-04-09 21:19:22 - INFO - Estat del sistema: RAM 57.5% | Disc 55.2%
+2026-04-09 21:19:22 - WARNING - Alerta de RAM: Ús al 57.5% (Límit 20.0%)
+2026-04-09 21:19:22 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 50.0%)
+2026-04-09 21:19:22 - INFO - Alerta enviada correctament al webhook.
+2026-04-09 21:19:22 - INFO - Estat del sistema: RAM 57.1% | Disc 55.2%
+2026-04-09 21:19:22 - WARNING - Alerta de RAM: Ús al 57.1% (Límit 20.0%)
+2026-04-09 21:19:22 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 50.0%)
+2026-04-09 21:19:22 - INFO - Alerta enviada correctament al webhook.
+2026-04-09 21:19:23 - INFO - Estat del sistema: RAM 57.2% | Disc 55.2%
+2026-04-09 21:19:23 - WARNING - Alerta de RAM: Ús al 57.2% (Límit 20.0%)
+2026-04-09 21:19:23 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 50.0%)
+2026-04-09 21:19:23 - INFO - Alerta enviada correctament al webhook.
+2026-04-09 21:19:23 - INFO - Estat del sistema: RAM 57.2% | Disc 55.2%
+2026-04-09 21:19:23 - WARNING - Alerta de RAM: Ús al 57.2% (Límit 20.0%)
+2026-04-09 21:19:23 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 50.0%)
+2026-04-09 21:19:23 - INFO - Alerta enviada correctament al webhook.
+2026-04-09 21:33:20 - INFO - Estat del sistema: RAM 60.2% | Disc 55.2%
+2026-04-09 21:33:20 - WARNING - Alerta de RAM: Ús al 60.2% (Límit 20.0%)
+2026-04-09 21:33:20 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 50.0%)
+2026-04-09 21:33:20 - INFO - Alerta enviada correctament al webhook.
+2026-04-09 21:33:38 - INFO - Estat del sistema: RAM 60.2% | Disc 55.2%
+2026-04-09 21:33:38 - WARNING - Alerta de RAM: Ús al 60.2% (Límit 20.0%)
+2026-04-09 21:33:38 - WARNING - Alerta de Disc: Ús al 55.2% (Límit 50.0%)
+2026-04-09 21:33:38 - INFO - Alerta enviada correctament al webhook.
