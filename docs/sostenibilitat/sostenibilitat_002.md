@@ -45,7 +45,30 @@ En ser tan generals, s'han especificat diferents metes per cadascun, arribant a 
 
 * **9.a** Facilitar el desenvolupament d'infraestructures sostenibles i resilients als països en desenvolupament mitjançant un major suport financer, tecnològic i tècnic als països africans, els països menys avançats, els països en desenvolupament sense litoral i els petits Estats insulars en desenvolupament
 
+!!! tip "La contribució del sector IT als ODS"
+    Com a administradors de sistemes, incidim directament en diversos objectius:
+    
+    * **ODS 9 (Indústria, Innovació i Infraestructura):** Mitjançant el disseny de xarxes resilients i centres de dades d'alt rendiment amb el mínim consum.
+
+    * **ODS 12 (Consum i Producció Responsables):** Aplicant polítiques de compra de maquinari de llarga durada i gestionant correctament el reciclatge de components electrònics (e-waste).
+
+    * **ODS 13 (Acció Climàtica):** El "Cloud Computing" ben gestionat permet a les empreses reduir la seva petjada de carboni en no haver de mantenir servidors infrautilitzats on-premise.
+
+![energies][]
+
 !!!question "Queden 5 anys, on hem arribat?"
+
+### On som ara? (L'equador de l'Agenda 2030)
+
+Actualment hem superat l'equador del termini (2015-2030). Segons els darrers informes de l'ONU i l'IDESCAT:
+
+* **Estat d'alerta:** Només el 15% de les metes dels ODS estan en camí de complir-se a nivell mundial.
+
+* **A Catalunya:** Es detecten progressos significatius en l'ús d'energies renovables i en la digitalització de l'economia, però encara hi ha reptes en la reducció de residus i la bretxa digital.
+
+* **El paper de la IA:** La Intel·ligència Artificial s'està convertint en una eina clau per accelerar els ODS (predicció de collites, optimització de xarxes elèctriques), però el seu alt consum energètic és un nou repte per als tècnics de sistemes.
+
+Podeu consultar el progrés en temps real a: [Indicadors dels ODS a Catalunya (IDESCAT)](https://www.idescat.cat/indicadors/?id=ods)
 
 !!!note "Tenim le web dels ODS a [https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/][]"
 
@@ -79,6 +102,8 @@ Els actors que poden fer quelcom són:
 
 * Món acadèmic: *Incloure competències relacionades amb ODS en la formació.*
 
+* **Comunitat Open Source:** El programari lliure ajuda a la sostenibilitat allargant la vida útil del maquinari antic (que no pot executar sistemes privatius moderns) i permetent la transparència en els algorismes.
+
 ## Gestió ASG
 
 La gestió *ASG* (**Ambiental, Social i de Governança**) fa referència a la pràctica d'integrar factors ambientals, socials i de governança **en** el procés de **presa de decisions d'inversió**. Aquest enfocament reconeix que aquests factors poden afectar significativament el rendiment financer i no financer d'una inversió i, per tant, són essencials per a una avaluació completa dels riscos i oportunitats. Els components ASG són:
@@ -94,6 +119,8 @@ La gestió *ASG* (**Ambiental, Social i de Governança**) fa referència a la pr
 3. Gestió de la governança
 
     Els factors de governança es refereixen a la qualitat i estructura del govern corporatiu d'una empresa. Això inclou la transparència en la presa de decisions, la remuneració dels directius, els drets dels accionistes, l'auditoria interna i les pràctiques ètiques.
+
+    * **ASG i el departament d'IT:** Avui dia, un administrador de sistemes ha de subministrar dades per als informes de sostenibilitat de l'empresa. Per exemple: el consum elèctric del CPD, el percentatge de maquinari reciclat o el compliment de les normatives de privacitat de dades (que forma part de la **Governança** i l'ètica digital).
 
 A la web de *Medi ambient i sostenibilitat de la Generalitat de Catalunya*, podreu veure un [Mapa de materialitat ASG per a la gestió de la sostenibilitat a la PIME][]
 
@@ -122,6 +149,7 @@ A la web de *Medi ambient i sostenibilitat de la Generalitat de Catalunya*, podr
 [Mapa de materialitat ASG per a la gestió de la sostenibilitat a la PIME]: https://mediambient.gencat.cat/ca/05_ambits_dactuacio/empresa_i_produccio_sostenible/finances-sostenibles/mapa-materialitat-asg-gestio-sostenibilitat-pime/index.html
 [Assemblea General de les Nacions Unides]: https://sdgs.un.org/
 [Agenda2030]:   https://www.un.org/sustainabledevelopment/es/development-agenda/
+[energies]:   ./img/energies.png
 
 
 

@@ -8,16 +8,16 @@ Tres pilars fonamentals:
 
     En lloc de fer un ping manual, podem usar *Python* per comprovar l'estat de tota una subxarxa i generar un informe (*JSON* o *CSV*) amb els hosts caiguts.
 
-    Eina: Llibreria `subprocess` (que ja hem vist) o llibreries més potents com `scapy`.
+    Eina: Llibreria [`subprocess`][subprocess] (que ja hem vist) o llibreries més potents com [`scapy`][scapy].
 
-2. Automatització de SSH (`Paramiko` / `Netmiko`)
+2. Automatització de SSH ([`Paramiko`][paramiko] / [`Netmiko`][netmiko])
 
     !!!question "Paramiko / Netmiko"
         
         són llibreries de *python*:
         
-        * `Netmiko`: molt usada en xarxes
-        * `Paramiko`: més genèrica
+        * [`Netmiko`][netmiko]: molt usada en xarxes
+        * [`Paramiko`][paramiko]: més genèrica
 
     Podem fer un script que es connecti a 50 servidors o routers simultàniament, executi una comanda (com actualitzar el sistema o canviar una regla de firewall) i tanqui la sessió.
 
@@ -27,7 +27,7 @@ Tres pilars fonamentals:
 
     Python tant pot obrir ports com consultar un _DNS_. Podem crear un _"Port Scanner"_ bàsic per veure quins ports tenen oberts els nostres servidors i detectar vulnerabilitats.
 
-    Llibreria: `socket`.
+    Llibreria: [`socket`][socket].
 
 ## Un exemple pràctic per començar: Port Scanner Bàsic
 
@@ -52,3 +52,10 @@ def check_port(ip, port):
 # Prova-ho amb el teu servidor local o una IP coneguda
 check_port("8.8.8.8", 53) # DNS de Google
 ```
+
+
+[subprocess]:   https://docs.python.org/library/subprocess.html
+[scapy]:        https://pypi.org/project/scapy/
+[paramiko]:     https://pypi.org/project/paramiko/
+[netmiko]:      https://pypi.org/project/netmiko/
+[socket]:       https://docs.python.org/library/socket.html

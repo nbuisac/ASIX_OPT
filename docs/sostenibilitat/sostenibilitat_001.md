@@ -38,6 +38,17 @@ La **sostenibilitat aplicada al sector de serveis** es refereix a l'adopció de 
 
 8. Participació comunitària i impacte social
 
+!!! info "Green IT: La sostenibilitat en el món informàtic"
+    Com a futurs administradors de sistemes (ASIX), el nostre camp d'acció directe és el **Green IT** o Informàtica Verda. Això implica optimitzar els recursos tecnològics per minimitzar la petjada ambiental de l'empresa:
+    
+    * **Virtualització:** Reduir el nombre de servidors físics actius mitjançant màquines virtuals o contenidors, estalviant energia i maquinari.
+
+    * **Eficiència del maquinari:** Seleccionar equips amb certificacions d'eficiència (com *Energy Star* o *80 PLUS* en fonts d'alimentació).
+
+    * **Gestió de potència:** Configurar polítiques d'estalvi energètic en els sistemes operatius i servidors durant les hores de baixa activitat.
+
+    * **Optimització de la refrigeració:** Millorar el flux d'aire als racks per reduir el consum dels sistemes de climatització (l'aire condicionat pot suposar el 40% del consum d'un CPD).
+
 ## Marc normatiu i regulador
 
 El marc normatiu i regulador sobre sostenibilitat és ampli i es desenvolupa a diferents nivells: **mundial**, **europeu**, **espanyol** i **català**. Cada un d'aquests nivells aporta les seves pròpies regulacions i objectius per fomentar pràctiques sostenibles.
@@ -55,6 +66,8 @@ El marc normatiu i regulador sobre sostenibilitat és ampli i es desenvolupa a d
 * *Directrius sobre Economia Circular*: Iniciatives per reduir residus i augmentar el reciclatge i la reutilització a través de tota la UE.
 
 * *Regulacions sobre Emissions*: Normatives sobre la reducció d'emissions de CO~2~, especialment en sectors com la indústria i el transport.
+
+* *EU Code of Conduct for Data Centre Energy Efficiency*: Una norma de referència per a la nostra professió. És un acord voluntari creat per la UE per reduir el consum d'energia dels centres de dades, establint millors pràctiques en el disseny, la selecció d'equips i la gestió de la infraestructura IT.
 
 **A Espanya**, la sostenibilitat està regulada per diverses lleis i estratègies, com:
 
