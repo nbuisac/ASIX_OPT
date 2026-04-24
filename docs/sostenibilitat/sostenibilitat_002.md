@@ -56,7 +56,21 @@ En ser tan generals, s'han especificat diferents metes per cadascun, arribant a 
 
 ![energies][]
 
-!!!question "Queden 5 anys, on hem arribat?"
+Què mostra exactament aquesta il·lustració conceptual?
+
+* **El procés electroquímic**: A diferència dels motors de combustió, la pila de combustible genera electricitat mitjançant una reacció química. La imatge mostra l'entrada d'Hidrogen (H2​) per un costat i d'Oxigen (O2​) de l'aire per l'altre.
+
+* **Generació d'energia neta**: Dins de la pila es veu una membrana on els electrons de l'hidrogen se separen per crear un corrent elèctric. Aquest corrent s'utilitza per alimentar un motor, una bombeta o, en el context de _IT_, un Centre de Dades.
+
+* **Residu zero (Aigua)**: Un dels punts més importants de la il·lustració és que mostra com l'únic subproducte de la reacció és vapor d'aigua (H2​O) i calor. No hi ha emissions de CO2​.
+
+* **Disseny isomètric**: El format "_3D Isometric Flat_" mostra els components (tancs, cables, piles) de forma geomètrica i estilitzada.
+
+En el món dels sistemes informàtics, l'hidrogen s'està començant a considerar com una alternativa real als _SAI_s (Sistemes d'Alimentació Ininterrompuda) de bateries de plom o liti i als generadors de gasoil.
+
+Moltes empreses de "_Cloud_" estan experimentant amb piles de combustible d'hidrogen per garantir que els seus servidors funcionin $24/7$ fins i tot si falla la xarxa elèctrica, sense contaminar. És un exemple perfecte d'infraestructura resilient (**ODS 9**).
+
+!!!question "Queden 4 anys, on hem arribat?"
 
 ### On som ara? (L'equador de l'Agenda 2030)
 
@@ -76,7 +90,7 @@ Alguns dels reptes són:
 
 * *Esgotament de recursos*: No tenim prou recursos naturals per la humanitat del 2050, 9600 milions d'habitants
 
-* *Fam al món*: Una de cada nou persones està subalimentada. ~*Dades pre-pandèmia*~
+* *Fam al món*: Una de cada nou persones està subalimentada. *Dades pre-pandèmia*
 
 * *Canvi climàtic*: Augment d'emissions de CO~2~ de gairebé el 50% des de 1990
 
@@ -106,6 +120,8 @@ Els actors que poden fer quelcom són:
 
 ## Gestió ASG
 
+![asg][]
+
 La gestió *ASG* (**Ambiental, Social i de Governança**) fa referència a la pràctica d'integrar factors ambientals, socials i de governança **en** el procés de **presa de decisions d'inversió**. Aquest enfocament reconeix que aquests factors poden afectar significativament el rendiment financer i no financer d'una inversió i, per tant, són essencials per a una avaluació completa dels riscos i oportunitats. Els components ASG són:
 
 1. Gestió ambiental
@@ -123,6 +139,8 @@ La gestió *ASG* (**Ambiental, Social i de Governança**) fa referència a la pr
     * **ASG i el departament d'IT:** Avui dia, un administrador de sistemes ha de subministrar dades per als informes de sostenibilitat de l'empresa. Per exemple: el consum elèctric del CPD, el percentatge de maquinari reciclat o el compliment de les normatives de privacitat de dades (que forma part de la **Governança** i l'ètica digital).
 
 A la web de *Medi ambient i sostenibilitat de la Generalitat de Catalunya*, podreu veure un [Mapa de materialitat ASG per a la gestió de la sostenibilitat a la PIME][]
+
+Podem accedir a la pestanya de **_Serveis IT_** per veure com podem incidir en diferents temes.
 
 [https://vimeo.com/609689555]:  https://vimeo.com/609689555
 [https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/]: https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/
@@ -149,7 +167,8 @@ A la web de *Medi ambient i sostenibilitat de la Generalitat de Catalunya*, podr
 [Mapa de materialitat ASG per a la gestió de la sostenibilitat a la PIME]: https://mediambient.gencat.cat/ca/05_ambits_dactuacio/empresa_i_produccio_sostenible/finances-sostenibles/mapa-materialitat-asg-gestio-sostenibilitat-pime/index.html
 [Assemblea General de les Nacions Unides]: https://sdgs.un.org/
 [Agenda2030]:   https://www.un.org/sustainabledevelopment/es/development-agenda/
-[energies]:   ./img/energies.png
+[energies]:     ./img/energies.png    "Pila de combustible d'hidrogen"
+[asg]:          ./img/asg.jpg    "Mapa de materialitat ASG"
 
 
 
