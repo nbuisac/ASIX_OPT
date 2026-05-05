@@ -1,27 +1,55 @@
-# Activitat(s)
+# Seguiment dels ODS a Espanya
 
-* Analitza els desafiaments i reptes **ASG** als quals s’enfronta el sector de la informàtica i identifica els **ODS** corresponents més rellevants.
+Aquest document proporciona recursos per comprovar l'estat i el progrés dels Objectius de Desenvolupament Sostenible (ODS) a Espanya.
 
-    Pots utilitzar el [*Mapa de materialitat ASG per a la PIME*][Mapa-de-materialitat-ASG-per-a-la-PIME.xlsx]{download="Mapa-de-materialitat-ASG-per-a-la-PIME.xlsx"}
+## Fonts Oficials i d'Anàlisi
 
-* Escull un dels [17 *ODS* ][unODS] i:
+### Informe REDS-SDSN Spain
 
-    * enumera'n les metes de l'objectiu
+L'informe anual de la **Red Española para el Desarrollo Sostenible (REDS)** és una de les fonts més completes. Segons l'edició 2025:
 
-    * escull-ne un i dona'n la teva opinió
+*   Espanya ocupa el **lloc 14 de 167 països**.
 
-    * esbrina i comenta, a l'Estat Espanyol, com estem respecte aquest objectiu
+*   Puntuació: **81/100**.
 
-* **Debat**: petit debat sobre _la IA i el consum d'aigua/energia_
+*   **Avanços destacats:** ODS 1 (Pobresa), 3 (Salut), 4 (Educació), 5 (Igualtat de gènere), 11 (Ciutats i comunitats sostenibles).
 
-    Busqueu dades sobre el tema a comentar i postriorment podem fer un debat de:
+*   **Retards significatius:** ODS 13 (Acció contra el canvi climàtic) i 15 (Vida d'ecosistemes terrestres).
 
-    * Què s'està fent?
 
-    * Què s'ha de canviar? Cap a on hem d'anar?
+[Informe SDR - Espanya 2025][]
 
-[Mapa-de-materialitat-ASG-per-a-la-PIME.xlsx]:  https://mediambient.gencat.cat/web/.content/home/ambits_dactuacio/empresa_i_produccio_sostenible/finances-sostenibles/Mapa-de-materialitat-ASG-per-a-la-PIME.xlsx "Mapa de materialitat ASG per a la PIME"
+[Nou informe: Anàlisi detallat de l'avanç de l'Agenda 2030 a España a 2025][]
 
-[unODS]:   https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/ "Nacions Unides - Objectius de desenvolupament sostenible"
+[Publicacions - reds - sdsn][]
+
+[Nou informe reds- Los ODS a 100 ciutats espanyoles][]
+
+## Govern d'Espanya
+
+El Ministeri de Drets Socials, Consum i Agenda 2030 publica informes de progrés oficials.
+
+Aquests informes alineen les polítiques públiques i els pressupostos amb els 17 ODS.
+Utilitzen dades de l'Institut Nacional d'Estadística (INE) com a base estadística.
+
+## Dades Europees (Eurostat)
+
+Per fer comparatives i verificar la coherència:
+
+Eurostat ofereix indicadors harmonitzats per a tots els països de la UE.
+Permet veure com es situa Espanya respecte a la mitjana europea.
+
+[Home eurostat - European Commission][]
+[INE - Informació Estadística Europea][]
+
+
+[Informe SDR - Espanya 2025]:  https://www.dsca.gob.es/sites/default/files/derechos-sociales/Informe_REDS_SDR_situacion_ODS_Espana_2025.pdf
+[Nou informe: Anàlisi detallat de l'avanç de l'Agenda 2030 a España a 2025]:  https://reds-sdsn.es/nuevo-informe-ods-espana/
+[Publicacions - reds - sdsn]:   https://reds-sdsn.es/documentos/
+[Nou informe reds- Los ODS a 100 ciutats espanyoles]:     https://reds-sdsn.es/informe-ods-ciudades-2020/
+
+
+[Home eurostat - European Commission]:      https://ec.europa.eu/eurostat
+[INE - Informació Estadística Europea]:     https://ine.es/dyngs/INE/es/index.htm?cid=545
 
 --8<-- ".acronims.txt"

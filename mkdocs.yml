@@ -229,6 +229,12 @@ nav:
       - "Proposta d'Exercicis" : 'esp32/esp32_005Ex.md'
       - "Ajudes" : 'esp32/esp32_010.md'
 
+    - "Docker" :
+      - "Instal·lació de Docker Desktop" : 'docker/docker000.md'
+      - "Servidor Mine-Craft" : 'docker/docker100.md'
+      - "Portainer" : 'docker/docker101.md'
+      - "Dynmap" : 'docker/docker102.md'
+
     - "Sostenibilitat" :
       - "Sostenibilitat aplicada al sistema productiu" : 'sostenibilitat/sostenibilitat_001.md'
       - "Objectius de Desenvolupament Sostenible: L'agenda 2030" : 'sostenibilitat/sostenibilitat_002.md'

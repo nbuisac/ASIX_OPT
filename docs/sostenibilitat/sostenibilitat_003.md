@@ -7,7 +7,7 @@ reutilització, el negoci de proximitat i el consum responsable per part dels ci
 
 Per conèixer què és l'**Economia Circular** mirarem amb atenció el següent vídeo de Youtube del 9 de març de 2017 de 15:13 min: [Vídeo d'economia circular][videoEconomiaCircular].
 
-## Què és l’economia circular?
+## Què és l'economia circular?
 
 [![economiaCircular][]][economiaCircular]
 
