@@ -230,10 +230,10 @@ nav:
       - "Ajudes" : 'esp32/esp32_010.md'
 
     - "Docker" :
-      - "Instal·lació de Docker Desktop" : 'docker/docker000.md'
       - "Servidor Mine-Craft" : 'docker/docker100.md'
       - "Portainer" : 'docker/docker101.md'
       - "Dynmap" : 'docker/docker102.md'
+      - "Instal·lació de Docker Desktop" : 'docker/docker000.md'
 
     - "Sostenibilitat" :
       - "Sostenibilitat aplicada al sistema productiu" : 'sostenibilitat/sostenibilitat_001.md'
