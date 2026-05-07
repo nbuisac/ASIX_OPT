@@ -2,7 +2,7 @@
 
 Ara afegirem el plugin _Dynmap_ és el "**wow factor**".
 
-Permet veure el món de _Minecraft_ des d'una web estil Google Maps. Com que fas utilitzem la imatge d'*itzg*, només cal:
+Permet veure el món de _Minecraft_ des d'una web estil Google Maps. Com que utilitzem la imatge d'*itzg*, només cal:
 
 * afegir una variable d'entorn:
 
@@ -14,7 +14,7 @@ Permet veure el món de _Minecraft_ des d'una web estil Google Maps. Com que fas
 
 Així, amb un sol "servei" (_Minecraft_), podem exposar dues aplicacions diferents (el joc i una web de mapes).
 
-Passarem de tenir un "_procés a la consola_" a tenir una a**rquitectura de serveis real**:
+Passarem de tenir un "_procés a la consola_" a tenir una **arquitectura de serveis real**:
 
 * un servidor de jocs i
 
@@ -23,7 +23,7 @@ Passarem de tenir un "_procés a la consola_" a tenir una a**rquitectura de serv
 ```yaml title="Docker Compose amb Dynmap i Portainer"
 services:
   minecraft: 
-    image: itzg/minecraft-server
+    image: itzg/minecraft-server:java21
     container_name: mc
     tty: true
     stdin_open: true
@@ -31,13 +31,14 @@ services:
       - "25565:25565" # Port del joc
       - "8123:8123"   # Port de la interfície web de Dynmap
     environment:
+      VERSION: "1.21"
       EULA: "TRUE"
       TYPE: "PAPER"
       MEMORY: 4G
       ONLINE_MODE: "false"
       CREATE_CONSOLE_IN_PIPE: "true"
       # Descarrega automàticament el plugin Dynmap de Spigot
-      SPIGET_RESOURCES: "273" 
+      SPIGET_RESOURCES: "273"
     volumes:
       - ./data:/data
     restart: always
@@ -74,11 +75,33 @@ volumes:
 
             * el descarreguem de [https://dynmap.us/builds/dynmap/][] la versió **v3.7-SNAPSHOT** més nova.
             
-                Podriem haver trobat versions a: [https://modrinth.com/plugin/dynmap/versions][] (versió paper) [https://modrinth.com/plugin/dynmap/version/3.7-beta-8][] però no n'ha funcionat cap
+                Podriem haver trobat versions a: [https://modrinth.com/plugin/dynmap/versions][] (versió paper) [https://modrinth.com/plugin/dynmap/version/3.7-beta-8][] però...
+
+                ???question "Quina versió descarreguem?"
+
+                    Com que al fitxer hi hem posat `TYPE: "PAPER"`, la resposta és clara:
+
+                    * ✅ Hem de baixar la versió per a _SPIGOT/PAPER_
+
+                        Encara que veiem noms diferents, la jerarquia de compatibilitat de plugins funciona així:
+
+                        * **Bukkit** → El pare de tots (molt antic).
+
+                        * **Spigot** → Una millora de Bukkit.
+
+                        * **Paper** → Una millora de Spigot (més ràpid i eficient).
+
+                        La clau: Qualsevol plugin que digui que és per a Spigot funcionarà perfectament a _Paper_.
+                    
+                    * ❌ Per què els altres no ens funcionen?
+
+                        * **Forge / Fabric**: Són per a "Mods" (modificacions que afegeixen blocs nous, màquines, animals, etc.). Aquests requereixen que el jugador també s'instal·li coses al seu ordinador. No funcionen amb el teu servidor actual.
+
+                        * **Sponge**: És un altre sistema de plugins, però no és compatible amb _Paper_.
 
             * el copiem a `./data/plugins`
 
-            * reiniciem el contenidor del _mein-craft`: `docker restart mc`
+            * reiniciem el contenidor del _minecraft_: `docker restart mc`
     
     * Al principi es veurà negre. Cal entrar al joc i moure'ns una mica per "renderitzar" el mapa.
     

@@ -251,6 +251,7 @@ nav:
         - "Instal·lació de paquets" : 'altres/pip.md'
         - "Exemple d'entorn i paquet" : 'altres/pytube.md'
         - "Enllaços": 'altres/altres.md'
+        - "Reserva de Ports en Windows": 'altres/reservaPorts.md'
 
 
 ## Tkinter 
