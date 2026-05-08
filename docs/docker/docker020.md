@@ -2,7 +2,7 @@
 
 !!!warning "Compte!"
 
-  A _Docker_, cada imatge té la seva pròpia estructura de fitxers. No doneu per fet que les rutes de _Debian/Ubuntu_ funcionen a tot arreu. **Sempre reviseu el Docker Hub** o la configuració per defecte.
+    A _Docker_, cada imatge té la seva pròpia estructura de fitxers. No doneu per fet que les rutes de _Debian/Ubuntu_ funcionen a tot arreu. **Sempre reviseu el Docker Hub** o la configuració per defecte.
 
 ## 1. OBJECTIU DE LA SESSIÓ
 
@@ -132,4 +132,4 @@ La resposta és **==NO!==**. Però, quasi...
     Si utilitzem _Gunicorn_, els logs de Python són més difícils de llegir (no surten els errors tan clars a la consola).
 
 
-[lamp]:     ./img/lamp.pn
+[lamp]:     ./img/lamp.png
