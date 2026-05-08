@@ -4,9 +4,9 @@
 
 ## 1. Instal·lació de Portainer (El mètode "_Docker-way_")
 
-El millor és que el despleguem com un contenidor més. També podem afegir-lo al mateix `docker-compose.yml` que ja tenim, o crear-ne un de nou, en un nou directori.
+El millor és que el despleguem com un contenidor més. També podem afegir-lo al mateix `compose.yaml` que ja tenim, o crear-ne un de nou, en un nou directori.
 
-```yml
+```yaml
 services:
   portainer:
     image: portainer/portainer-ce:latest

@@ -59,7 +59,7 @@ volumes:
 
 ## 🛠️ Passos a fer
 
-* **Actualitzar el stack**: Cal executar `docker-compose up -d`. Docker detectarà els canvis, crearà el contenidor de _Portainer_ i actualitzarà el de _Minecraft_.
+* **Actualitzar el stack**: Cal executar `docker compose up -d`. Docker detectarà els canvis, crearà el contenidor de _Portainer_ i actualitzarà el de _Minecraft_.
     
 * **Esperar la descàrrega**: El servidor trigarà una mica més a arrencar perquè ha de descarregar el fitxer `.jar` del plugin i instal·lar-lo.
 

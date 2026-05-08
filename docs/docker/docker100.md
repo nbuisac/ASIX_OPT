@@ -19,7 +19,7 @@ _Minecraft_ és un servidor que escriu dades constantmment. _Mons_, _jugadors_, 
     cd C:\asix\docker\minecraft-pc
     ```
 
-2. Dins el directori creat, crearem el fitxer `docker-compose.yml` amb els paràmetres necessaris
+2. Dins el directori creat, crearem el fitxer `compose.yaml` amb els paràmetres necessaris
 
 3. Iniciem el contenidor: `docker compose up -d`
 
@@ -91,9 +91,9 @@ _Minecraft_ és un servidor que escriu dades constantmment. _Mons_, _jugadors_, 
 
 ???example "Fitxers"
 
-    === "docker-compose.yml"
+    === "compose.yaml"
 
-        ```yaml title="docker-compose.yml" hl_lines="6 9 10 12"
+        ```yaml title="compose.yaml" hl_lines="6 9 10 12"
         services:
           minecraft: 
             image: itzg/minecraft-server:java21
@@ -148,15 +148,15 @@ netsh interface ipv4 set subinterface "vEthernet (WSL (Hyper-V firewall))" mtu=1
 
 _En baixar la MTU a 1400, fem que els paquets siguin una mica més petits i "càpiguen" perfectament per tot el túnel de xarxa de WSL2 sense haver-se de fragmentar._
 
-També podem jugar amb el fitxer `docker-compose.yml` modificant el paràmetre `JVM_DD_OPTS: "-Dpaper.playerconnection.keepalive=120"`. En aquest cas, al posar-li 120, ja l'hem posat prou alt.
+També podem jugar amb el fitxer `compose.yaml` modificant el paràmetre `JVM_DD_OPTS: "-Dpaper.playerconnection.keepalive=120"`. En aquest cas, al posar-li 120, ja l'hem posat prou alt.
 
 ## Què hem treballat? Com podem avançar?
 
 1. **El pas cap a la professionalització**: Docker Compose
     
-    Hem utilitzat el terminal per a tot, el següent pas natural és analitzar el fitxer `docker-compose.yml`.
+    Hem utilitzat el terminal per a tot, el següent pas natural és analitzar el fitxer `compose.yaml`.
 
-    * *Repte*: Aprendre la importància de la indentació (_YAML_) i com aixecar tot l'entorn amb una sola comanda (`docker-compose up -d`).
+    * *Repte*: Aprendre la importància de la indentació (_YAML_) i com aixecar tot l'entorn amb una sola comanda (`docker compose up -d`).
 
     * *Concepte*: Infraestructura com a Codi (_IaC_).
 
@@ -211,7 +211,7 @@ Si volem que els nostres amics es connectin al servidor de _Minecraft_, no els p
 
 ### Com funciona el contenidor de [Duck DNS][duckdns]?
 
-En el fitxer `docker-compose.yml` que hem vist abans, hem afegit un servei anomenat `duckdns`. La seva única funció és:
+En el fitxer `compose.yaml` que hem vist abans, hem afegit un servei anomenat `duckdns`. La seva única funció és:
 
 1. "Despertar-se" cada 5 minuts.
 
@@ -240,7 +240,7 @@ En el fitxer `docker-compose.yml` que hem vist abans, hem afegit un servei anome
 
 4. **Actualitzem el Docker Compose**: Posem el subdomini i el token al fitxer.
 
-5. **Aixequem el servei**: `docker-compose up -d`.
+5. **Aixequem el servei**: `docker compose up -d`.
 
 ---
 

@@ -230,6 +230,9 @@ nav:
       - "Ajudes" : 'esp32/esp32_010.md'
 
     - "Docker" :
+      - "Servidor web" : 'docker/docker010.md'
+      - "Servidor web-python-mariadb (a)" : 'docker/docker020.md'
+      - "Servidor web-python-mariadb (b)" : 'docker/docker021.md'
       - "Servidor Mine-Craft" : 'docker/docker100.md'
       - "Portainer" : 'docker/docker101.md'
       - "Dynmap" : 'docker/docker102.md'
