@@ -78,7 +78,7 @@ Aquests són els més realistes: llegir, modificar i guardar el resultat.
             # 2. Llegim el fitxer de dades
             with open("dades.csv", "rt", encoding="utf-8") as f_dades:
                 # Llegim la primera línia per saber quins són els encapçalaments (camps)
-                encapçalaments = f_dades.readline().strip().split(",")
+                encapcalaments = f_dades.readline().strip().split(",")
                 
                 # Processem cada línia de dades restant
                 for linia in f_dades:
@@ -86,7 +86,7 @@ Aquests són els més realistes: llegir, modificar i guardar el resultat.
                     
                     # Creem un diccionari que relacioni el camp amb el seu valor
                     # Ex: {'nom': 'Pere', 'ip': '192.168.1.10', ...}
-                    dades_dict = dict(zip(encapçalaments, valors))
+                    dades_dict = dict(zip(encapcalaments, valors))
                     
                     # Plantilla 1
                     # Substituïm les claus de la plantilla pels valors del diccionari

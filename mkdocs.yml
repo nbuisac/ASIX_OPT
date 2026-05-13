@@ -201,6 +201,7 @@ nav:
       - "Exercicis" :
         - "Exercicis de Fitxers" : 'fitxers/fitxers_001ex.md'
         - "Exercicis de Fitxers ASIX" : 'fitxers/fitxers_001ASIXex.md'
+        - "Més exercicis de Fitxers ASIX" : 'fitxers/fitxers_002ASIXex.md'
         - "Exercicis de Bases de dades" : 'fitxers/fitxers_002ex.md'
         - "Exercici total" : 'fitxers/fitxers_009ex.md'
         - "Exercici csv/SQLite" : 'fitxers/fitxers_010ex.md'
