@@ -58,15 +58,15 @@ En ser tan generals, s'han especificat diferents metes per cadascun, arribant a 
 
 Què mostra exactament aquesta il·lustració conceptual?
 
-* **El procés electroquímic**: A diferència dels motors de combustió, la pila de combustible genera electricitat mitjançant una reacció química. La imatge mostra l'entrada d'Hidrogen (H2​) per un costat i d'Oxigen (O2​) de l'aire per l'altre.
+* **El procés electroquímic**: A diferència dels motors de combustió, la pila de combustible genera electricitat mitjançant una reacció química. La imatge mostra l'entrada d'Hidrogen (H~2~) per un costat i d'Oxigen (O~2~) de l'aire per l'altre.
 
 * **Generació d'energia neta**: Dins de la pila es veu una membrana on els electrons de l'hidrogen se separen per crear un corrent elèctric. Aquest corrent s'utilitza per alimentar un motor, una bombeta o, en el context de _IT_, un Centre de Dades.
 
-* **Residu zero (Aigua)**: Un dels punts més importants de la il·lustració és que mostra com l'únic subproducte de la reacció és vapor d'aigua (H2​O) i calor. No hi ha emissions de CO2​.
+* **Residu zero (Aigua)**: Un dels punts més importants de la il·lustració és que mostra com l'únic subproducte de la reacció és vapor d'aigua (H~2~O​) i calor. No hi ha emissions de CO~2~​.
 
 * **Disseny isomètric**: El format "_3D Isometric Flat_" mostra els components (tancs, cables, piles) de forma geomètrica i estilitzada.
 
-En el món dels sistemes informàtics, l'hidrogen s'està començant a considerar com una alternativa real als _SAI_s (Sistemes d'Alimentació Ininterrompuda) de bateries de plom o liti i als generadors de gasoil.
+En el món dels sistemes informàtics, l'hidrogen s'està començant a considerar com una alternativa real als _SAI_ (Sistemes d'Alimentació Ininterrompuda) de bateries de plom o liti i als generadors de gasoil.
 
 Moltes empreses de "_Cloud_" estan experimentant amb piles de combustible d'hidrogen per garantir que els seus servidors funcionin $24/7$ fins i tot si falla la xarxa elèctrica, sense contaminar. És un exemple perfecte d'infraestructura resilient (**ODS 9**).
 
