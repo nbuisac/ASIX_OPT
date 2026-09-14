@@ -67,7 +67,13 @@ markdown_extensions:
   - pymdownx.highlight:
       linenums: None
 #      auto_title: True
-  - pymdownx.superfences  
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+    # https://squidfunk.github.io/mkdocs-material/reference/diagrams/
+    # https://mermaid.js.org/
   - pymdownx.tabbed:
       alternate_style: true       # vàries pestanyes de codi https://squidfunk.github.io/mkdocs-material/reference/content-tabs/?h=tabs
                                   # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#tabbed
@@ -132,34 +138,72 @@ draft_docs: |
 
 nav:
     - "Python" :
-      - "Introducció" : 'python/py_000.md'
-      - "L'entorn de desenvolupament" : 'python/py_001.md'
-      - "Instal·lació" : 'python/py_002.md'
-      - "Un tastet" : 'python/py_002b.md'
-      - "Nombres" : 'python/py_003.md'
-      - "Conceptes bàsics" : 'python/py_004.md'
-      - "Entrada per teclat" : 'python/py_018.md'
-      - "Booleans" : 'python/py_005.md'
-      - "Condicionals" : 'python/py_006.md'
-      - "Comparacions" : 'python/py_007.md'
-      - "Strings" : 'python/py_008.md'
-      - "Strings - Mètodes" : 'python/py_009.md'
-      - "El tipus range" : 'python/py_010_b.md'
-      - "Llistes" : 'python/py_010.md'
-      - "Llistes - Mètodes" : 'python/py_011.md'
-      - "Llistes - Resum" : 'python/py_012.md'
-      - "Iteracions" : 'python/py_013.md'
-      - "Usos de l'estructura while" : 'python/py_014.md'
-      - "Estructures repetitives (teoria)" : 'python/py_015.md'
-      - "Estructures repetitives (seqüències)" : 'python/py_016.md'
+      - "Introducció" : 'pyASIX/py_000.md'
+      - "L'entorn de desenvolupament" : 'pyASIX/py_001.md'
+      # - "Instal·lació" : 'pyASIX/py_002.md'
+      - "Un tastet" : 'pyASIX/py_002.md'
+      - "Entrada de dades: input()" : 'pyASIX/py_003.md'
+      - "Variables i Tipus de Dades en Sistemes": 'pyASIX/py_004.md'
+      - "Condicionals. Prenem decisions" : 'pyASIX/py_005.md'
       - "Exercicis":
-        - "Exercici d'escriptures i assignacions" : 'python/py_001ex.md'
-        - "Exercicis d'alternatives" : 'python/py_002ex.md'
-        - "Exercicis de llistes" : 'python/py_lists001ex.md'
-        - "Exercicis d'iteracions" : 'python/py_iter001ex.md'
-        - "Exercicis d'iteracions ASIX" : 'python/py_iter003ex.md'
-        - "Exercicis d'iteracions ASIX - 2" : 'python/py_iter004ex.md'
-        - "Exercicis d'iteracions amb seqüències" : 'python/py_iter002ex.md'
+        - "Input i Conversió de Tipus (Typecasting)" : 'pyASIX/py_ex001.md'
+        - "Entrada de dades i Condicionals" : 'pyASIX/py_ex002.md'
+    - "Estructures de dades" :
+      - "Llistes i Tuples" : 'pyASIX/py_101.md'
+      - "Iteracions" :
+        - "Iteracions: for i range" : 'pyASIX/py_201.md'
+        - "Iteracions: while" : 'pyASIX/py_301.md'
+      - "Diccionaris" : 'pyASIX/py_401.md'
+      - "Exercicis":
+        - "Llistes" : 'pyASIX/py_ex101.md'
+        - "Iteracions for i range (i)" : 'pyASIX/py_ex201.md'
+        - "Iteracions for i range (ii)" : 'pyASIX/py_ex202.md'
+        - "Iteracions while i validació" : 'pyASIX/py_ex301.md'
+        - "Diccionaris" : 'pyASIX/py_ex401.md'
+        - "Reptes Finals" : 'pyASIX/py_ex402.md'
+    - "Procediments i Funcions" :
+      - "Introduccio" : 'pyASIX/py_500.md'
+      - "Procediments" : 'python/py_020.md'
+      - "Funcions" : 'python/py_021.md'
+      - "Barregem *ars i **kwargs" : 'python/py_022.md'
+      - "Metadades" : 'python/py_023.md'
+      - "Exercicis de Funcions i Procediments" : 'pyASIX/py_ex500.md'
+    - "Accés a fitxers" :
+      - "Fitxers de text Pla" : 'pyASIX/py_601.md'
+      - "Fitxers JSON i XML" : 'pyASIX/py_602.md'
+      - "Gestió d'errors" : 'pyASIX/py_600.md'
+      - "Bases de dades: SQLite" : 'pyASIX/py_603.md'
+      - "Exercicis":
+        - "Exercicis Fitxers de text Pla" : 'pyASIX/py_ex601.md'
+        - "Exercicis Fitxers JSON i XML" : 'pyASIX/py_ex602.md'
+    - "Eines i Complements" :
+      - "Caixa d'eines." : 'pyASIX/py_901.md'
+      - "Exercicis: break, continue": 'pyASIX/py_ex901.md'
+      - "Decoradors (@) en Python": 'pyASIX/py_902.md'
+      # - "Nombres" : 'python/py_003.md'
+      # - "Conceptes bàsics" : 'python/py_004.md'
+      # - "Entrada per teclat" : 'python/py_018.md'
+      # - "Booleans" : 'python/py_005.md'
+      # - "Condicionals" : 'python/py_006.md'
+      # - "Comparacions" : 'python/py_007.md'
+      # - "Strings" : 'python/py_008.md'
+      # - "Strings - Mètodes" : 'python/py_009.md'
+      # - "El tipus range" : 'python/py_010_b.md'
+      # - "Llistes" : 'python/py_010.md'
+      # - "Llistes - Mètodes" : 'python/py_011.md'
+      # - "Llistes - Resum" : 'python/py_012.md'
+      # - "Iteracions" : 'python/py_013.md'
+      # - "Usos de l'estructura while" : 'python/py_014.md'
+      # - "Estructures repetitives (teoria)" : 'python/py_015.md'
+      # - "Estructures repetitives (seqüències)" : 'python/py_016.md'
+      # - "Exercicis":
+      #   - "Exercici d'escriptures i assignacions" : 'python/py_001ex.md'
+      #   - "Exercicis d'alternatives" : 'python/py_002ex.md'
+      #   - "Exercicis de llistes" : 'python/py_lists001ex.md'
+      #   - "Exercicis d'iteracions" : 'python/py_iter001ex.md'
+      #   - "Exercicis d'iteracions ASIX" : 'python/py_iter003ex.md'
+      #   - "Exercicis d'iteracions ASIX - 2" : 'python/py_iter004ex.md'
+      #   - "Exercicis d'iteracions amb seqüències" : 'python/py_iter002ex.md'
 
         # - "Conceptes bàsics" : 'python/py_004ex.md'
         # - "Booleans" : 'python/py_005ex.md'
@@ -167,44 +211,44 @@ nav:
         # - "Strings" : 'python/py_009ex.md'
         # - "Llistes" : 'python/py_010ex.md'
 
-    - "Procediments i Funcions" :
-      - "Procediments" : 'python/py_020.md'
-      - "Funcions" : 'python/py_021.md'
-      - "Barregem *ars i **kwargs" : 'python/py_022.md'
-      - "Metadades" : 'python/py_023.md'
-      - "Exercicis de Funcions i Procediments" : 'python/py_020ex.md'
+    # - "Procediments i Funcions" :
+    #   - "Procediments" : 'python/py_020.md'
+    #   - "Funcions" : 'python/py_021.md'
+    #   - "Barregem *ars i **kwargs" : 'python/py_022.md'
+    #   - "Metadades" : 'python/py_023.md'
+    #   - "Exercicis de Funcions i Procediments" : 'python/py_020ex.md'
 
     - "Turtle" :
       - "Turtle" : 'turtle/tu_000.md'
       - "Exercicis de Banderes" : 'banderes/banderes001.md'
 
-    - "Pygame" :
-      - "Introducció" : 'pygame/pygame_001.md'
-      - "Tutorial bàsic" : 'pygame/pygame_002.md'
-      - "Tutorial avançat" : 'pygame/pygame_003.md'
+    # - "Pygame" :
+    #   - "Introducció" : 'pygame/pygame_001.md'
+    #   - "Tutorial bàsic" : 'pygame/pygame_002.md'
+    #   - "Tutorial avançat" : 'pygame/pygame_003.md'
 
-    - "Excepcions" :
-      - "Tractament de les excepcions" : 'excepcions/excepcions_001.md'
+    # - "Excepcions" :
+    #   - "Tractament de les excepcions" : 'excepcions/excepcions_001.md'
 
-    - "Accés extern" :
-      - "Introducció" : 'fitxers/fitxers_001.md'
-      - "Lectura de fitxers de text" : 'fitxers/fitxers_002.md'
-      - "Escriptura en fitxers de text" : 'fitxers/fitxers_003.md'
-      - "Lectura de fitxers de diferents tipus: CSV" : 'fitxers/fitxers_004.md'
-      - "Lectura de fitxers de diferents tipus: XML" : 'fitxers/fitxers_005.md'
-      - "Accés a bases de dades SQL: SQLite" : 'fitxers/fitxers_006.md'
-      - "Accés a bases de dades SQL: MariaDB" : 'fitxers/fitxers_007.md'
-      - "DBeaver" : 'fitxers/fitxers_00a.md'
-      - "Servidor web propi" : 'fitxers/fitxers_008.md'
-      - "Accés amb GET" : 'fitxers/fitxers_009.md'
-      - "APIRest" : 'fitxers/fitxers_010.md'
-      - "Exercicis" :
-        - "Exercicis de Fitxers" : 'fitxers/fitxers_001ex.md'
-        - "Exercicis de Fitxers ASIX" : 'fitxers/fitxers_001ASIXex.md'
-        - "Més exercicis de Fitxers ASIX" : 'fitxers/fitxers_002ASIXex.md'
-        - "Exercicis de Bases de dades" : 'fitxers/fitxers_002ex.md'
-        - "Exercici total" : 'fitxers/fitxers_009ex.md'
-        - "Exercici csv/SQLite" : 'fitxers/fitxers_010ex.md'
+    # - "Accés extern" :
+    #   - "Introducció" : 'fitxers/fitxers_001.md'
+    #   - "Lectura de fitxers de text" : 'fitxers/fitxers_002.md'
+    #   - "Escriptura en fitxers de text" : 'fitxers/fitxers_003.md'
+    #   - "Lectura de fitxers de diferents tipus: CSV" : 'fitxers/fitxers_004.md'
+    #   - "Lectura de fitxers de diferents tipus: XML" : 'fitxers/fitxers_005.md'
+    #   - "Accés a bases de dades SQL: SQLite" : 'fitxers/fitxers_006.md'
+    #   - "Accés a bases de dades SQL: MariaDB" : 'fitxers/fitxers_007.md'
+    #   - "DBeaver" : 'fitxers/fitxers_00a.md'
+    #   - "Servidor web propi" : 'fitxers/fitxers_008.md'
+    #   - "Accés amb GET" : 'fitxers/fitxers_009.md'
+    #   - "APIRest" : 'fitxers/fitxers_010.md'
+    #   - "Exercicis" :
+    #     - "Exercicis de Fitxers" : 'fitxers/fitxers_001ex.md'
+    #     - "Exercicis de Fitxers ASIX" : 'fitxers/fitxers_001ASIXex.md'
+    #     - "Més exercicis de Fitxers ASIX" : 'fitxers/fitxers_002ASIXex.md'
+    #     - "Exercicis de Bases de dades" : 'fitxers/fitxers_002ex.md'
+    #     - "Exercici total" : 'fitxers/fitxers_009ex.md'
+    #     - "Exercici csv/SQLite" : 'fitxers/fitxers_010ex.md'
 
     - "Eines ASIX" :
       - "os, shutil, subprocess" : 'ASIX/asix_001.md'
@@ -213,10 +257,10 @@ nav:
       - "Exercici 2" : 'ASIX/asix_902.md'
       - "Exercici 3" : 'ASIX/asix_903.md'
 
-    - "Tkinter" :
-      - "Tkinter" : 'tkinter/tk_000.md'
-      - "Canvas" : 'tkinter/tk_001.md'
-      - "Pintem en un Canvas" : 'tkinter/tk_001ex.md'
+    # - "Tkinter" :
+    #   - "Tkinter" : 'tkinter/tk_000.md'
+    #   - "Canvas" : 'tkinter/tk_001.md'
+    #   - "Pintem en un Canvas" : 'tkinter/tk_001ex.md'
 
     - "ESP-32" :
       - "La placa" : 'esp32/esp32_000.md'

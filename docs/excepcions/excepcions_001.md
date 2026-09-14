@@ -2,7 +2,7 @@
 
 En aquest apartat esbrinarem com tractar les excepcions en python. Trobareu més informació a:
 
-* [Tractament d'errors  i excepcions][]: tutorial de python
+* [Tractament d'errors i excepcions][]: tutorial de python
 
 * [Sintaxis del `try`][try]: Sintaxis del `try` a python.
 
@@ -90,7 +90,7 @@ El fet de llançar errors ens pot ser útil quan programem funcions i/o procedim
 
 
 
-[Tractament d'errors  i excepcions]: https://docs.python.org/tutorial/errors.html#exceptions "Excepcions"
+[Tractament d'errors i excepcions]: https://docs.python.org/tutorial/errors.html#exceptions "Excepcions"
 
 [try]:      https://docs.python.org/reference/compound_stmts.html#try   "try"
 [raise]:    https://docs.python.org/3/reference/simple_stmts.html#raise "raise"

@@ -32,13 +32,13 @@ Anem a treballar, amb el que hem vist fins ara, creant banderes amb l'entorn del
 
 ## Dues franges
 
-Començarem amb les més senzilles, dues franges. [Mònaco][], [Ucraina][] i [Polònia][]
+Començarem amb les més senzilles, dues franges. [Mònaco][], [Ucraïna][] i [Polònia][]
 
 Escriu el codi necessari, utilitzant el que coneixes, per tal de fer el dibuix de les següents banderes:
 
-| **Mònaco**: |  **Ucraina** |  **Polònia** |
+| **Mònaco**: |  **Ucraïna** |  **Polònia** |
 |:-----------:|:------------:|:------------:|
-| ![Mònaco][] | ![Ucraina][] | ![Polònia][] |
+| ![Mònaco][] | ![Ucraïna][] | ![Polònia][] |
 
 ## Tres franges
 
@@ -83,7 +83,7 @@ Escriu el codi necessari, utilitzant el que coneixes, per tal de fer el dibuix d
 [Turtle]:   ../turtle/tu_000.md
 
 [Mònaco]:   ./img/monaco.jpg
-[Ucraina]:  ./img/ucraina.jpg
+[Ucraïna]:  ./img/ucraina.jpg
 [Polònia]:  ./img/polonia.jpg
 [Nigèria]:  ./img/nigeria.jpg
 [Perú]:     ./img/peru.jpg
