@@ -27,7 +27,18 @@ El programa ha de calcular quant espai necessitarem si volem guardar tres còpie
     nom_servidor = input("Nom del servidor: ")
     mida_backup = float(input("Mida de la còpia en GB (ex: 4.5): "))
     espai_total = mida_backup * 3
-    print("Per guardar 3 còpies de " + nom_servidor + " necessitarem " + str(espai_total) + " GB.")
+    print("Per guardar 3 còpies de", nom_servidor, " necessitarem ", espai_total, " GB.")
+    ```
+
+    o millor 
+
+    ```py title="Solució amb constants"
+    # --- Solució Exercici 1.1. ---
+    COPIES = 3
+    nom_servidor = input("Nom del servidor: ")
+    mida_backup = float(input("Mida de la còpia en GB (ex: 4.5): "))
+    espai_total = mida_backup * COPIES
+    print("Per guardar", COPIES, "còpies de", nom_servidor, "necessitarem", espai_total, "GB.")
     ```
 
 1.2. _Repartiment de memòria RAM_
