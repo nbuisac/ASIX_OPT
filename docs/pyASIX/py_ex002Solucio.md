@@ -61,7 +61,7 @@ A l'institut tenim tres tipus d'usuaris: `admin`, `professorat` i `alumnat`. Fes
 
 ## Bloc 4: Manteniment de Sistemes i Hardware
 
-4.1. _Alerta de temperatura del servidor (amb #!py float`)_
+4.1. _Alerta de temperatura del servidor (amb `#!py float`)_
 
 Els servidors de la sala de màquines tenen sensors de temperatura. Fes un script que demani la temperatura actual de la CPU (número amb decimals, ex: 65.4).
 

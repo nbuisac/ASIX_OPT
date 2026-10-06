@@ -79,6 +79,26 @@ El programa ha de prendre una decisió segons el temps introduït:
         print("ALERTA: La web va massa lenta! Cal revisar el servidor.")
     ```
 
+    o millor
+
+    ```py
+    # --- Solució Exercici 2.1 ---
+    # 2.1: El detector de webs lentes
+    TEMPS_1 = 1.0
+    TEMPS_2 = 3.0
+
+    temps_carrega = float(input("Quant triga a carregar la pàgina? "))
+
+    if temps_carrega < TEMPS_1:
+        missatge = "La web va genial! Rendiment òptim."
+    elif temps_carrega <= TEMPS_2:
+        missatge = "Rendiment acceptable, demana una ullada, però funciona."
+    else:
+        missatge = "ALERTA: La web va massa lenta! Cal revisar el servidor."
+
+    print(missatge)
+    ```
+
 2.2. _Control de bateries als portàtils de l'aula_
 
 Volem fer un script que s'executi als portàtils dels alumnes de 1r d'ASIX per comprovar si han de connectar el carregador. El programa demanarà el percentatge actual de la bateria (un número enter del 0 al 100).
